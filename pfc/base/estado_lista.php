@@ -18,12 +18,12 @@
         </tr>
         <?php
         require("conexao.php");
-        $sql = "select nome, tipojogo_descricao from jogo, tipo_jogo where jogo_idtipo_jogo = idtipo_jogo;";
+        $sql = "select jogo_descricao, tipojogo_descricao from jogo, tipo_jogo where jogo_idtipo_jogo = idtipo_jogo;";
         $resultado = mysqli_query($conexao, $sql);
         while ($linha = mysqli_fetch_array($resultado)) {
             echo "<tr class='active'>
                 <td></td>
-                <td class='active'>" . $linha["nome"] . "</td>
+                <td class='active'>" . $linha["jogo_descricao"] . "</td>
                 <td class='active'>" . $linha["tipojogo_descricao"] . "</td>
               </tr>";
         }

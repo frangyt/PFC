@@ -6,7 +6,7 @@
     $nome = "";
     $tipojogo_descricao = "";
     if ($_GET["id"] == NULL) {
-        echo "<h2>Estados : Inclusão</h2>";
+        echo "<h2>jogo : Inclusão</h2>";
         echo "<form action='estado_processa.php?cmd=ins' method='post'>";
     }
     else {

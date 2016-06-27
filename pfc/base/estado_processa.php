@@ -7,7 +7,7 @@ $jogo_idtipo_jogo = $_POST["jogo_idtipo_jogo"];
 
 if ($_GET["cmd"] == "ins") {
     $sql = "insert into jogo
-                (nome, jogo_idtipo_jogo )
+                (jogo_descricao, jogo_idtipo_jogo )
                 values ('$nome', '$jogo_idtipo_jogo');";
 }
 
