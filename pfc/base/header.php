@@ -30,10 +30,12 @@
                             <ul class="dropdown-menu">
                                 <li><a href="usuario_lista.php">Usuários</a></li>
                                 <li class="divider"></li>
-                                <li><a href="cidade_lista.php">Cidades</a></li>
-                                <li><a href="estado_lista.php">Estados</a></li>
+                                <li><a href="cidade_lista.php">Tipo de jogo e região</a></li>
+                                <li><a href="estado_lista.php">Jogo</a></li>
                                 <li class="divider"></li>
-                                <li><a href="produto_lista.php">Produtos</a></li>
+                                <li><a href="produto_lista.php">Campeonatos</a></li>
+                                <li><a href="time_lista.php">Times</a></li>
+                                <li><a href="partidas_lista.php">Partidas</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">

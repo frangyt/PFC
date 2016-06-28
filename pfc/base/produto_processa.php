@@ -1,5 +1,7 @@
 <?php
 require_once("conexao.php");
+require("header.php");
+
 
 
 $nome = $_POST["nome"];
@@ -11,9 +13,8 @@ $campeonatos_idjogo = $_POST["campeonatos_idjogo"];
 if ($_GET["cmd"] == "ins") {
     $sql = "insert into campeonatos
                 (nome, sigla, campeonatos_idregiao, campeonatos_idjogo)
-                values ('$nome', '$sigla','$campeonatos_idregiao','$campeonatos_idjogo');";
+                values ('$nome', '$sigla',$campeonatos_idregiao,$campeonatos_idjogo);";
 }
-echo $sql;
 
 $resultado = mysqli_query($conexao, $sql);
 if ($resultado == false) {
@@ -21,7 +22,10 @@ if ($resultado == false) {
 
 }
 else {
-    header("location:produto_lista.php");
+    echo ('<p><a class="btn btn-primary btn-large" href="time_lista.php.php">Adicionar Times<span ></span></a></p> ');
+    echo ('<p><a class="btn btn-primary btn-large" href="index.php">Concluir<span ></span></a></p> ');
+
 }
+include("footer.php");
 
 ?>
