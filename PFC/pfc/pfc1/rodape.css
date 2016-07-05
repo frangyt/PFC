@@ -1,0 +1,13 @@
+#footer{
+	margin: 2% 2% 1% 2%;
+	background-color: #006400;
+}
+#rodape{
+    margin: 0 auto;
+	width: 98%;    
+}
+#letra{
+    color: white;
+    margin:45%;
+    font-size: 1.5em;
+}

@@ -1,0 +1,117 @@
+#estilobotoes{
+	margin-left: 30%;
+	color: #FFFFFF;
+	border-color: #FFFFFF;
+	background-color: #0f0f0f;
+}
+.form-control{
+    margin-top: 17%;
+
+}
+#titulo{
+	color: #FFFFFF	;
+	font-size: 300%;
+	font-family: MathJax_Typewriter;
+}
+
+
+#cabecalho{
+
+	width: 98%;
+	margin: 2% 2% 1% 2%;
+	background-color: #141265;
+	border-radius: 5px;
+}
+
+.menu{
+
+
+	margin-left:2%;
+	background-color: #006400;
+	padding: 1%;
+	border-radius: 5px;
+	margin-bottom:2%;
+
+}
+
+
+				
+.content-sidebar {
+	background-color:#F0F0F0;
+	float: right;
+	padding: 1%;
+	width: 30%;
+}
+				
+.main-nav ul {
+	list-style-type: none;
+}
+					
+.main-nav li {
+	background-color: #006400;
+	float: left;
+	margin: 4.6583%;
+	outline: 0.3105% solid #DEDEDE;
+	text-align: center;
+	width: 40.3726%;
+}
+						
+.main-nav a {
+	display: block;
+	padding: 3.1055%;
+	text-decoration: none;
+}
+				
+.main-footer {
+	background-color: #F0F0F0;
+	clear: both;
+	float: left;
+	font-size: 0.75em;
+	margin: 4.6583% 0;
+	padding: 4.6583%;
+	text-align: center;
+	width: 100%;
+}
+#titulo{
+	position: relative;
+
+}
+
+.glyphicon glyphicon-remove{
+    float: center;
+    margin:4.6583%;
+}
+
+#cad{
+	margin-left: 15%;
+}
+#termos{
+	border-style: solid;
+	margin-top: 4%;
+}
+#imagemindex{
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
+	margin-left: 1%;
+	width: 33.3%;
+}
+#titulo1{
+width: 25%;
+	margin-top: 1.5%;
+
+
+}
+#dbutao{
+	width: 8.3 %;
+	margin-top: 2.6%;
+}
+#login{
+	width: 16.7%;
+
+
+}
+#senha{
+	width:16.7%;
+
+
+}

@@ -1,0 +1,19 @@
+#menujogos{
+	margin-top: 1%;
+
+}
+.panel {
+	margin-left: 3%;
+	margin-right: 2.9%;
+}
+.panel-heading{
+	border: groove;
+}
+.table{
+	border: groove;
+}
+#estilobotoes{
+border-color: #FFFFFF;
+	background-color: #0f0f0f;
+}
+
