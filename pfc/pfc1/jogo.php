@@ -11,20 +11,25 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/scripts.js"></script>
         <script src="jogo.js"></script>
+		<style>
+			body  {
+				background-image: url("imagens/fundo2.jpg");
+			}
+		</style>
         
         
 	
     </head>
     <body>
-<?php require("header.php") ?> 
+<?php require("header.php") ?>
 
-			<div class="jumbotron" id="menu">
+            <div class="menu" id="menujogos">
                 <div class="menu">
-                    <a role="button" class="btn btn-primary navbar-btn" href="jogo1.php">Counter-Strike</a>
-                    <a role="button" class="btn btn-primary navbar-btn" href="jogo1.php">League of Legends</a>
-                    <a role="button" class="btn btn-primary navbar-btn" href="jogo1.php">DOTA 2</a>
-                    <a role="button" class="btn btn-primary navbar-btn" href="jogo1.php">Hearthstone</a>
-                    <a role="button" class="btn btn-primary navbar-btn" href="jogo1.php">Fighting Games</a>                    
+                    <a role="button" class="btn btn-primary navbar-btn" href="jogo1.php" id="estilobotoes">Counter-Strike</a>
+                    <a role="button" class="btn btn-primary navbar-btn" href="jogo1.php" id="estilobotoes">League of Legends</a>
+                    <a role="button" class="btn btn-primary navbar-btn" href="jogo1.php" id="estilobotoes">DOTA 2</a>
+                    <a role="button" class="btn btn-primary navbar-btn" href="jogo1.php" id="estilobotoes">Hearthstone</a>
+                    <a role="button" class="btn btn-primary navbar-btn" href="jogo1.php" id="estilobotoes">Fighting Games</a>
                 </div>
             </div>
             

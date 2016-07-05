@@ -30,32 +30,37 @@
 <div class="row">
 
 
-    <div class="col-md-7">
-<div id="texto">
-<img id="img-p" class="img-responsive" src="imagens/overwatch.jpeg" alt="">
-
+    <div class="col-md-6">
+        <div class="card" id="cardfodase">
+ <div id="texto">
+ <img id="img-p" class="card-img-top" src="imagens/overwatch.jpeg" alt="">
+            <div class="card-block">
                 <hr>
                
-                <p class="lead">Novo cenario se aproximando</p>
-                <p>Fãs de Overwatch e de e-sports estão ansiosos para os campeonatos do jogo </p>
-                <p>que promete serem emocionantes de muita estratégia e emoção </p>
-                <p>O jogo atualmente esta na fase beta mas muitos times profissionais ja estão confirmados.</p>
+                <h2 class="card-title">Novo cenario se aproximando</h2>
+                <p class="card-text">Fãs de Overwatch e de e-sports estão ansiosos para os campeonatos do jogo </p>
+                <p class="card-text">que promete serem emocionantes de muita estratégia e emoção </p>
+                <p class="card-text">O jogo atualmente esta na fase beta mas muitos times profissionais ja estão confirmados.</p>
                 
 
                 <hr>
+    </div>
 </div>
+            </div>
 </div>
 
-<div class="col-md-5">
+
+
+        <div class="col-md-6">
 <div id="jogo" class="table-responsive">
     <table class="table table-condensed">
 
 
       <th></th>
-      <th id="titulo"><a href="jogo.php">Jogos</a> </th>      
-      <th></th> 
-  
- 
+      <th id="titulo"><a href="jogo.php">Jogos</a> </th>
+      <th></th>
+
+
     <tr>
       <td id="campo"><a href="time_teste.php">Time1</a></td>
       <td id="x"><span class='glyphicon glyphicon-remove' aria-hidden='true'></span></td>
@@ -71,12 +76,33 @@
       <td id="x"><span class='glyphicon glyphicon-remove' aria-hidden='true'></span></td>
       <td id="campo"><a href="time_teste.php">Time2</a></td>
     </tr>
-  
+
 </table>
+    </div>
 </div>
+    </div>
 </br>
+            <div class="row">
 
 
+                <div class="col-md-6">
+                    <div id="texto">
+                        <img id="img-p" class="img-responsive" src="imagens/overwatch.jpeg" alt="">
+
+                        <hr>
+
+                        <p class="lead">Novo cenario se aproximando</p>
+                        <p>Fãs de Overwatch e de e-sports estão ansiosos para os campeonatos do jogo </p>
+                        <p>que promete serem emocionantes de muita estratégia e emoção </p>
+                        <p>O jogo atualmente esta na fase beta mas muitos times profissionais ja estão confirmados.</p>
+
+
+                        <hr>
+                    </div>
+                </div>
+
+
+            <div class="col-md-6">
 <div id="top" class="table-responsive">
     <table class="table table-condensed">
 
@@ -102,6 +128,7 @@
 </table>
 </div>
 </div>
+    </div>
     </div>
 
 

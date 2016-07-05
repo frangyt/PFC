@@ -36,8 +36,7 @@ require_once("conexao.php");
                             <input type="password" class="form-control"  placeholder="senha">
                         </div>
                         <div class="col-md-1" id="dbutao">
-                                    <button type="button"
-                                    class="btn btn-primary" id="botaoP">
+                                    <button type="button" class="btn btn-primary" id="estilobotoes">
                                     OK
                             </button>
                         </div>              
@@ -45,20 +44,36 @@ require_once("conexao.php");
             </div>
         </div>
 
-       
-        
 
 
-             
 
-                <div class="menu">
-                    <a role="button" id="botaop2" class="btn btn-default navbar-btn" href="index.php">Página Inicial</a>
-                    <a role="button" id="botaop1" class="btn btn-default navbar-btn" href="jogo.php">Campeonatos</a>
-                    <a role="button" id="botaop1" class="btn btn-default navbar-btn" href="cadastro.php">Cadastrar</a>
-                    <a role="button" id="botaop1" class="btn btn-default navbar-btn" href="calendario.php">Calendário</a>
-                    <a role="button" id="botaop1" class="btn btn-default navbar-btn" href="informacao.php">Sobre Nós</a>
-                    
+
+
+
+        <div class="row" id="menu">
+
+                    <div class="col-md-1">
+                         </div>
+        <div class="col-md-2">
+            <a href="index.php"> <button type="button" id="estilobotoes" class="btn btn-primary navbar-btn"> Página Inicial</button> </a>
+            </div>
+            <div class="col-md-2">
+                <a href="jogo.php"> <button type="button" id="estilobotoes" class="btn btn-primary navbar-btn">  Campeonatos </button> </a>
+            </div>
+            <div class="col-md-2">
+                <a href="cadastro.php">  <button type="button" id="estilobotoes" class="btn btn-primary navbar-btn"> Cadastrar </button> </a>
+            </div>
+            <div class="col-md-2">
+                <a href="calendario.php"> <button type="button" id="estilobotoes" class="btn btn-primary navbar-btn"> Calendário </button> </a>
+            </div>
+            <div class="col-md-2">
+                <a href="informacao.php"> <button type="button" id="estilobotoes" class="btn btn-primary navbar-btn"> Sobre Nós</button> </a>
+</div>
+            <div class="col-md-1">
+            </div>
+
                 </div>
+        </div>
 
 
 

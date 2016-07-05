@@ -10,6 +10,11 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/scripts.js"></script>
+        <style>
+            body  {
+                background-image: url("imagens/fundo2.jpg");
+            }
+        </style>
     </head>
     <body>
 <?php require("header.php") ?>

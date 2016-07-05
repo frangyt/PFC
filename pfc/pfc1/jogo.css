@@ -1,5 +1,6 @@
-#menu{
-	margin-top: -2.5%;
+#menujogos{
+	margin-top: 1%;
+
 }
 .panel {
 	margin-left: 3%;
@@ -10,5 +11,9 @@
 }
 .table{
 	border: groove;
+}
+#estilobotoes{
+border-color: #FFFFFF;
+	background-color: #0f0f0f;
 }
 
