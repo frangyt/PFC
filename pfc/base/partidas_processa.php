@@ -13,8 +13,9 @@ $hora = $_POST["hora"];
 
 $datetime = $data . " " . $hora;
 echo $datetime;
-$idpartidas = "";
-
+?>
+<br/>
+<?php
 
 if ($_GET["cmd"] == "ins") {
     echo "oi";
@@ -22,22 +23,31 @@ if ($_GET["cmd"] == "ins") {
                 (data, partidas_idcampeonatos)
                 values ('$datetime', '$idcampeonatos');
 
-              select max(idpartidas) from partidas;
+             select max(idpartidas) as idpartidas from partidas;
+
 
             insert into times_partida
               (idtimes, times_partidas_idpartidas)
-              values ($idtimes1, ;);
+              values ($idtimes1, );
              insert into times_partida
               (idtimes, times_partidas_idpartidas)
-              values ($idtimes2, ;);
+              values ($idtimes2, );
 
                  ";
     echo "tchau";
 }
+?>
+<br/>
+<?php
 echo "oi";
+?>
+<br/>
+<?php
 echo $idpartidas;
 echo $sql;
-
+?>
+<br/>
+<?php
 $resultado = mysqli_query($conexao, $sql);
 echo $resultado;
 if ($resultado == false) {
