@@ -8,7 +8,7 @@ $jogo = $_POST["times_idjogo"];
 
 if ($_GET["cmd"] == "ins") {
     $sql = "insert into times
-                (nome, sigla, times_idjogo)
+                (nome, sigla_times, times_idjogo)
                 values ('$nome', '$sigla', $jogo);";
 }
 

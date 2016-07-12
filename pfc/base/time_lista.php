@@ -19,7 +19,7 @@
         </tr>
         <?php
         require("conexao.php");
-        $sql = "select   nome, sigla, jogo_descricao
+        $sql = "select   nome, sigla_times, jogo_descricao
                     from times, jogo where times_idjogo = idjogo;
                     ";
 
@@ -27,7 +27,7 @@
         while ($linha = mysqli_fetch_array($resultado)) {
             echo "<tr class='active'>
                 <td class='active'>" . $linha["nome"] . "</td>
-                <td class='active'>" . $linha["sigla"] . "</td>
+                <td class='active'>" . $linha["sigla_times"] . "</td>
                 <td class='active'>" . $linha["jogo_descricao"] . "</td>
               </tr>";
         }

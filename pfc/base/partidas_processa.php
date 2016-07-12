@@ -6,42 +6,54 @@ require("header.php");
 $data = $_POST["data"];
 $nome = $_POST["nome"];
 $sigla = $_POST["sigla"];
-$idcampeonato = $_POST["partidas_idcampeonato"];
+$idcampeonatos = $_POST["partidas_idcampeonatos"];
 $idtimes1 = $_POST["idtimes1"];
 $idtimes2 = $_POST["idtimes2"];
 $hora = $_POST["hora"];
 
 $datetime = $data . " " . $hora;
 echo $datetime;
-
+$idpartidas = "";
 
 
 if ($_GET["cmd"] == "ins") {
+    echo "oi";
     $sql = "insert into partidas
-                (data, sigla, partidas_idcampeonato)
-                values ('$data', '$idcampeonato');
+                (data, partidas_idcampeonatos)
+                values ('$datetime', '$idcampeonatos');
 
-            select idpartidas into $idpartida from partidas where data = $data and $idcampeonato = partidas_idcampeonato;
+              select max(idpartidas) from partidas;
 
             insert into times_partida
               (idtimes, times_partidas_idpartidas)
-              values ($idtimes1, $idpartida );
+              values ($idtimes1, ;);
              insert into times_partida
               (idtimes, times_partidas_idpartidas)
-              values ($idtimes2, $idpartida);
+              values ($idtimes2, ;);
 
-                ";
+                 ";
+    echo "tchau";
 }
+echo "oi";
+echo $idpartidas;
+echo $sql;
 
 $resultado = mysqli_query($conexao, $sql);
+echo $resultado;
 if ($resultado == false) {
     $erro = mysqli_error($conexao);
-
+   echo $erro;
 }
 else {
     header("location:partidas_lista.php");
-
 }
+
+
+
+
+
+
+
 include("footer.php");
 
 ?>

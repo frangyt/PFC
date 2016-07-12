@@ -18,7 +18,7 @@
         require("conexao.php");
         $sql = "select   data, idcampeonatos, idtimes, ganhador
                     from partidas, times_partidas, campeonato  where idpartidas = times_partidas_idpartidas
-                    and partidas_idcampeonato = idcampeonato;" ;
+                    and partidas_idcampeonatos = idcampeonatos;" ;
         $resultado = mysqli_query($conexao, $sql);
 
         while ($linha = mysqli_fetch_array($resultado)) {
