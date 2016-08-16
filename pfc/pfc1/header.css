@@ -1,5 +1,5 @@
 #estilobotoes{
-	margin-left: 30%;
+	padding-top: 5%;
 	color: #FFFFFF;
 	border-color: #FFFFFF;
 	background-color: #0f0f0f;
@@ -7,37 +7,17 @@
 .form-control{
     margin-top: 17%;
 
+
 }
 #titulo{
 	color: #FFFFFF	;
-	font-size: 300%;
+    margin-left: 50%;
+	margin-top: -8%;
 	font-family: MathJax_Typewriter;
+
 }
-
-
 #cabecalho{
-
-	width: 98%;
-	margin: 2% 2% 1% 2%;
-	background-color: #141265;
-	border-radius: 5px;
-}
-
-#menu{
-
-
-	margin-left:2%;
-	background-color: #141265;
-	padding: 0.5%;
-	border-radius: 5px;
-	margin-bottom:4%;
-	margin-right: 0.1%;
-
-}
-
-#titulo{
-	position: relative;
-
+background-color: #787676;
 }
 
 #termos{
@@ -47,26 +27,21 @@
 #imagemindex{
 	margin-top: 0.5%;
 	margin-bottom: 0.5%;
-	margin-left: 1%;
+	margin-left: 1.5%;
 	width: 33.3%;
 }
-#titulo1{
-width: 25%;
-	margin-top: 1.5%;
 
-
-}
 #dbutao{
-	width: 8.3%;
-	margin-top: 2.6%;
+	width: 5%;
+	margin-top: 0.25%;
 }
 #login{
-	width: 16.7%;
-
-
+	margin-top: -1%;
+	width: 8.5%;
 }
 #senha{
-	width:16.7%;
 
-
+}
+#botoesheader{
+	margin-top: 2.2%;
 }

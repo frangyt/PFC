@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset=utf-8>
-        <title>Cadastro</title>
+        <title>Cadastro de Usuário</title>
 
         <link href="css/bootstrap.min.css"  rel="stylesheet">
         <link href="css/style.css"  rel="stylesheet">
@@ -18,7 +18,7 @@
 
 <form>
        
-       <div class="row">
+       <div class="row" id="texto">
            
             <div class="col-md-7" id="cad">
 
@@ -44,7 +44,8 @@
                           
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3" id="textotermos">
+
     
                 <p class="termos">
                 000000000000000000000000000000000000
