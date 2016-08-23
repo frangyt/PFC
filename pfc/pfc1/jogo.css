@@ -1,19 +1,45 @@
-#menujogos{
-	margin-top: 1%;
-
-}
-.panel {
-	margin-left: 3%;
-	margin-right: 2.9%;
-}
-.panel-heading{
-	border: groove;
-}
-.table{
-	border: groove;
-}
 #estilobotoes{
-border-color: #FFFFFF;
-	background-color: #0f0f0f;
+
+	background-color: #000000;
+}
+.form-control{
+	margin-top: 17%;
+
+
+}
+#titulo{
+	color: #FFFFFF	;
+	margin-left: 50%;
+	margin-top: -8%;
+	font-family: MathJax_Typewriter;
+
+}
+#cabecalho{
+	background-color: #787676;
 }
 
+#termos{
+	border-style: solid;
+	margin-top: 4%;
+}
+#imagemindex{
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
+	margin-left: 1.5%;
+	width: 33.3%;
+}
+
+#dbutao{
+	width: 5%;
+	margin-top: 0.25%;
+}
+#login{
+	margin-top: -1%;
+	width: 8.5%;
+}
+#senha{
+
+}
+#botoesheader{
+	margin-top: 2.2%;
+}
