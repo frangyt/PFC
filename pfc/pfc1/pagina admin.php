@@ -26,7 +26,7 @@
         <div class="row">
 
             <div class="col-md-4">
-                <a href="jogolista.php.php"> <button type="button"  class="btn btn-primary navbar-btn"> Adicionar Jogo</button> </a>
+                <a href="jogolista.php"> <button type="button"  class="btn btn-primary navbar-btn"> Adicionar Jogo</button> </a>
 
             </div>
             <div class="col-md-4">

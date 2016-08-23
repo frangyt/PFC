@@ -3,12 +3,13 @@ require_once("conexao.php");
 
 
 $nome = $_POST["nome"];
-$jogo_idtipo_jogo = $_POST["jogo_idtipo_jogo"];
+$sigla = $_POST["sigla"];
+$jogo = $_POST["times_idjogo"];
 
 if ($_GET["cmd"] == "ins") {
-    $sql = "insert into jogo
-                (jogo_descricao, jogo_idtipo_jogo )
-                values ('$nome', '$jogo_idtipo_jogo');";
+    $sql = "insert into times
+                (nome, sigla_times, times_idjogo)
+                values ('$nome', '$sigla', $jogo);";
 }
 
 
@@ -18,7 +19,7 @@ if ($resultado == false) {
     header("location:erro.php?erro=".$erro);
 }
 else {
-    header("location:jogolista.php");
+    header("location:time_lista.php");
 }
 
 ?>

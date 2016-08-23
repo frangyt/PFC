@@ -27,7 +27,7 @@ require_once("conexao.php");
                         </div>
 
                         <div class="col-md-1" id="botoesheader">
-                            <a href="paginaadmin.php"> <button type="button" id="estilobotoes" class="btn btn-primary navbar-btn"> Admin</button> </a>
+                            <a href="pagina admin.php"> <button type="button" id="estilobotoes" class="btn btn-primary navbar-btn"> Admin</button> </a>
                         </div>
 
         <div class="col-md-1" id="botoesheader">

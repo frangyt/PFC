@@ -22,9 +22,7 @@ if ($resultado == false) {
 
 }
 else {
-    echo ('<p><a class="btn btn-primary btn-large" href="time_lista.php.php">Adicionar Times<span ></span></a></p> ');
-    echo ('<p><a class="btn btn-primary btn-large" href="index.php">Concluir<span ></span></a></p> ');
-
+    header("location:campeonato_lista.php");
 }
 include("footer.php");
 
