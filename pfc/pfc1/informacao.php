@@ -14,6 +14,6 @@
     <body>
 <?php require("header.php") ?>
 
-  <?php require("rodape.php") ?> 
+
     </body>
 </html>

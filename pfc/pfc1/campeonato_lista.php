@@ -1,3 +1,13 @@
+<head>
+
+    <style>
+        body  {
+            background-image: url("imagens/fundo2.jpg");
+        }
+    </style>
+
+
+</head>
 <?php require("header.php") ?>
 
 <script language="Javascript">

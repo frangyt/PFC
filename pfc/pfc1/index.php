@@ -32,24 +32,24 @@
 
         <img id="noticia" src="imagens/noticia1.jpg">
         <h3>League of Legends - Mais dois times se classificam para o Mundial</h3>
-        Mais duas equipes garantiram suas vagas no Campeonato Mundial de League of Legends que acontece do fim de setembro ao fim de outubro nos Estados Unidos.
-        Agora foi a vez da Team SoloMid (TSM) e Flash Wolves se classificarem.
-        A TSM se classificou ao derrotar o CounterLogic Gaming na semifinal da LCS North America Summer 2016. Com isso, a equipe já garantiu 170 pontos no circuito norte-americano.
-        Desta forma, mesmo que eles percam a Grande Final, que será contra a cloud9, a SoloMid vai continuar com a vaga garantida por conta dos pontos.
-        A Team SoloMid é formada por Kevin "Hauntzer" Yarnel (Solo Top), Dennis "Svenskeren" Johnsen (Jungler), Soren "Bjergsen" Bjerg (Mid Laner), Yilliang "Doublelift" Peng (AD Carry) e
-        Vincent "Biofrost" Wang (Support), e até hoje, a organização não ficou de fora de uma edição do Mundial.
-        Enquanto isso, em Taiwan, a Flash Wolves se classificou ao vencer a LSM, derrotando o ahq eSports Club por 3 x 2 na semifinal, e vencendo J Team (antigo Taipei Assassins) por 3 x 0.
-        A equipe é formada por Yu "MMD" Li-Hung (Solo Top), Hung "Karsa" Hau-Hsuan (Jungler), Huang "Maple" Yi-Tang (Mid Laner), Hsiung "NL" Wen-An (AD Carry) e Hu "SwordArt" Shuo-Jie (Support).
+        <p>Mais duas equipes garantiram suas vagas no Campeonato Mundial de League of Legends que acontece do fim de setembro ao fim de outubro nos Estados Unidos.</p>
+        <p>Agora foi a vez da Team SoloMid (TSM) e Flash Wolves se classificarem.</p>
+        <p>A TSM se classificou ao derrotar o CounterLogic Gaming na semifinal da LCS North America Summer 2016. Com isso, a equipe já garantiu 170 pontos no circuito norte-americano.</p>
+        <p>Desta forma, mesmo que eles percam a Grande Final, que será contra a cloud9, a SoloMid vai continuar com a vaga garantida por conta dos pontos.</p>
+        <p>A Team SoloMid é formada por Kevin "Hauntzer" Yarnel (Solo Top), Dennis "Svenskeren" Johnsen (Jungler), Soren "Bjergsen" Bjerg (Mid Laner), Yilliang "Doublelift" Peng (AD Carry) e</p>
+        <p>Vincent "Biofrost" Wang (Support), e até hoje, a organização não ficou de fora de uma edição do Mundial.</p>
+        <p>Enquanto isso, em Taiwan, a Flash Wolves se classificou ao vencer a LSM, derrotando o ahq eSports Club por 3 x 2 na semifinal, e vencendo J Team (antigo Taipei Assassins) por 3 x 0.</p>
+        <p>A equipe é formada por Yu "MMD" Li-Hung (Solo Top), Hung "Karsa" Hau-Hsuan (Jungler), Huang "Maple" Yi-Tang (Mid Laner), Hsiung "NL" Wen-An (AD Carry) e Hu "SwordArt" Shuo-Jie (Support).</p>
 
-        Até agora, estão garantidas no Mundial:
+        <p>Até agora, estão garantidas no Mundial:</p>
 
-        ROX Tigers (Coreia do Sul)
-        Edward Gaming (China)
-        Royal Never Give Up (China)
-        G2 Esports (Europa)
-        SK Telecom T1 (Coreia do Sul)
-        Flash Wolves (Taiwan)
-        Team SoloMid (América do Norte)
+        <p>ROX Tigers (Coreia do Sul)</p>
+        <p>Edward Gaming (China)</p>
+        <p>Royal Never Give Up (China)</p>
+        <p>G2 Esports (Europa)</p>
+        <p>SK Telecom T1 (Coreia do Sul)</p>
+        <p>Flash Wolves (Taiwan)</p>
+        <p>Team SoloMid (América do Norte)</p>
         <br></br>
         <img id="noticia" src="imagens/noticia2.jpg">
         <h3>League of Legends - Thiago "Djokovic" Maia não é mais técnico da CNB</h3>
@@ -167,6 +167,6 @@
 
      
     </div>
-    <?php require("rodape.php") ?>
+
     </body>
 </html>

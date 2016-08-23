@@ -21,7 +21,7 @@ require_once("conexao.php");
         <div class="row" id="cabecalho">
             <div class ="row" class="tables-responsive">
                     <div class="row" class="table table-condesed">
-                        <div class="col-md-5" id="imagemindex">
+                        <div class="col-md-6" id="imagemindex">
                             <img src="imagens/frente.jpg" class="img-responsive img-rounded" >
                             <h1 id="titulo">E-BET</h1>
                         </div>
@@ -42,7 +42,7 @@ require_once("conexao.php");
                     <div class="col-md-1" id="botoesheader">
                         <a href="calendario.php"> <button type="button" id="estilobotoes" class="btn btn-primary navbar-btn"> Calendário </button> </a>
                         </div>
-                        <div class="col-md-2" id="botoesheader">
+                        <div class="col-md-1" id="botoesheader">
                             <a href="informacao.php"> <button type="button" id="estilobotoes" class="btn btn-primary navbar-btn"> Sobre Nós</button> </a>
         </div>
 

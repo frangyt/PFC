@@ -1,6 +1,6 @@
 .table-responsive{
     margin-top: 20%;
-    width: 95%;
+    width: 80%;
     border-collapse: collapse;
     margin-right: 2.5%;
     background-color: #787676;
@@ -66,4 +66,5 @@ margin-left:7%;
 }
 #texto_noticia{
     margin-left: 2%;
+    color:white;
 }

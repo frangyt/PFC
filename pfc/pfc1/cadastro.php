@@ -90,6 +90,6 @@
         </div>
         
     </div>
-    <?php require("rodape.php") ?>     
+
     </body>
 </html>
