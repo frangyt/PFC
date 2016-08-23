@@ -10,6 +10,11 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <style>
+        body  {
+            background-image: url("imagens/fundo2.jpg");
+        }
+    </style>
 </head>
 <body>
 <div class="container-fluid">
@@ -20,32 +25,22 @@
 
         <div class="row">
 
-            <div class="col-md-3">
-                </div>
-            <div class="col-md-6" id="texto">
-
-                <p><h4> Email: </h4></p>
-                <input class="form-control" type="login" id="loginesenha" > <button type="button" id="estilobotaoadmin" class="btn btn-primary navbar-btn"> Logar </button>
-                <h4> Senha: </h4>
-                <input class="form-control" type="password" id="loginesenha">
+            <div class="col-md-4">
+                <a href="jogolista.php"> <button type="button"  class="btn btn-primary navbar-btn"> Adicionar Jogo</button> </a>
 
             </div>
-        <div class="col-md-3">
-             </div>
+            <div class="col-md-4">
+                <a href="time_lista.php"> <button type="button"  class="btn btn-primary navbar-btn"> Adicionar Time</button> </a>
 
+            </div>
+            <div class="col-md-4">
+                <a href="campeonato_lista.php"> <button type="button"  class="btn btn-primary navbar-btn"> Adicionar Campeonato</button> </a>
 
-
-
-
-
-
-
-
-
+            </div>
 </div>
 
 </div>
-<?php require("rodape.php") ?>
+
 </body>
 </html>
 

@@ -28,106 +28,135 @@
 
 
 <div class="row">
+    <div class="col-md-9" id="texto_noticia">
+
+        <img id="noticia" src="imagens/noticia1.jpg">
+        <h3>League of Legends - Mais dois times se classificam para o Mundial</h3>
+        Mais duas equipes garantiram suas vagas no Campeonato Mundial de League of Legends que acontece do fim de setembro ao fim de outubro nos Estados Unidos.
+        Agora foi a vez da Team SoloMid (TSM) e Flash Wolves se classificarem.
+        A TSM se classificou ao derrotar o CounterLogic Gaming na semifinal da LCS North America Summer 2016. Com isso, a equipe já garantiu 170 pontos no circuito norte-americano.
+        Desta forma, mesmo que eles percam a Grande Final, que será contra a cloud9, a SoloMid vai continuar com a vaga garantida por conta dos pontos.
+        A Team SoloMid é formada por Kevin "Hauntzer" Yarnel (Solo Top), Dennis "Svenskeren" Johnsen (Jungler), Soren "Bjergsen" Bjerg (Mid Laner), Yilliang "Doublelift" Peng (AD Carry) e
+        Vincent "Biofrost" Wang (Support), e até hoje, a organização não ficou de fora de uma edição do Mundial.
+        Enquanto isso, em Taiwan, a Flash Wolves se classificou ao vencer a LSM, derrotando o ahq eSports Club por 3 x 2 na semifinal, e vencendo J Team (antigo Taipei Assassins) por 3 x 0.
+        A equipe é formada por Yu "MMD" Li-Hung (Solo Top), Hung "Karsa" Hau-Hsuan (Jungler), Huang "Maple" Yi-Tang (Mid Laner), Hsiung "NL" Wen-An (AD Carry) e Hu "SwordArt" Shuo-Jie (Support).
+
+        Até agora, estão garantidas no Mundial:
+
+        ROX Tigers (Coreia do Sul)
+        Edward Gaming (China)
+        Royal Never Give Up (China)
+        G2 Esports (Europa)
+        SK Telecom T1 (Coreia do Sul)
+        Flash Wolves (Taiwan)
+        Team SoloMid (América do Norte)
+        <br></br>
+        <img id="noticia" src="imagens/noticia2.jpg">
+        <h3>League of Legends - Thiago "Djokovic" Maia não é mais técnico da CNB</h3>
+
+        Thiago "Djokovic" Maia está deixando o posto de técnico do CNB e-Sports Club vice-campeão brasileiro de League of Legends.
+        Ele vai focar em terminar a faculdade de medicina, mas continuará parte da organização, agora agindo como analista.
+        Djoko já jogou pela INTZ mas ganhou destaque no cenário competitivo como técnico na CNB, sendo considerado um dos melhores na posição. Entretanto, isso vinha com custos.
+        Ele fazia viagens de ônibus rotineiramente entre São Paulo (SP) e Juiz de Fora (MG) para tentar equilibrar os treinos e as provas do curso. Agora, o foco de Djoko fica nos estudos, mas ele ainda vai ajudar a equipe.
+
+        “Apesar de algumas mudanças na rotina do Djoko, devido a sua faculdade de medicina, conseguimos adaptar ele no cargo de analista para continuar trazendo todo seu conhecimento de LoL para o individual de cada jogador e estratégias da equipe," explicou Cleber "fuzi" Fonseca, COO do CNB. "Mesmo ficando um pouco ausente de nosso Centro de Treinamento, ele continuará vindo para SP, esporadicamente, para acompanhar o desenvolvimento da equipe de perto."
 
 
-    <div class="col-md-6">
-        <div class="card" id="cardfodase">
- <div id="texto">
- <img id="img-p" class="card-img-top" src="imagens/overwatch.jpeg" alt="">
-            <div class="card-block">
-                <hr>
-               
-                <h2 class="card-title">Novo cenario se aproximando</h2>
-                <p class="card-text">Fãs de Overwatch e de e-sports estão ansiosos para os campeonatos do jogo </p>
-                <p class="card-text">que promete serem emocionantes de muita estratégia e emoção </p>
-                <p class="card-text">O jogo atualmente esta na fase beta mas muitos times profissionais ja estão confirmados.</p>
-                
-
-                <hr>
     </div>
-</div>
-            </div>
-</div>
 
 
 
-        <div class="col-md-6">
-<div id="jogo" class="table-responsive">
+
+
+
+        <div class="col-md-3">
+  <div id="jogo" class="table-responsive">
     <table class="table table-condensed">
 
 
       <th></th>
-      <th id="titulo"><a href="jogo.php">Jogos</a> </th>
+      <th id="titulojogo"><a id="textotab" href="jogo.php">Jogos</a> </th>
       <th></th>
 
 
     <tr>
-      <td id="campo"><a href="time_teste.php">Time1</a></td>
+      <td id="campo"><a id="textotab" href="time_teste.php">Time1</a></td>
       <td id="x"><span class='glyphicon glyphicon-remove' aria-hidden='true'></span></td>
-      <td id="campo"><a href="time_teste.php">Time2</a></td>
+      <td id="campo"><a id="textotab"  href="time_teste.php">Time2</a></td>
     </tr>
     <tr>
-     <td id="campo"><a href="time_teste.php">Time1</a></td>
+     <td id="campo"><a id="textotab" href="time_teste.php">Time3</a></td>
       <td id="x"><span class='glyphicon glyphicon-remove' aria-hidden='true'></span></td>
-      <td id="campo"><a href="time_teste.php">Time2</a></td>
+      <td id="campo"><a id="textotab" href="time_teste.php">Time4</a></td>
     </tr>
     <tr>
-      <td id="campo"><a href="time_teste.php">Time1</a></td>
+      <td id="campo"><a id="textotab" href="time_teste.php">Time5</a></td>
       <td id="x"><span class='glyphicon glyphicon-remove' aria-hidden='true'></span></td>
-      <td id="campo"><a href="time_teste.php">Time2</a></td>
+      <td id="campo"><a id="textotab" href="time_teste.php">Time6</a></td>
     </tr>
+        <tr>
+            <td id="campo"><a id="textotab" href="time_teste.php">Time7</a></td>
+            <td id="x"><span class='glyphicon glyphicon-remove' aria-hidden='true'></span></td>
+            <td id="campo"><a id="textotab" href="time_teste.php">Time8</a></td>
+        </tr>
 
 </table>
-    </div>
-</div>
+    </div><div id="ranking" class="table-responsive">
+                <table class="table table-condensed">
+
+
+
+                    <th id="titulorank"><a id="textotab" href="jogo.php">Ranking</a> </th>
+
+
+
+                    <tr>
+                        <td id="campo"><a id="textotab" href="usuario_teste.php">Usuario1</a></td>
+
+                    </tr>
+                    <tr>
+                        <td id="campo"><a id="textotab" href="usuario_teste.php">Usuario2</a></td>
+
+                    </tr>
+                    <tr>
+                        <td id="campo"><a id="textotab" href="usuario_teste.php">Usuario3</a></td>
+                        </tr>
+                    <tr>
+                        <td id="campo"><a id="textotab" href="usuario_teste.php">Usuario4</a></td>
+                        </tr>
+                    <tr>
+                        <td id="campo"><a id="textotab" href="usuario_teste.php">Usuario5</a></td>
+
+                    </tr>
+                    <tr>
+                        <td id="campo"><a id="textotab" href="usuario_teste.php">Usuario6</a></td>
+
+                    </tr>
+                    <tr>
+                        <td id="campo"><a id="textotab" href="usuario_teste.php">Usuario7</a></td>
+                    </tr>
+                    <tr>
+                        <td id="campo"><a id="textotab" href="usuario_teste.php">Usuario8</a></td>
+                    </tr>
+                    <tr>
+                        <td id="campo"><a id="textotab" href="usuario_teste.php">Usuario9</a></td>
+                    </tr>
+                    <tr>
+                        <td id="campo"><a id="textotab" href="usuario_teste.php">Usuario10</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </div>
 </br>
             <div class="row">
 
+                <div class="col-md-9" >
 
-                <div class="col-md-6">
-                    <div id="texto">
-                        <img id="img-p" class="img-responsive" src="imagens/overwatch.jpeg" alt="">
+</div>
+                <div class="col-md-3">
 
-                        <hr>
-
-                        <p class="lead">Novo cenario se aproximando</p>
-                        <p>Fãs de Overwatch e de e-sports estão ansiosos para os campeonatos do jogo </p>
-                        <p>que promete serem emocionantes de muita estratégia e emoção </p>
-                        <p>O jogo atualmente esta na fase beta mas muitos times profissionais ja estão confirmados.</p>
-
-
-                        <hr>
                     </div>
-                </div>
-
-
-            <div class="col-md-6">
-<div id="top" class="table-responsive">
-    <table class="table table-condensed">
-
-
-      <th></th>
-      <th ><a id="titulo1" href="ranking.php">Ranking</a> </th>      
-      <th></th> 
-  
- 
-    <tr>
-      <td id="campo"><a href="perfil_teste.php">Usuário 1</a></td>
-      <td id="campo">9999999</td>
-    </tr>
-    <tr>
-      <td id="campo"><a href="perfil_teste.php">Usuário 1</a></td>
-      <td id="campo">9999999</td>
-    </tr>
-    <tr>
-      <td id="campo"><a href="perfil_teste.php">Usuário 1</a></td>
-      <td id="campo">9999999</td>
-    </tr>
-  
-</table>
-</div>
-</div>
     </div>
     </div>
 

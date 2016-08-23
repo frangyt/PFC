@@ -21,13 +21,14 @@ require_once("conexao.php");
         <div class="row" id="cabecalho">
             <div class ="row" class="tables-responsive">
                     <div class="row" class="table table-condesed">
-                        <div class="col-md-3" id="imagemindex">
+                        <div class="col-md-5" id="imagemindex">
                             <img src="imagens/frente.jpg" class="img-responsive img-rounded" >
                             <h1 id="titulo">E-BET</h1>
                         </div>
 
-
-
+                        <div class="col-md-1" id="botoesheader">
+                            <a href="pagina admin.php"> <button type="button" id="estilobotoes" class="btn btn-primary navbar-btn"> Admin</button> </a>
+                        </div>
 
         <div class="col-md-1" id="botoesheader">
             <a href="index.php"> <button type="button" id="estilobotoes" class="btn btn-primary navbar-btn"> Página Inicial</button> </a>
@@ -41,20 +42,12 @@ require_once("conexao.php");
                     <div class="col-md-1" id="botoesheader">
                         <a href="calendario.php"> <button type="button" id="estilobotoes" class="btn btn-primary navbar-btn"> Calendário </button> </a>
                         </div>
-                        <div class="col-md-1" id="botoesheader">
+                        <div class="col-md-2" id="botoesheader">
                             <a href="informacao.php"> <button type="button" id="estilobotoes" class="btn btn-primary navbar-btn"> Sobre Nós</button> </a>
         </div>
-            <div class="col-md-1" id="login">
-                <input type="login" class="form-control"  placeholder="login">
-                </div>
-                <div class="col-md-1" id="login">
-                <input type="password" class="form-control"  placeholder="senha">
-                </div>
-            <div class="col-md-2" id="dbutao">
-                <button type="button" class="btn btn-primary" id="estilobotoes">
-                    OK
-                </button>
-            </div>
+
+
+
          </div>
         </div>
         </div>

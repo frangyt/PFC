@@ -1,15 +1,23 @@
 .table-responsive{
-    width: 90%;
-    border: groove;
-    margin-right: 2.9%;   
-    background-color: #F0FFF0;
+    margin-top: 20%;
+    width: 95%;
+    border-collapse: collapse;
+    margin-right: 2.5%;
+    background-color: #787676;
     position: relative;
 }
 #jogo{
-   margin-left: 8%;
-    border-radius: 10px;
+   margin-left: 0%;
+
 }
-#titulo{
+#ranking{
+    width: 42%;
+    margin-right: 50%;
+}
+#titulojogo{
+    margin-left: 20%;
+}
+#titulorank{
     margin-left: 20%;
 }
 #campo{
@@ -46,8 +54,16 @@ margin-left:7%;
     width: 100%;
     height: 100%;
 }
-#cardfodase{
-    border: solid;
-    width: 20%;
 
+#textotab{
+    color: white;
+}
+#noticia{
+
+    width: 40%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+#texto_noticia{
+    margin-left: 2%;
 }
