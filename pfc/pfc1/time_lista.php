@@ -8,7 +8,7 @@
 </script>
 
 
-    <h2>Times</h2>
+    <h2>Cidades</h2>
     <p><a class="btn btn-primary btn-large" href="time_form.php?id=">Adicionar Time <span class="glyphicon glyphicon-plus-sign"></span></a></p>
     <table class="table table-condensed">
         <tr class="success">
