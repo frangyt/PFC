@@ -18,68 +18,49 @@
     </head>
     <body>
     <div class="container-fluid">
-       <?php require("header.php") ?>  
+       <?php require("header.php");
+
+        $email = "";
+        $senha = "";
+        $nome = "";
+
+        echo "<h2>Usuários : Inclusão</h2>";
+?>
+        <form action='usuario_processa.php?cmd=ins' method='post'>
 
 
-<form>
-       
-       <div class="row" id="texto">
-           
-            <div class="col-md-7" id="cad">
-
-                            
-                                <label>Nome:</label>
-                                <input class="campo" type="text" id="nome"></br>
-                                <label> Email: </label>
-                                <input class="campo" type="email" id="email" ></br>
-                       
-                   
-                            
-                                <label> Data de Nascimento: </label>
-                                    <input class="campo" type="date" id="datanasc"></br>
-
-                             
-                  
-                         
-                                <label> Senha: </label>
-                                    <input class="campo" type="password" id="senha"></br>
-                                    </br>
-                                    </br>
-                                    
-                          
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="inputemail">email</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                            <input type="text" class="form-control" id="inputemail" name="email" placeholder="email" value="<?php echo $email; ?>">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="inputsenha">Senha</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                            <input type="password" class="form-control" id="inputsenha" name="senha" placeholder="Senha" value="<?php echo $senha; ?>">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="inputnome">Nome Completo</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                            <input type="text" class="form-control" id="inputnome" name="nome" placeholder="Nome" value="<?php echo $nome; ?>">
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-md-3" id="textotermos">
-
-    
-                <p class="termos">
-                000000000000000000000000000000000000
-                000000000000000000000000000000000000
-                000000000000000000000000000000000000
-                000000000000000000000000000000000000
-                000000000000000000000000000000000000
-                Termos que ninguem vai ler0000000000
-                000000000000000000000000000000000000
-                000000000000000000000000000000000000
-                000000000000000000000000000000000000
-                000000000000000000000000000000000000
-                000000000000000000000000000000000000
-                000000000000000000000000000000000000
-                000000000000000000000000000000000000
-                000000000000000000000000000000000000
-                000000000000000000000000000000000000
-                000000000000000000000000000000000000
-                </p>
-                <h3 >
-                <input class="check"  type="checkbox"> aceito
-                </h3>
-                
-            
-            </div>
-        </div>
-        
-        <input type="submit" class="aceito" value="Cadastrar">
-
+            <input type="submit" class="btn btn-primary btn-large" value="Salvar"/>
+        </form>
                  
 
                    
@@ -88,8 +69,8 @@
        
              
         </div>
-        
-    </div>
+
+
 
     </body>
 </html>

@@ -38,6 +38,32 @@
 
             </div>
 </div>
+        <div>
+            <h2>Cidades</h2>
+            <table class="table table-condensed">
+                <tr class="success">
+
+                    <td class="success">Nome</td>
+                    <td class="success">email</td>
+                    <td class="success">senha</td>
+                </tr>
+                <?php
+                require("conexao.php");
+                $sql = "select   nome, email, senha
+                    from usuario;
+                    ";
+
+                $resultado = mysqli_query($conexao, $sql);
+                while ($linha = mysqli_fetch_array($resultado)) {
+                    echo "<tr class='active'>
+                <td class='active'>" . $linha["nome"] . "</td>
+                <td class='active'>" . $linha["email"] . "</td>
+                <td class='active'>" . $linha["senha"] . "</td>
+              </tr>";
+                }
+                ?>
+            </table>
+        </div>
 
 </div>
 
