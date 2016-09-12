@@ -16,7 +16,7 @@
         <script src="dist/js/vendor/respond.min.js"></script>
         <style>
             body  {
-                background-color: midnightblue;
+                background-color: white;
             }
         </style>
     </head>
@@ -24,12 +24,42 @@
 
 
 
-    <?php require("header.php") ?>
 
 
     <div class="container">
-<div class="row demo-row">
-    <div class="col-xs-9" id="texto_noticia">
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <a class="navbar-brand" href="#">E-bet</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-01">
+                <ul class="nav navbar-nav">
+                    <li ><a href="pagina admin.php">Admin</a></li>
+                    <li><a href="jogo.php">Campeonatos</a></li>
+                    <li><a href="cadastro.php">Cadastrar</a></li>
+                    <li><a href="calendario.php">Calendário</a></li>
+                    <li><a href="informacao.php">Sobre Nós</a></li>
+                </ul>
+                <form class="navbar-form navbar-right" action="#" role="search">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input class="form-control" id="navbarInput-01" type="search" placeholder="Pesquise aqui!">
+                            <span class="input-group-btn">
+            <button type="submit" class="btn"><span class="fui-search"></span></button>
+          </span>
+                        </div>
+                    </div>
+                </form>
+                </div>
+
+        </nav>
+        <div class="demo-headline">
+            </div>
+        <div class="row demo-row">
+
+    <div class="col-xs-12" id="texto_noticia">
 
         <img id="noticia" src="imagens/noticia1.jpg">
         <h3>League of Legends - Mais dois times se classificam para o Mundial</h3>
@@ -70,94 +100,87 @@
 
 
 
-        <div class="col-xs-3">
-  <div id="jogo" class="table-responsive">
-    <table class="table table-condensed">
 
-
-      <th></th>
-      <th id="titulojogo"><a id="textotab" href="jogo.php">Jogos</a> </th>
-      <th></th>
-
-
-    <tr>
-      <td id="campo"><a id="textotab" href="time_teste.php">Time1</a></td>
-      <td id="x"><span class='glyphicon glyphicon-remove' aria-hidden='true'></span></td>
-      <td id="campo"><a id="textotab"  href="time_teste.php">Time2</a></td>
-    </tr>
-    <tr>
-     <td id="campo"><a id="textotab" href="time_teste.php">Time3</a></td>
-      <td id="x"><span class='glyphicon glyphicon-remove' aria-hidden='true'></span></td>
-      <td id="campo"><a id="textotab" href="time_teste.php">Time4</a></td>
-    </tr>
-    <tr>
-      <td id="campo"><a id="textotab" href="time_teste.php">Time5</a></td>
-      <td id="x"><span class='glyphicon glyphicon-remove' aria-hidden='true'></span></td>
-      <td id="campo"><a id="textotab" href="time_teste.php">Time6</a></td>
-    </tr>
-        <tr>
-            <td id="campo"><a id="textotab" href="time_teste.php">Time7</a></td>
-            <td id="x"><span class='glyphicon glyphicon-remove' aria-hidden='true'></span></td>
-            <td id="campo"><a id="textotab" href="time_teste.php">Time8</a></td>
-        </tr>
-
-</table>
-    </div><div id="ranking" class="table-responsive">
-                <table class="table table-condensed">
-
-
-
-                    <th id="titulorank"><a id="textotab" href="jogo.php">Ranking</a> </th>
-
-
-
-                    <tr>
-                        <td id="campo"><a id="textotab" href="usuario_teste.php">Usuario1</a></td>
-
-                    </tr>
-                    <tr>
-                        <td id="campo"><a id="textotab" href="usuario_teste.php">Usuario2</a></td>
-
-                    </tr>
-                    <tr>
-                        <td id="campo"><a id="textotab" href="usuario_teste.php">Usuario3</a></td>
-                        </tr>
-                    <tr>
-                        <td id="campo"><a id="textotab" href="usuario_teste.php">Usuario4</a></td>
-                        </tr>
-                    <tr>
-                        <td id="campo"><a id="textotab" href="usuario_teste.php">Usuario5</a></td>
-
-                    </tr>
-                    <tr>
-                        <td id="campo"><a id="textotab" href="usuario_teste.php">Usuario6</a></td>
-
-                    </tr>
-                    <tr>
-                        <td id="campo"><a id="textotab" href="usuario_teste.php">Usuario7</a></td>
-                    </tr>
-                    <tr>
-                        <td id="campo"><a id="textotab" href="usuario_teste.php">Usuario8</a></td>
-                    </tr>
-                    <tr>
-                        <td id="campo"><a id="textotab" href="usuario_teste.php">Usuario9</a></td>
-                    </tr>
-                    <tr>
-                        <td id="campo"><a id="textotab" href="usuario_teste.php">Usuario10</a></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
     </div>
 </br>
             <div class="row demo-row">
 
-                <div class="col-xs-9" >
+                <div class="col-xs-5" >
+
+                    <table class="flat-table flat-table-5">
+                        <thead>
+                        <th>Ranking</th>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Usuário 1</td>
+                        </tr>
+                        <tr>
+                            <td>Usuário 2</td>
+                        </tr>
+                        <tr>
+                            <td>Usuário 3</td>
+                        </tr>
+                        <tr>
+                            <td>Usuário 4</td>
+                        </tr>
+                        <tr>
+                            <td>Usuário 5</td>
+                        </tr>
+                        <tr>
+                            <td>Usuário 6</td>
+                        </tr>
+                        <tr>
+                            <td>Usuário 7</td>
+                        </tr>
+                        <tr>
+                            <td>Usuário 8</td>
+                        </tr>
+                        <tr>
+                            <td>Usuário 9</td>
+                        </tr>
+                        <tr>
+                            <td>Usuário 10</td>
+                        </tr>
+                        </tbody>
+                    </table>
 
 </div>
-                <div class="col-xs-3">
+                <div class="col-xs-2" >
+                </div>
 
-                    </div>
+                <div class="col-xs-5" >
+                    <table class="flat-table flat-table-1">
+                        <thead>
+                        <th>---</th>
+                        <th>Jogos</th>
+                        <th>---</th>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Time A</td>
+                            <td>X</td>
+                            <td>Time B</td>
+                        </tr>
+                        <tr>
+                            <td>Time C</td>
+                            <td>X</td>
+                            <td>Time D</td>
+                        </tr>
+                        <tr>
+                            <td>Time E</td>
+                            <td>X</td>
+                            <td>Time F</td>
+                        </tr>
+                        <tr>
+                            <td>Time G</td>
+                            <td>X</td>
+                            <td>Time H</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
     </div>
     </div>
 
