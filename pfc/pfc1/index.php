@@ -7,15 +7,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>E-BET</title>
 
-        <link href="css/bootstrap.min.css"  rel="stylesheet">
-        <link href="css/style.css"  rel="stylesheet">
-        <link href="index.css"  rel="stylesheet">
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/scripts.js"></script>
+        <link href="dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="dist/css/flat-ui.css" rel="stylesheet">
+        <link href="docs/assets/css/demo.css" rel="stylesheet">
+        <link rel="shortcut icon" href="img/favicon.ico">
+
+        <script src="dist/js/vendor/html5shiv.js"></script>
+        <script src="dist/js/vendor/respond.min.js"></script>
         <style>
             body  {
-                background-image: url("imagens/fundo2.jpg");
+                background-color: midnightblue;
             }
         </style>
     </head>
@@ -26,9 +27,9 @@
     <?php require("header.php") ?>
 
 
-
-<div class="row">
-    <div class="col-md-9" id="texto_noticia">
+    <div class="container">
+<div class="row demo-row">
+    <div class="col-xs-9" id="texto_noticia">
 
         <img id="noticia" src="imagens/noticia1.jpg">
         <h3>League of Legends - Mais dois times se classificam para o Mundial</h3>
@@ -54,12 +55,12 @@
         <img id="noticia" src="imagens/noticia2.jpg">
         <h3>League of Legends - Thiago "Djokovic" Maia não é mais técnico da CNB</h3>
 
-        Thiago "Djokovic" Maia está deixando o posto de técnico do CNB e-Sports Club vice-campeão brasileiro de League of Legends.
-        Ele vai focar em terminar a faculdade de medicina, mas continuará parte da organização, agora agindo como analista.
-        Djoko já jogou pela INTZ mas ganhou destaque no cenário competitivo como técnico na CNB, sendo considerado um dos melhores na posição. Entretanto, isso vinha com custos.
-        Ele fazia viagens de ônibus rotineiramente entre São Paulo (SP) e Juiz de Fora (MG) para tentar equilibrar os treinos e as provas do curso. Agora, o foco de Djoko fica nos estudos, mas ele ainda vai ajudar a equipe.
-
-        “Apesar de algumas mudanças na rotina do Djoko, devido a sua faculdade de medicina, conseguimos adaptar ele no cargo de analista para continuar trazendo todo seu conhecimento de LoL para o individual de cada jogador e estratégias da equipe," explicou Cleber "fuzi" Fonseca, COO do CNB. "Mesmo ficando um pouco ausente de nosso Centro de Treinamento, ele continuará vindo para SP, esporadicamente, para acompanhar o desenvolvimento da equipe de perto."
+        <p>Thiago "Djokovic" Maia está deixando o posto de técnico do CNB e-Sports Club vice-campeão brasileiro de League of Legends.</p>
+        <p>Ele vai focar em terminar a faculdade de medicina, mas continuará parte da organização, agora agindo como analista.</p>
+        <p>Djoko já jogou pela INTZ mas ganhou destaque no cenário competitivo como técnico na CNB, sendo considerado um dos melhores na posição. Entretanto, isso vinha com custos.</p>
+        <p>Ele fazia viagens de ônibus rotineiramente entre São Paulo (SP) e Juiz de Fora (MG) para tentar equilibrar os treinos e as provas do curso. Agora, o foco de Djoko fica nos estudos, mas ele ainda vai ajudar a equipe.</p>
+        <p>“Apesar de algumas mudanças na rotina do Djoko, devido a sua faculdade de medicina, conseguimos adaptar ele no cargo de analista para continuar trazendo todo seu conhecimento de LoL para o individual de cada jogador e estratégias da equipe,</p>
+        <p>"explicou Cleber "fuzi" Fonseca, COO do CNB. "Mesmo ficando um pouco ausente de nosso Centro de Treinamento, ele continuará vindo para SP, esporadicamente, para acompanhar o desenvolvimento da equipe de perto."</p>
 
 
     </div>
@@ -69,7 +70,7 @@
 
 
 
-        <div class="col-md-3">
+        <div class="col-xs-3">
   <div id="jogo" class="table-responsive">
     <table class="table table-condensed">
 
@@ -149,12 +150,12 @@
         </div>
     </div>
 </br>
-            <div class="row">
+            <div class="row demo-row">
 
-                <div class="col-md-9" >
+                <div class="col-xs-9" >
 
 </div>
-                <div class="col-md-3">
+                <div class="col-xs-3">
 
                     </div>
     </div>
