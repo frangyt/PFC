@@ -3,7 +3,8 @@ require_once("conexao.php");
 $email = $_POST["email"];
 $senha = $_POST["senha"];
 $nome = $_POST["nome"];
-$hash = password_hash($senha,PASSWORD_BCRYPT);
+$hash = password_hash($senha,PASSWORD_DEFAULT);
+
 
 
 if ($_GET["cmd"] == "ins") {
