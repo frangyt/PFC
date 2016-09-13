@@ -10,7 +10,8 @@
         <link href="dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="dist/css/flat-ui.css" rel="stylesheet">
         <link href="docs/assets/css/demo.css" rel="stylesheet">
-        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="shortcut icon" href="img/íconee-bet.ico">
+        <link href="index.css" rel="stylesheet">
 
         <script src="dist/js/vendor/html5shiv.js"></script>
         <script src="dist/js/vendor/respond.min.js"></script>
@@ -40,7 +41,7 @@
                     <li><a href="jogo.php">Campeonatos</a></li>
                     <li><a href="cadastro.php">Cadastrar</a></li>
                     <li><a href="calendario.php">Calendário</a></li>
-                    <li><a href="informacao.php">Sobre Nós</a></li>
+                    <li><a href="informacao.php">Notícias</a></li>
                 </ul>
                 <form class="navbar-form navbar-right" action="#" role="search">
                     <div class="form-group">
@@ -63,14 +64,14 @@
 
         <img id="noticia" src="imagens/noticia1.jpg">
         <h3>League of Legends - Mais dois times se classificam para o Mundial</h3>
-        <p>Mais duas equipes garantiram suas vagas no Campeonato Mundial de League of Legends que acontece do fim de setembro ao fim de outubro nos Estados Unidos.</p>
-        <p>Agora foi a vez da Team SoloMid (TSM) e Flash Wolves se classificarem.</p>
-        <p>A TSM se classificou ao derrotar o CounterLogic Gaming na semifinal da LCS North America Summer 2016. Com isso, a equipe já garantiu 170 pontos no circuito norte-americano.</p>
-        <p>Desta forma, mesmo que eles percam a Grande Final, que será contra a cloud9, a SoloMid vai continuar com a vaga garantida por conta dos pontos.</p>
-        <p>A Team SoloMid é formada por Kevin "Hauntzer" Yarnel (Solo Top), Dennis "Svenskeren" Johnsen (Jungler), Soren "Bjergsen" Bjerg (Mid Laner), Yilliang "Doublelift" Peng (AD Carry) e</p>
-        <p>Vincent "Biofrost" Wang (Support), e até hoje, a organização não ficou de fora de uma edição do Mundial.</p>
-        <p>Enquanto isso, em Taiwan, a Flash Wolves se classificou ao vencer a LSM, derrotando o ahq eSports Club por 3 x 2 na semifinal, e vencendo J Team (antigo Taipei Assassins) por 3 x 0.</p>
-        <p>A equipe é formada por Yu "MMD" Li-Hung (Solo Top), Hung "Karsa" Hau-Hsuan (Jungler), Huang "Maple" Yi-Tang (Mid Laner), Hsiung "NL" Wen-An (AD Carry) e Hu "SwordArt" Shuo-Jie (Support).</p>
+        <p>Mais duas equipes garantiram suas vagas no Campeonato Mundial de League of Legends que acontece do fim de setembro ao fim de outubro nos Estados Unidos.
+        Agora foi a vez da Team SoloMid (TSM) e Flash Wolves se classificarem.
+        A TSM se classificou ao derrotar o CounterLogic Gaming na semifinal da LCS North America Summer 2016. Com isso, a equipe já garantiu 170 pontos no circuito norte-americano.
+        Desta forma, mesmo que eles percam a Grande Final, que será contra a cloud9, a SoloMid vai continuar com a vaga garantida por conta dos pontos.
+        A Team SoloMid é formada por Kevin "Hauntzer" Yarnel (Solo Top), Dennis "Svenskeren" Johnsen (Jungler), Soren "Bjergsen" Bjerg (Mid Laner), Yilliang "Doublelift" Peng (AD Carry) e
+        Vincent "Biofrost" Wang (Support), e até hoje, a organização não ficou de fora de uma edição do Mundial.
+        Enquanto isso, em Taiwan, a Flash Wolves se classificou ao vencer a LSM, derrotando o ahq eSports Club por 3 x 2 na semifinal, e vencendo J Team (antigo Taipei Assassins) por 3 x 0.
+        A equipe é formada por Yu "MMD" Li-Hung (Solo Top), Hung "Karsa" Hau-Hsuan (Jungler), Huang "Maple" Yi-Tang (Mid Laner), Hsiung "NL" Wen-An (AD Carry) e Hu "SwordArt" Shuo-Jie (Support).</p>
 
         <p>Até agora, estão garantidas no Mundial:</p>
 
@@ -85,12 +86,12 @@
         <img id="noticia" src="imagens/noticia2.jpg">
         <h3>League of Legends - Thiago "Djokovic" Maia não é mais técnico da CNB</h3>
 
-        <p>Thiago "Djokovic" Maia está deixando o posto de técnico do CNB e-Sports Club vice-campeão brasileiro de League of Legends.</p>
-        <p>Ele vai focar em terminar a faculdade de medicina, mas continuará parte da organização, agora agindo como analista.</p>
-        <p>Djoko já jogou pela INTZ mas ganhou destaque no cenário competitivo como técnico na CNB, sendo considerado um dos melhores na posição. Entretanto, isso vinha com custos.</p>
-        <p>Ele fazia viagens de ônibus rotineiramente entre São Paulo (SP) e Juiz de Fora (MG) para tentar equilibrar os treinos e as provas do curso. Agora, o foco de Djoko fica nos estudos, mas ele ainda vai ajudar a equipe.</p>
-        <p>“Apesar de algumas mudanças na rotina do Djoko, devido a sua faculdade de medicina, conseguimos adaptar ele no cargo de analista para continuar trazendo todo seu conhecimento de LoL para o individual de cada jogador e estratégias da equipe,</p>
-        <p>"explicou Cleber "fuzi" Fonseca, COO do CNB. "Mesmo ficando um pouco ausente de nosso Centro de Treinamento, ele continuará vindo para SP, esporadicamente, para acompanhar o desenvolvimento da equipe de perto."</p>
+        <p>Thiago "Djokovic" Maia está deixando o posto de técnico do CNB e-Sports Club vice-campeão brasileiro de League of Legends.
+        Ele vai focar em terminar a faculdade de medicina, mas continuará parte da organização, agora agindo como analista.
+        Djoko já jogou pela INTZ mas ganhou destaque no cenário competitivo como técnico na CNB, sendo considerado um dos melhores na posição. Entretanto, isso vinha com custos.
+        Ele fazia viagens de ônibus rotineiramente entre São Paulo (SP) e Juiz de Fora (MG) para tentar equilibrar os treinos e as provas do curso. Agora, o foco de Djoko fica nos estudos, mas ele ainda vai ajudar a equipe.
+        “Apesar de algumas mudanças na rotina do Djoko, devido a sua faculdade de medicina, conseguimos adaptar ele no cargo de analista para continuar trazendo todo seu conhecimento de LoL para o individual de cada jogador e estratégias da equipe,
+        "explicou Cleber "fuzi" Fonseca, COO do CNB. "Mesmo ficando um pouco ausente de nosso Centro de Treinamento, ele continuará vindo para SP, esporadicamente, para acompanhar o desenvolvimento da equipe de perto."</p>
 
 
     </div>
@@ -103,9 +104,20 @@
 
     </div>
 </br>
-            <div class="row demo-row">
+        <div class="row demo-row">
+        <div class="col-xs-4">
+            </div>
+            <div class="col-xs-4">
+                <p>Para mais notícias clique <a href="informacao.php"> aqui</a> </p>
+            </div>
+            <div class="col-xs-4">
+            </div>
+        </div>
 
-                <div class="col-xs-5" >
+        <div class="row demo-row">
+                <div class="col-xs-1">
+                    </div>
+                <div class="col-xs-4" >
 
                     <table class="flat-table flat-table-5">
                         <thead>
@@ -152,29 +164,29 @@
                 <div class="col-xs-5" >
                     <table class="flat-table flat-table-1">
                         <thead>
-                        <th>---</th>
+                        <th></th>
                         <th>Jogos</th>
-                        <th>---</th>
+                        <th></th>
                         </thead>
                         <tbody>
                         <tr>
                             <td>Time A</td>
-                            <td>X</td>
+                            <td><span class="fui-cross"></span></td>
                             <td>Time B</td>
                         </tr>
                         <tr>
                             <td>Time C</td>
-                            <td>X</td>
+                            <td><span class="fui-cross"></span></td>
                             <td>Time D</td>
                         </tr>
                         <tr>
                             <td>Time E</td>
-                            <td>X</td>
+                            <td><span class="fui-cross"></span></td>
                             <td>Time F</td>
                         </tr>
                         <tr>
                             <td>Time G</td>
-                            <td>X</td>
+                            <td><span class="fui-cross"></span></td>
                             <td>Time H</td>
                         </tr>
                         </tbody>
@@ -191,6 +203,18 @@
 
      
     </div>
-
+    <footer>
+        <div class="container">
+        <div class="row demo-row">
+        <div class="col-xs-4">
+        </div>
+            <div class="col-xs-4">
+        © Todos os Direitos reservados á sua mãe
+        </div>
+            <div class="col-xs-4">
+            </div>
+        </div>
+        </div>
+    </footer>
     </body>
 </html>
