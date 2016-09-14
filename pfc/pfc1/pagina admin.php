@@ -29,16 +29,20 @@
 
         <div class="row">
 
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <a href="jogolista.php"> <button type="button"  class="btn btn-primary navbar-btn"> Adicionar Jogo</button> </a>
 
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <a href="time_lista.php"> <button type="button"  class="btn btn-primary navbar-btn"> Adicionar Time</button> </a>
 
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <a href="campeonato_lista.php"> <button type="button"  class="btn btn-primary navbar-btn"> Adicionar Campeonato</button> </a>
+
+            </div>
+            <div class="col-md-3">
+                <a href="partidas_lista.php"> <button type="button"  class="btn btn-primary navbar-btn"> Adicionar partidas</button> </a>
 
             </div>
 </div>

@@ -3,22 +3,19 @@ require_once("conexao.php");
 require("header.php");
 
 
-$data = $_POST["data"];
-$nome = $_POST["nome"];
-$idcampeonatos = $_POST["partidas_idcampeonatos"];
-$hora = $_POST["hora"];
+$idtimes1 = $_POST["idtimes1"];
+$idtimes2 = $_POST["idtimes2"];
+$idpartidas = $_POST["idpartidas"];
 
-$datetime = $data . " " . $hora;
-echo $datetime;
 ?>
 <br/>
 <?php
 
 if ($_GET["cmd"] == "ins") {
     echo "oi";
-    $sql = "insert into partidas
-                (data, partidas_idcampeonatos)
-                values ('$datetime', '$idcampeonatos');
+    $sql = "insert into times_partida
+                (times_partidas_idtimes, times_partidas_idpartidas)
+                values ('$idtimes1', '$idpartidas'), ('$idtimes2', '$idpartidas');
 
              
 
@@ -40,10 +37,10 @@ $resultado = mysqli_query($conexao, $sql);
 echo $resultado;
 if ($resultado == false) {
     $erro = mysqli_error($conexao);
-   echo $erro;
+    echo $erro;
 }
 else {
-    header("location:partidas_times_form.php");
+    header("location:partidas_lista.php");
 }
 
 
