@@ -66,7 +66,7 @@ margin-left:7%;
 }
 #texto_noticia{
     margin-left: 2%;
-    color:white;
+    color:#34495e;
 }
 .flat-table {
     margin-bottom: 20px;
@@ -87,13 +87,13 @@ margin-left:7%;
     padding: 1em;
     color: rgba(0,0,0,0.45);
     text-shadow: 0 0 1px rgba(0,0,0,0.1);
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 .flat-table td {
     color: #f7f7f7;
     padding: 0.7em 1em 0.7em 1.15em;
     text-shadow: 0 0 1px rgba(255,255,255,0.1);
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 .flat-table tr {
     -webkit-transition: background 0.3s, box-shadow 0.3s;
@@ -101,7 +101,7 @@ margin-left:7%;
     transition: background 0.3s, box-shadow 0.3s;
 }
 .flat-table-1 {
-    background: #336ca6;
+    background:rgb(52, 73, 94);
 }
 .flat-table-1 tr:hover {
     background: rgba(0,0,0,0.19);

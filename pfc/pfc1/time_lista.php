@@ -1,4 +1,4 @@
-<?php require("header.php") ?>
+
 
 <script language="Javascript">
     function confirma(id) {

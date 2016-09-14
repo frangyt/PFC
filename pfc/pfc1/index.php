@@ -119,40 +119,40 @@
                     </div>
                 <div class="col-xs-4" >
 
-                    <table class="flat-table flat-table-5">
+                    <table class="flat-table flat-table-1">
                         <thead>
                         <th>Ranking</th>
                         </thead>
                         <tbody>
                         <tr>
-                            <td>Usuário 1</td>
+                            <td>1° - Usuário 1</td>
                         </tr>
                         <tr>
-                            <td>Usuário 2</td>
+                            <td>2° - Usuário 2</td>
                         </tr>
                         <tr>
-                            <td>Usuário 3</td>
+                            <td>3° - Usuário 3</td>
                         </tr>
                         <tr>
-                            <td>Usuário 4</td>
+                            <td>4° - Usuário 4</td>
                         </tr>
                         <tr>
-                            <td>Usuário 5</td>
+                            <td>5° - Usuário 5</td>
                         </tr>
                         <tr>
-                            <td>Usuário 6</td>
+                            <td>6° - Usuário 6</td>
                         </tr>
                         <tr>
-                            <td>Usuário 7</td>
+                            <td>7° - Usuário 7</td>
                         </tr>
                         <tr>
-                            <td>Usuário 8</td>
+                            <td>8° - Usuário 8</td>
                         </tr>
                         <tr>
-                            <td>Usuário 9</td>
+                            <td>9° - Usuário 9</td>
                         </tr>
                         <tr>
-                            <td>Usuário 10</td>
+                            <td>10° - Usuário 10</td>
                         </tr>
                         </tbody>
                     </table>
@@ -171,22 +171,22 @@
                         <tbody>
                         <tr>
                             <td>Time A</td>
-                            <td><span class="fui-cross"></span></td>
+                            <td><span id="icone" class="fui-cross"></span></td>
                             <td>Time B</td>
                         </tr>
                         <tr>
                             <td>Time C</td>
-                            <td><span class="fui-cross"></span></td>
+                            <td><span id="icone" class="fui-cross"></span></td>
                             <td>Time D</td>
                         </tr>
                         <tr>
                             <td>Time E</td>
-                            <td><span class="fui-cross"></span></td>
+                            <td><span id="icone" class="fui-cross"></span></td>
                             <td>Time F</td>
                         </tr>
                         <tr>
                             <td>Time G</td>
-                            <td><span class="fui-cross"></span></td>
+                            <td><span id="icone" class="fui-cross"></span></td>
                             <td>Time H</td>
                         </tr>
                         </tbody>
