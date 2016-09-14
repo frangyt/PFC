@@ -20,9 +20,9 @@
         </tr>
         <?php
         require("conexao.php");
-        $sql = "select   data, sigla, sigla_time, ganhador
-                    from partidas, times_partidas, campeonato  where idpartidas = times_partidas_idpartidas
-                    and partidas_idcampeonato = idcampeonato;
+        $sql = "select   data, sigla, sigla_times, ganhador
+                    from partidas, times_partida, campeonatos, times  where idpartidas = times_partidas_idpartidas
+                    and partidas_idcampeonatos = idcampeonatos and idtimes = times_partidas_idtimes;
                     ";
 
         $resultado = mysqli_query($conexao, $sql);
@@ -30,7 +30,7 @@
             echo "<tr class='active'>
                 <td class='active'>" . $linha["data"] . "</td>
                 <td class='active'>" . $linha["sigla"] . "</td>
-                <td class='active'>" . $linha["sigla_time"] . "</td>
+                <td class='active'>" . $linha["sigla_times"] . "</td>
                 <td class='active'>" . $linha["ganhador"] . "</td>
               </tr>";
         }
