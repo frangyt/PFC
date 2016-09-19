@@ -33,7 +33,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
                     <span class="sr-only">Toggle navigation</span>
                 </button>
-                <a class="navbar-brand" href="#">E-bet</a>
+                <a class="navbar-brand" href="index.php" >E-bet</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse-01">
                 <ul class="nav navbar-nav">
@@ -62,7 +62,7 @@
 
     <div class="col-xs-12" id="texto_noticia">
 
-        <img id="noticia" src="imagens/noticia1.jpg">
+        <img class="img-rounded img-responsive" src="imagens/noticia1.jpg">
         <h3>League of Legends - Mais dois times se classificam para o Mundial</h3>
         <p>Mais duas equipes garantiram suas vagas no Campeonato Mundial de League of Legends que acontece do fim de setembro ao fim de outubro nos Estados Unidos.
         Agora foi a vez da Team SoloMid (TSM) e Flash Wolves se classificarem.
@@ -83,7 +83,7 @@
         <p>Flash Wolves (Taiwan)</p>
         <p>Team SoloMid (América do Norte)</p>
         <br></br>
-        <img id="noticia" src="imagens/noticia2.jpg">
+        <img class="img-rounded img-responsive" src="imagens/noticia2.jpg">
         <h3>League of Legends - Thiago "Djokovic" Maia não é mais técnico da CNB</h3>
 
         <p>Thiago "Djokovic" Maia está deixando o posto de técnico do CNB e-Sports Club vice-campeão brasileiro de League of Legends.
@@ -161,37 +161,48 @@
                 <div class="col-xs-2" >
                 </div>
 
-                <div class="col-xs-5" >
+                <div class="col-xs-3" >
                     <table class="flat-table flat-table-1">
                         <thead>
+
                         <th></th>
                         <th>Jogos</th>
                         <th></th>
+
+
                         </thead>
                         <tbody>
                         <tr>
-                            <td>Time A</td>
+                            <td>TimeA</td>
                             <td><span id="icone" class="fui-cross"></span></td>
-                            <td>Time B</td>
+                            <td>TimeB</td>
                         </tr>
                         <tr>
-                            <td>Time C</td>
+                            <td>TimeC</td>
+
                             <td><span id="icone" class="fui-cross"></span></td>
-                            <td>Time D</td>
+
+                            <td>TimeD</td>
                         </tr>
                         <tr>
-                            <td>Time E</td>
+                            <td>TimeE</td>
+
                             <td><span id="icone" class="fui-cross"></span></td>
-                            <td>Time F</td>
+
+                            <td>TimeF</td>
                         </tr>
                         <tr>
-                            <td>Time G</td>
+                            <td>TimeG</td>
+
                             <td><span id="icone" class="fui-cross"></span></td>
-                            <td>Time H</td>
+
+                            <td>TimeH</td>
                         </tr>
                         </tbody>
                     </table>
                 </div>
+            <div class="col-xs-2">
+            </div>
 
     </div>
     </div>

@@ -21,7 +21,7 @@
     </style>
 </head>
     <body>
-    <div class="container-fluid">
+
         <?php
 
         $email = "";
@@ -39,7 +39,7 @@
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
                             <span class="sr-only">Toggle navigation</span>
                         </button>
-                        <a class="navbar-brand" href="#">E-bet</a>
+                        <a class="navbar-brand" href="index.php">E-bet</a>
                     </div>
                     <div class="collapse navbar-collapse" id="navbar-collapse-01">
                         <ul class="nav navbar-nav">
@@ -64,22 +64,26 @@
                 </nav>
             <form action='usuario_processa.php?cmd=ins' method='post'>
             <div class="row demo-row">
-                <div class="col-xs-3">
+                <div class="col-xs-2">
+                    </div>
+                <div class="col-xs-8">
                     <div class="form-group">
-                        <label for="inputemail">email</label>
+                        <label for="inputemail"><p>E-mail</p></label>
                         <div class="input-group">
                             <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
                             <input type="text" class="form-control" id="inputemail" name="email" placeholder="email" value="<?php echo $email; ?>">
                         </div>
                     </div>
                 </div>
+                    <div class="col-xs-2">
+                        </div>
                 </div>
                 <div class="row demo-row">
                 <div class="col-xs-2">
                     </div>
                     <div class="col-xs-8">
                     <div class="form-group">
-                        <label for="inputsenha">Senha</label>
+                        <label for="inputsenha"><p>Senha</p></label>
                         <div class="input-group">
                             <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
                             <input type="password" class="form-control" id="inputsenha" name="senha" placeholder="Senha" value="<?php echo $senha; ?>">
@@ -94,29 +98,24 @@
                     </div>
                     <div class="col-xs-8">
                     <div class="form-group">
-                        <label for="inputnome">Nome Completo</label>
+                        <label for="inputnome"><p>Nome Completo</p></label>
                         <div class="input-group">
                             <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
                             <input type="text" class="form-control" id="inputnome" name="nome" placeholder="Nome" value="<?php echo $nome; ?>">
                         </div>
                     </div>
                 </div>
-                  </div>
-                <div class="col-xs-2">
 
+                <div class="col-xs-2">
                 </div>
+                </div>
+                </div>
+
             </div>
 
             <input type="submit" class="btn btn-primary btn-large" value="Salvar"/>
         </form>
-                 
 
-                   
-            
-       
-       
-             
-        </div>
     </div>
 
 

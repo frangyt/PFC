@@ -68,6 +68,9 @@ margin-left:7%;
     margin-left: 2%;
     color:#34495e;
 }
+#icone{
+    margin-left:40%;
+}
 .flat-table {
     margin-bottom: 20px;
     border-collapse:collapse;
@@ -87,13 +90,13 @@ margin-left:7%;
     padding: 1em;
     color: rgba(0,0,0,0.45);
     text-shadow: 0 0 1px rgba(0,0,0,0.1);
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 .flat-table td {
     color: #f7f7f7;
-    padding: 0.7em 1em 0.7em 1.15em;
+    padding: 0.7em 1.1em 0.7em 1.1em;
     text-shadow: 0 0 1px rgba(255,255,255,0.1);
-    font-size: 1.2em;
+    font-size: 1em;
 }
 .flat-table tr {
     -webkit-transition: background 0.3s, box-shadow 0.3s;
@@ -106,3 +109,4 @@ margin-left:7%;
 .flat-table-1 tr:hover {
     background: rgba(0,0,0,0.19);
 }
+
