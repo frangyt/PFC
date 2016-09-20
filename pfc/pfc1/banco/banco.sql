@@ -57,8 +57,8 @@ DROP TABLE IF EXISTS `campeonatos`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `campeonatos` (
   `idcampeonatos` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(45) NOT NULL,
-  `sigla` varchar(10) NOT NULL,
+  `nome_campeonato` varchar(45) NOT NULL,
+  `sigla_campeonato` varchar(10) NOT NULL,
   `campeonatos_idregiao` int(11) NOT NULL,
   `campeonatos_idjogo` int(11) NOT NULL,
   PRIMARY KEY (`idcampeonatos`),
@@ -171,14 +171,14 @@ DROP TABLE IF EXISTS `jogador`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `jogador` (
   `idjogador` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(45) DEFAULT NULL,
+  `nome_jogador` varchar(45) DEFAULT NULL,
   `nick` varchar(45) NOT NULL,
   `conquistas` varchar(45) DEFAULT NULL,
   `jogador_idtimes` int(11) NOT NULL,
   PRIMARY KEY (`idjogador`),
   KEY `fk_jogador_1_idx` (`jogador_idtimes`),
   CONSTRAINT `jogador-times` FOREIGN KEY (`jogador_idtimes`) REFERENCES `times` (`idtimes`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -187,6 +187,7 @@ CREATE TABLE `jogador` (
 
 LOCK TABLES `jogador` WRITE;
 /*!40000 ALTER TABLE `jogador` DISABLE KEYS */;
+INSERT INTO `jogador` VALUES (1,'Dauren Kystaubayev','AdreN',NULL,1),(2,'Leandro','hooch',NULL,1),(3,'Alexandre Pianaro','bodyy',NULL,17),(4,'Lincoln Lau','fnx',NULL,13);
 /*!40000 ALTER TABLE `jogador` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -304,7 +305,7 @@ DROP TABLE IF EXISTS `times`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `times` (
   `idtimes` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(45) NOT NULL,
+  `nome_time` varchar(45) NOT NULL,
   `sigla_times` varchar(10) NOT NULL,
   `conquistas` varchar(45) DEFAULT NULL,
   `times_idjogo` int(11) NOT NULL,
@@ -439,4 +440,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-09-14 10:57:02
+-- Dump completed on 2016-09-20  9:25:31

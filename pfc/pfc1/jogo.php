@@ -32,57 +32,34 @@
                     <a role="button" class="btn btn-primary navbar-btn" href="jogo1.php" id="estilobotoes">Fighting Games</a>
                 </div>
             </div>
-            
-			<div class = "panel">
-			   <div class = "panel-heading">Proximos Jogos</div>
-			   
-			   <table class="table">
-				  <tr>
-					 <td><img src="imagens/CS.jpg" class="img-responsive img-rounded"></td>
-					<td><a href=#><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></a></span></td>
-					<td id="campo"><a href="time_teste.php">Time1</a></td>
-				    <td id="x"><span class='glyphicon glyphicon-remove' aria-hidden='true'></span></td>
-					<td id="campo"><a href="time_teste.php">Time2</a></td>
-					<td><a><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></a></span></td>
-				  </tr>
-				  
-				  <tr>
-					<td><img src="imagens/dota.png" class="img-responsive img-rounded"></td>
-					<td><a href=#><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></a></span></td>
-					<td id="campo"><a href="time_teste.php">Time1</a></td>
-				    <td id="x"><span class='glyphicon glyphicon-remove' aria-hidden='true'></span></td>
-					<td id="campo"><a href="time_teste.php">Time2</a></td>
-					<td><a><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></a></span></td>
-					
-				  </tr>
-				  
-				  <tr>
-					 <td><img src="imagens/lol.png" class="img-responsive img-rounded"></td>
-					<td><a href=#><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></a></span></td>
-					<td id="campo"><a href="time_teste.php">Time1</a></td>
-				    <td id="x"><span class='glyphicon glyphicon-remove' aria-hidden='true'></span></td>
-					<td id="campo"><a href="time_teste.php">Time2</a></td>
-					<td><a><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></a></span></td>
-				  </tr>
-				  <tr>
-					<td><img src="imagens/hs.png" class="img-responsive img-rounded"></td>
-					<td><a href=#><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></a></span></td>
-					<td id="campo"><a href="time_teste.php">Time1</a></td>
-				    <td id="x"><span class='glyphicon glyphicon-remove' aria-hidden='true'></span></td>
-					<td id="campo"><a href="time_teste.php">Time2</a></td>
-					<td><a><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></a></span></td>
-				  </tr>
-				  <tr>
-					<td><img src="imagens/fg.jpg" class="img-responsive img-rounded"></td>
-					<td><a href=#><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></a></span></td>
-					<td id="campo"><a href="time_teste.php">Time1</a></td>
-				    <td id="x"><span class='glyphicon glyphicon-remove' aria-hidden='true'></span></td>
-					<td id="campo"><a href="time_teste.php">Time2</a></td>
-					<td><a><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></a></span></td>
-				  </tr>				  
-			   </table>
-			   
-			</div>
+
+			<h2>Campeonatos</h2>
+			<p><a class="btn btn-primary btn-large" href="campeonato_form.php?id=">Adicionar Campeonato <span class="glyphicon glyphicon-plus-sign"></span></a></p>
+			<table class="table table-condensed">
+				<tr class="success">
+					<td class="success"></td>
+					<td class="success">ID</td>
+					<td class="success">Nome</td>
+					<td class="success">Sigla</td>
+					<td class="success">Região</td>
+					<td class="success">Jogo</td>
+				</tr>
+<?php
+require("conexao.php");
+$sql = "select idcampeonatos, nome_campeonato, sigla_campeonato, regiao_descricao, jogo_descricao from campeonatos, jogo, regiao
+                where campeonatos_idregiao = idregiao and campeonatos_idjogo = idjogo;";
+$resultado = mysqli_query($conexao, $sql);
+while ($linha = mysqli_fetch_array($resultado)) {
+	echo "<tr class='active'>
+                <td></td>
+                <td class='active'><a class='btn btn-info' href='campeonato_perfil.php?id=".$linha["idcampeonatos"]."'>" .$linha["idcampeonatos"]. "</a>              </td>
+                <td class='active'>" . $linha["nome_campeonato"] . "</td>
+                <td class='active'>" . $linha["sigla_campeonato"] . "</td>
+                <td class='active'>" . $linha["regiao_descricao"] . "</td>
+                <td class='active'>" . $linha["jogo_descricao"] . "</td>
+              </tr>";
+}
+?>
             
             
             

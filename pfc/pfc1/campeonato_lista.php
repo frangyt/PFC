@@ -40,14 +40,14 @@
         </tr>
         <?php
         require("conexao.php");
-        $sql = "select nome, sigla, regiao_descricao, jogo_descricao from campeonatos, jogo, regiao
+        $sql = "select nome_campeonato, sigla_campeonato, regiao_descricao, jogo_descricao from campeonatos, jogo, regiao
                 where campeonatos_idregiao = idregiao and campeonatos_idjogo = idjogo;";
         $resultado = mysqli_query($conexao, $sql);
         while ($linha = mysqli_fetch_array($resultado)) {
             echo "<tr class='active'>
                 <td></td>
-                <td class='active'>" . $linha["nome"] . "</td>
-                <td class='active'>" . $linha["sigla"] . "</td>
+                <td class='active'>" . $linha["nome_campeonato"] . "</td>
+                <td class='active'>" . $linha["sigla_campeonato"] . "</td>
                 <td class='active'>" . $linha["regiao_descricao"] . "</td>
                 <td class='active'>" . $linha["jogo_descricao"] . "</td>
               </tr>";
