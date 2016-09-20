@@ -134,35 +134,6 @@ LOCK TABLES `conquista` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `denuncia`
---
-
-DROP TABLE IF EXISTS `denuncia`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `denuncia` (
-  `iddenuncia` int(11) NOT NULL AUTO_INCREMENT,
-  `denuncia_idcomentario` int(11) DEFAULT NULL,
-  `datadenuncia` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `denuncia_idusuario` int(11) DEFAULT NULL,
-  PRIMARY KEY (`iddenuncia`),
-  KEY `denuncia-comentario_idx` (`denuncia_idcomentario`),
-  KEY `denuncia-usuario_idx` (`denuncia_idusuario`),
-  CONSTRAINT `denuncia-comentario` FOREIGN KEY (`denuncia_idcomentario`) REFERENCES `comentario` (`idcomentario`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `denuncia-usuario` FOREIGN KEY (`denuncia_idusuario`) REFERENCES `usuario` (`idusuario`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `denuncia`
---
-
-LOCK TABLES `denuncia` WRITE;
-/*!40000 ALTER TABLE `denuncia` DISABLE KEYS */;
-/*!40000 ALTER TABLE `denuncia` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `jogador`
 --
 
@@ -173,7 +144,6 @@ CREATE TABLE `jogador` (
   `idjogador` int(11) NOT NULL AUTO_INCREMENT,
   `nome_jogador` varchar(45) DEFAULT NULL,
   `nick` varchar(45) NOT NULL,
-  `conquistas` varchar(45) DEFAULT NULL,
   `jogador_idtimes` int(11) NOT NULL,
   PRIMARY KEY (`idjogador`),
   KEY `fk_jogador_1_idx` (`jogador_idtimes`),
@@ -187,7 +157,7 @@ CREATE TABLE `jogador` (
 
 LOCK TABLES `jogador` WRITE;
 /*!40000 ALTER TABLE `jogador` DISABLE KEYS */;
-INSERT INTO `jogador` VALUES (1,'Dauren Kystaubayev','AdreN',NULL,1),(2,'Leandro','hooch',NULL,1),(3,'Alexandre Pianaro','bodyy',NULL,17),(4,'Lincoln Lau','fnx',NULL,13);
+INSERT INTO `jogador` VALUES (1,'Dauren Kystaubayev','AdreN',1),(2,'Leandro','hooch',1),(3,'Alexandre Pianaro','bodyy',17),(4,'Lincoln Lau','fnx',13);
 /*!40000 ALTER TABLE `jogador` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -307,7 +277,6 @@ CREATE TABLE `times` (
   `idtimes` int(11) NOT NULL AUTO_INCREMENT,
   `nome_time` varchar(45) NOT NULL,
   `sigla_times` varchar(10) NOT NULL,
-  `conquistas` varchar(45) DEFAULT NULL,
   `times_idjogo` int(11) NOT NULL,
   PRIMARY KEY (`idtimes`),
   KEY `times-jogo_idx` (`times_idjogo`),
@@ -321,7 +290,7 @@ CREATE TABLE `times` (
 
 LOCK TABLES `times` WRITE;
 /*!40000 ALTER TABLE `times` DISABLE KEYS */;
-INSERT INTO `times` VALUES (1,'gambit gaming','GG',NULL,1),(2,'Astralis','AST',NULL,1),(3,'team dignitas','DIG',NULL,1),(4,'counter logic gaming','CLG',NULL,1),(5,'natus vincere','NAVI',NULL,1),(6,'Flipsid3 tatics','F3',NULL,1),(7,'Ninjas in Pyjamas','NIP',NULL,1),(8,'OpTic gaming','OG',NULL,1),(9,'Virtus.pro','VP',NULL,1),(10,'team liquid','TL',NULL,1),(11,'mousesports','MS',NULL,1),(12,'team enVyUs','NV',NULL,1),(13,'SK Gaming','SK',NULL,1),(14,'Dnatic','',NULL,1),(15,'Fnatic','FNC',NULL,1),(16,'FaZe clan','FZC',NULL,1),(17,'G2 eports','G2',NULL,1);
+INSERT INTO `times` VALUES (1,'gambit gaming','GG',1),(2,'Astralis','AST',1),(3,'team dignitas','DIG',1),(4,'counter logic gaming','CLG',1),(5,'natus vincere','NAVI',1),(6,'Flipsid3 tatics','F3',1),(7,'Ninjas in Pyjamas','NIP',1),(8,'OpTic gaming','OG',1),(9,'Virtus.pro','VP',1),(10,'team liquid','TL',1),(11,'mousesports','MS',1),(12,'team enVyUs','NV',1),(13,'SK Gaming','SK',1),(14,'Dnatic','',1),(15,'Fnatic','FNC',1),(16,'FaZe clan','FZC',1),(17,'G2 eports','G2',1);
 /*!40000 ALTER TABLE `times` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -440,4 +409,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-09-20  9:25:31
+-- Dump completed on 2016-09-20 16:49:15
