@@ -12,7 +12,7 @@ $campeonatos_idjogo = $_POST["campeonatos_idjogo"];
 
 if ($_GET["cmd"] == "ins") {
     $sql = "insert into campeonatos
-                (nome, sigla, campeonatos_idregiao, campeonatos_idjogo)
+                (nome_campeonato, sigla_campeonato, campeonatos_idregiao, campeonatos_idjogo)
                 values ('$nome', '$sigla',$campeonatos_idregiao,$campeonatos_idjogo);";
 }
 
