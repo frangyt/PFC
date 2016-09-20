@@ -63,7 +63,23 @@
 
                 </nav>
             <form action='usuario_processa.php?cmd=ins' method='post'>
-            <div class="row demo-row">
+                <div class="row demo-row">
+                    <div class="col-xs-2">
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="form-group">
+                            <label for="inputnome"><p>Nome Completo</p></label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                <input type="text" class="form-control" id="inputnome" name="nome" placeholder="Nome" value="<?php echo $nome; ?>">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-2">
+                    </div>
+                </div>
+                <div class="row demo-row">
                 <div class="col-xs-2">
                     </div>
                 <div class="col-xs-8">
@@ -93,31 +109,35 @@
                     </div>
                     <div class="col-xs-2">
                         </div>
+                </div>
                 <div class="row demo-row">
-                <div class="col-xs-2">
+                    <div class="col-xs-2">
                     </div>
                     <div class="col-xs-8">
-                    <div class="form-group">
-                        <label for="inputnome"><p>Nome Completo</p></label>
-                        <div class="input-group">
-                            <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-                            <input type="text" class="form-control" id="inputnome" name="nome" placeholder="Nome" value="<?php echo $nome; ?>">
-                        </div>
+                <a type="submit" class="btn btn-primary btn-large" value="Salvar"/>Salvar</a>
+                </div>
+                    <div class="col-xs-2">
                     </div>
                 </div>
-
-                <div class="col-xs-2">
-                </div>
-                </div>
-                </div>
-
             </div>
 
-            <input type="submit" class="btn btn-primary btn-large" value="Salvar"/>
+
         </form>
 
     </div>
-
+        <footer>
+            <div class="container">
+                <div class="row demo-row">
+                    <div class="col-xs-4">
+                    </div>
+                    <div class="col-xs-4">
+                        © Todos os Direitos reservados á sua mãe
+                    </div>
+                    <div class="col-xs-4">
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
     </body>
