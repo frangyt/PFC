@@ -20,20 +20,26 @@
         </tr>
         <?php
         require("conexao.php");
-        $sql = "select   data, sigla, sigla_times, ganhador
+        $consulta = "select max(idpartidas) from partidas;";
+        $rconsulta = mysqli_query($conexao,$consulta);
+        $seila = mysqli_fetch_array($rconsulta);
+        $max=$seila["max(idpartidas)"];
+        $idpartidas = 1;
+            $sql = "select   idpartidas, idtimes, idcampeonatos, data, sigla_campeonato, sigla_times, ganhador
                     from partidas, times_partida, campeonatos, times  where idpartidas = times_partidas_idpartidas
                     and partidas_idcampeonatos = idcampeonatos and idtimes = times_partidas_idtimes;
                     ";
-
-        $resultado = mysqli_query($conexao, $sql);
-        while ($linha = mysqli_fetch_array($resultado)) {
-            echo "<tr class='active'>
+ echo $seila["max(idpartidas)"];
+            $resultado = mysqli_query($conexao, $sql);
+            while ($linha = mysqli_fetch_array($resultado)) {
+                echo "<tr class='active'>
                 <td class='active'>" . $linha["data"] . "</td>
-                <td class='active'>" . $linha["sigla"] . "</td>
-                <td class='active'>" . $linha["sigla_times"] . "</td>
+                <td class='active'><a class='btn btn-info' href='campeonato_perfil.php?id=" . $linha["idcampeonatos"] . "'>" . $linha["sigla_campeonato"] . "</a>              </td>
+                <td class='active'><a class='btn btn-info' href='times_perfil.php?id=" . $linha["idtimes"] . "'>" . $linha["sigla_times"] . "</a>              </td>
                 <td class='active'>" . $linha["ganhador"] . "</td>
               </tr>";
-        }
+            }
+
         ?>
     </table>
 

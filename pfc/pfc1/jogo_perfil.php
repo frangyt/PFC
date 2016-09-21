@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <head>
     <meta charset=utf-8>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,6 +20,13 @@
 </head>
 <body>
 <div class="container">
+
+
+
+
+
+
+
 
     <nav class="navbar navbar-inverse" role="navigation">
         <div class="navbar-header">
@@ -58,58 +63,63 @@
         </div>
 
     </nav>
-    <form>
 
-        <div class="row demo-row">
-
-            <div class="col-xs-3">
-                <a href="jogolista.php"> <button type="button"  class="btn btn-primary navbar-btn"> Adicionar Jogo</button> </a>
-
-            </div>
-            <div class="col-xs-3">
-                <a href="time_lista.php"> <button type="button"  class="btn btn-primary navbar-btn"> Adicionar Time</button> </a>
-
-            </div>
-            <div class="col-xs-3">
-                <a href="campeonato_lista.php"> <button type="button"  class="btn btn-primary navbar-btn"> Adicionar Campeonato</button> </a>
-
-            </div>
-            <div class="col-xs-3">
-                <a href="partidas_lista.php"> <button type="button"  class="btn btn-primary navbar-btn"> Adicionar partidas</button> </a>
-
-            </div>
+<script language="Javascript">
+    function confirma(id) {
+        if (confirm("Deseja remover esse item?"))
+            window.location.href = "campeonato_processa.php?cmd=del&id="+id;
+    }
+</script>
 
 
-</div>
-        <div class="demo-row">
-            <h2>Cidades</h2>
-            <table class="table table-condensed">
-                <tr class="success">
-
-                    <td class="success">Nome</td>
-                    <td class="success">email</td>
-                    <td class="success">senha</td>
-                </tr>
-                <?php
-                require("conexao.php");
-                $sql = "select   nome, email, senha
-                    from usuario;
-                    ";
-
-                $resultado = mysqli_query($conexao, $sql);
-                while ($linha = mysqli_fetch_array($resultado)) {
-                    echo "<tr class='active'>
-                <td class='active'>" . $linha["nome"] . "</td>
-                <td class='active'>" . $linha["email"] . "</td>
-                <td class='active'>" . $linha["senha"] . "</td>
+<h2>Campeonatos</h2>
+<p><a class="btn btn-primary btn-large" href="campeonato_form.php?id=">Adicionar Campeonato <span class="glyphicon glyphicon-plus-sign"></span></a></p>
+<table class="table table-condensed">
+    <tr class="success">
+        <td></td>
+        <td class="success">Nome</td>
+        <td class="success">Sigla</td>
+        <td class="success">Região</td>
+        <td class="success">Jogo</td>
+    </tr>
+    <?php
+    require("conexao.php");
+    $idjogo = $_GET["id"];
+    $sql = "select idcampeonatos, nome_campeonato, sigla_campeonato, regiao_descricao, jogo_descricao from campeonatos, jogo, regiao
+                where campeonatos_idregiao = idregiao and campeonatos_idjogo = idjogo and idjogo=$idjogo;";
+    $resultado = mysqli_query($conexao, $sql);
+ $linha = mysqli_fetch_array($resultado);
+        echo "<tr class='active'>
+          
+                <td class='active'><a class='btn btn-info' href='campeonato_perfil.php?id=".$linha["idcampeonatos"]."'>" .$linha["idcampeonatos"]. "</a>              </td>
+                <td class='active'>" . $linha["nome_campeonato"] . "</td>
+                <td class='active'>" . $linha["sigla_campeonato"] . "</td>
+                <td class='active'>" . $linha["regiao_descricao"] . "</td>
+                <td class='active'>" . $linha["jogo_descricao"] . "</td>
               </tr>";
-                }
-                ?>
-            </table>
+
+    ?>
+</table>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row demo-row">
+                <div class="col-xs-4">
+                </div>
+                <div class="col-xs-4">
+                    © Todos os Direitos reservados á sua mãe
+                </div>
+                <div class="col-xs-4">
+                </div>
+            </div>
         </div>
+    </footer>
+    <script src="dist/js/vendor/jquery.min.js"></script>
+    <script src="dist/js/flat-ui.min.js"></script>
+    <script src="docs/assets/js/application.js"></script>
 
-</div>
+    <script>
+        videojs.options.flash.swf = "dist/js/vendors/video-js.swf"
+    </script>
 
-</body>
-</html>
 

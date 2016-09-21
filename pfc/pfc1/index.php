@@ -8,7 +8,6 @@
         <link href="dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="dist/css/flat-ui.css" rel="stylesheet">
         <link href="docs/assets/css/demo.css" rel="stylesheet">
-        <link rel="shortcut icon" href="img/íconee-bet.ico">
         <link href="index.css" rel="stylesheet">
 
         <script src="dist/js/vendor/html5shiv.js"></script>
