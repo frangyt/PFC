@@ -109,5 +109,7 @@ margin-left:7%;
 .flat-table-1 tr:hover {
     background: rgba(0,0,0,0.19);
 }
-.flat-table
+.flat-table thead{
+    background-color: #1abc9c;
+}
 
