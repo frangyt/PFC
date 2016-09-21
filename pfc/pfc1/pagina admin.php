@@ -82,14 +82,14 @@
 
 </div>
         <div class="demo-row">
-            <h2>Cidades</h2>
-            <table class="table table-condensed">
-                <tr class="success">
+            <h2>Usuários</h2>
+            <table class="flat-table flat-table-1">
+                <thead>
 
                     <td class="success">Nome</td>
                     <td class="success">email</td>
                     <td class="success">senha</td>
-                </tr>
+                </thead>
                 <?php
                 require("conexao.php");
                 $sql = "select   nome, email, senha
