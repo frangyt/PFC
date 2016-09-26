@@ -71,8 +71,11 @@
     <div class="col-xs-12" id="texto_noticia">
 
         <img class="img-rounded img-responsive" src="imagens/noticia1.jpg">
+        <blockquote>
+            22/08/2016 - 16:45
+        </blockquote>
         <h3>League of Legends - Mais dois times se classificam para o Mundial</h3>
-        <p>Mais duas equipes garantiram suas vagas no Campeonato Mundial de League of Legends que acontece do fim de setembro ao fim de outubro nos Estados Unidos.
+        <p align="justify">Mais duas equipes garantiram suas vagas no Campeonato Mundial de League of Legends que acontece do fim de setembro ao fim de outubro nos Estados Unidos.
         Agora foi a vez da Team SoloMid (TSM) e Flash Wolves se classificarem.
         A TSM se classificou ao derrotar o CounterLogic Gaming na semifinal da LCS North America Summer 2016. Com isso, a equipe já garantiu 170 pontos no circuito norte-americano.
         Desta forma, mesmo que eles percam a Grande Final, que será contra a cloud9, a SoloMid vai continuar com a vaga garantida por conta dos pontos.
@@ -92,9 +95,12 @@
         <p>Team SoloMid (América do Norte)</p>
         <br></br>
         <img class="img-rounded img-responsive" src="imagens/noticia2.jpg">
+        <blockquote>
+            22/08/2016 - 20:03
+        </blockquote>
         <h3>League of Legends - Thiago "Djokovic" Maia não é mais técnico da CNB</h3>
 
-        <p>Thiago "Djokovic" Maia está deixando o posto de técnico do CNB e-Sports Club vice-campeão brasileiro de League of Legends.
+        <p align="justify">Thiago "Djokovic" Maia está deixando o posto de técnico do CNB e-Sports Club vice-campeão brasileiro de League of Legends.
         Ele vai focar em terminar a faculdade de medicina, mas continuará parte da organização, agora agindo como analista.
         Djoko já jogou pela INTZ mas ganhou destaque no cenário competitivo como técnico na CNB, sendo considerado um dos melhores na posição. Entretanto, isso vinha com custos.
         Ele fazia viagens de ônibus rotineiramente entre São Paulo (SP) e Juiz de Fora (MG) para tentar equilibrar os treinos e as provas do curso. Agora, o foco de Djoko fica nos estudos, mas ele ainda vai ajudar a equipe.

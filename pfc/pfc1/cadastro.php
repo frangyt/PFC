@@ -106,7 +106,6 @@
                         </div>
                     </div>
                 </div>
-                    </div>
                     <div class="col-xs-2">
                         </div>
                 </div>
@@ -114,7 +113,7 @@
                     <div class="col-xs-2">
                     </div>
                     <div class="col-xs-8">
-                <a type="submit" class="btn btn-primary btn-large" value="Salvar"/>Salvar</a>
+                <a type="submit" class="btn btn-block btn-lg btn-success" value="Salvar"/>Salvar</a>
                 </div>
                     <div class="col-xs-2">
                     </div>
