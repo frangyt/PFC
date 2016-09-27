@@ -83,11 +83,11 @@
             <p align="justify">
                 Para aumentar o hype para o campeonato mundial de League of Legends, além dos papéis de parede de cada time participante, a Riot Games também disponibilizou os episódios do documentário Legends Rising, que retrata seis grandes jogadores do MOBA.
                 O protagonista do 5º episódio da 2ª temporada é Gabriel “Revolta” Henud, jungler da equipe brasileira INTZ, que venceu a 2ª etapa do CBLoL 2016 e também conquistou a vaga do International Wildcard Qualifier (IWCQ).
-
             </p>
 
-
+            <iframe width="854" height="480" src="https://www.youtube.com/embed/UaJJp3mVUpQ" frameborder="0" allowfullscreen></iframe>
         </div>
+
 
 
 </div>
