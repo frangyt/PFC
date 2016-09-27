@@ -23,6 +23,13 @@
 <body>
 <div class="container">
 
+
+
+
+
+
+
+
     <nav class="navbar navbar-inverse" role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
@@ -82,7 +89,7 @@
 
 </div>
         <div class="demo-row">
-            <h2>Usuários</h2>
+            <h2>Usuários Cadastrados</h2>
             <table class="flat-table flat-table-1">
                 <thead>
 
@@ -109,6 +116,26 @@
         </div>
 
 </div>
+<footer>
+    <div class="container">
+        <div class="row demo-row">
+            <div class="col-xs-4">
+            </div>
+            <div class="col-xs-4">
+                © Todos os Direitos reservados á sua mãe
+            </div>
+            <div class="col-xs-4">
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="dist/js/vendor/jquery.min.js"></script>
+<script src="dist/js/flat-ui.min.js"></script>
+<script src="docs/assets/js/application.js"></script>
+
+<script>
+    videojs.options.flash.swf = "dist/js/vendors/video-js.swf"
+</script>
 
 </body>
 </html>
