@@ -93,9 +93,9 @@
             <table class="flat-table flat-table-1">
                 <thead>
 
-                    <td class="success">Nome</td>
-                    <td class="success">email</td>
-                    <td class="success">senha</td>
+                    <th class="success">Nome</th>
+                    <th class="success">email</th>
+                    <th class="success">senha</th>
                 </thead>
                 <?php
                 require("conexao.php");

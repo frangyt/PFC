@@ -92,7 +92,7 @@
             echo "<tbody>
                     <tr class='active'>
           
-                <td class='active'><a class='btn btn-info' href='campeonato_perfil.php?id=".$linha["idcampeonatos"]."'>" .$linha["idcampeonatos"]. "</a>              </td>
+                <td class='active'><a class='btn btn-block btn-lg btn-inverse' href='campeonato_perfil.php?id=".$linha["idcampeonatos"]."'>" .$linha["idcampeonatos"]. "</a>              </td>
                 <td class='active'>" . $linha["nome_campeonato"] . "</td>
                 <td class='active'>" . $linha["sigla_campeonato"] . "</td>
                 <td class='active'>" . $linha["regiao_descricao"] . "</td>

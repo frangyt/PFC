@@ -56,6 +56,7 @@
                         <input class="form-control" id="navbarInput-01" type="search" placeholder="Pesquise aqui!">
                         <span class="input-group-btn">
             <button type="submit" class="btn"><span class="fui-search"></span></button>
+                            
           </span>
                     </div>
                 </div>

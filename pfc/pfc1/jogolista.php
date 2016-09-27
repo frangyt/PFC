@@ -76,20 +76,20 @@
     <p><a href="jogo_form.php?id="> <button type="button" class="btn btn-primary btn-large"> Adicionar Jogo</button> </a></p>
     <table class="flat-table flat-table-1">
         <thead>
-            <td></td>
-            <td class="success">Nome</td>
-            <td class="success">Tipo jogo</td>
+            <th></th>
+            <th class="success">Nome</th>
+            <th class="success">Tipo jogo</th>
         </thead>
         <?php
         require("conexao.php");
         $sql = "select idjogo, jogo_descricao, tipojogo_descricao from jogo, tipo_jogo where jogo_idtipo_jogo = idtipo_jogo;";
         $resultado = mysqli_query($conexao, $sql);
         while ($linha = mysqli_fetch_array($resultado)) {
-            echo "<tr class='active'>
-                <td class='active'><a class='btn btn-info' href='jogo_perfil.php?id=".$linha["idjogo"]."'>" .$linha["idjogo"]. "</a>              </td>
+            echo "<tbody>
+                <td class='active'><a class='btn btn-block btn-lg btn-inverse' href='jogo_perfil.php?id=".$linha["idjogo"]."'>" .$linha["idjogo"]. "</a>              </td>
                 <td class='active'>" . $linha["jogo_descricao"] . "</td>
                 <td class='active'>" . $linha["tipojogo_descricao"] . "</td>
-              </tr>";
+              </tbody>";
         }
         ?>
     </table>
