@@ -1,4 +1,3 @@
-<?php require("header.php") ?>
 
 <script language="Javascript">
     function confirma(id) {
@@ -20,16 +19,10 @@
         </tr>
         <?php
         require("conexao.php");
-        $consulta = "select max(idpartidas) from partidas;";
-        $rconsulta = mysqli_query($conexao,$consulta);
-        $seila = mysqli_fetch_array($rconsulta);
-        $max=$seila["max(idpartidas)"];
-        $idpartidas = 1;
             $sql = "select   idpartidas, idtimes, idcampeonatos, data, sigla_campeonato, sigla_times, ganhador
                     from partidas, times_partida, campeonatos, times  where idpartidas = times_partidas_idpartidas
                     and partidas_idcampeonatos = idcampeonatos and idtimes = times_partidas_idtimes;
                     ";
- echo $seila["max(idpartidas)"];
             $resultado = mysqli_query($conexao, $sql);
             while ($linha = mysqli_fetch_array($resultado)) {
                 echo "<tr class='active'>
@@ -44,5 +37,3 @@
     </table>
 
 </div>
-
-<?php include("footer.php")?>
