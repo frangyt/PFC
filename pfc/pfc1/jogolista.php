@@ -74,12 +74,12 @@
 
     <h2>Jogos</h2>
     <p><a href="jogo_form.php?id="> <button type="button" class="btn btn-primary btn-large"> Adicionar Jogo</button> </a></p>
-    <table class="table table-condensed">
-        <tr class="success">
+    <table class="flat-table flat-table-1">
+        <thead>
             <td></td>
             <td class="success">Nome</td>
             <td class="success">Tipo jogo</td>
-        </tr>
+        </thead>
         <?php
         require("conexao.php");
         $sql = "select idjogo, jogo_descricao, tipojogo_descricao from jogo, tipo_jogo where jogo_idtipo_jogo = idtipo_jogo;";
