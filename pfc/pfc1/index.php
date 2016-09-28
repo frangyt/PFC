@@ -12,8 +12,12 @@
 
         <script src="dist/js/vendor/html5shiv.js"></script>
         <script src="dist/js/vendor/respond.min.js"></script>
+        <script src="dist/js/vendor/jquery.min.js"></script>
+        <script src="dist/js/flat-ui.min.js"></script>
+        <script src="docs/assets/js/application.js"></script>
 
-        <style>
+
+    <style>
             body  {
                 background-color: white;
             }
@@ -241,9 +245,7 @@
         </div>
         </div>
     </footer>
-    <script src="dist/js/vendor/jquery.min.js"></script>
-    <script src="dist/js/flat-ui.min.js"></script>
-    <script src="docs/assets/js/application.js"></script>
+
 
     <script>
         videojs.options.flash.swf = "dist/js/vendors/video-js.swf"
