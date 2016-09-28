@@ -1,4 +1,3 @@
-<?php require("header.php") ?>
 
 <div class="jumbotron">
     <?php
@@ -60,10 +59,10 @@
                     <select name=partidas_idcampeonatos id="inputCampeonatos">
                         <?php
                         require("conexao.php");
-                        $sintaxesql = "select * from campeonatos order by nome;";
+                        $sintaxesql = "select * from campeonatos order by nome_campeonato;";
                         $resultado = mysqli_query($conexao, $sintaxesql);
                         while ($linha = mysqli_fetch_array($resultado)) {
-                            echo "<option value=".$linha['idcampeonatos'].">".$linha['nome']."</option>";
+                            echo "<option value=".$linha['idcampeonatos'].">".$linha['sigla_campeonato']."</option>";
                         }
                         ?>
                     </select>

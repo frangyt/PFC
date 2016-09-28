@@ -1,6 +1,5 @@
 <?php
 require_once("conexao.php");
-require("header.php");
 
 
 $data = $_POST["data"];
