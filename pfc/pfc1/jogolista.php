@@ -73,7 +73,7 @@
 
 
     <h2>Jogos</h2>
-    <p><a href="jogo_form.php?id="> <button type="button" class="btn btn-primary btn-large"> Adicionar Jogo</button> </a></p>
+    <p><a href="jogo_form.php?id=" class="btn btn-primary btn-large"> Adicionar Jogo <span class="fui-plus-circle"></span></a></p>
     <table class="flat-table flat-table-1">
         <thead>
             <th></th>
@@ -86,7 +86,7 @@
         $resultado = mysqli_query($conexao, $sql);
         while ($linha = mysqli_fetch_array($resultado)) {
             echo "<tbody>
-                <td class='active'><a class='btn btn-block btn-lg btn-inverse' href='jogo_perfil.php?id=".$linha["idjogo"]."'>" .$linha["idjogo"]. "</a>              </td>
+                <td class='active'><a class='btn btn-block btn-lg btn-inverse' href='jogo_perfil.php?id=".$linha["idjogo"]."'>" .$linha["idjogo"]. "</a>  </td>
                 <td class='active'>" . $linha["jogo_descricao"] . "</td>
                 <td class='active'>" . $linha["tipojogo_descricao"] . "</td>
               </tbody>";

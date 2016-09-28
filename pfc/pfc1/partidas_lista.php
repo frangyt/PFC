@@ -8,7 +8,7 @@
 
 <div class="jumbotron">
     <h2>Partidas</h2>
-    <p><a class="btn btn-primary btn-large" href="partidas_form.php?id=">Adicionar partida <span class="glyphicon glyphicon-plus-sign"></span></a></p>
+    <p><a class="btn btn-primary btn-large" href="partidas_form.php?id=">Adicionar partida <span class="fui-plus-circle"></span></a></p>
     <table class="table table-condensed">
         <tr class="success">
 

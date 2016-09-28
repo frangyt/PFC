@@ -67,7 +67,7 @@
 
 
     <h2>Times</h2>
-    <p><a class="btn btn-primary btn-large" href="time_form.php?id=">Adicionar Time <span class="glyphicon glyphicon-plus-sign"></span></a></p>
+    <p><a class="btn btn-primary btn-large" href="time_form.php?id=">Adicionar Time  <span class="fui-plus-circle"></span></a></p>
     <table class="flat-table flat-table-1">
         <thead>
             <th ></th>

@@ -74,7 +74,7 @@
 
 
     <h2>Campeonatos</h2>
-    <p><a class="btn btn-primary btn-large" href="campeonato_form.php?id=">Adicionar Campeonato <span class="glyphicon glyphicon-plus-sign"></span></a></p>
+    <p><a class="btn btn-primary btn-large" href="campeonato_form.php?id=">Adicionar Campeonato <span class="fui-plus-circle"></span></a></p>
     <table class="flat-table flat-table-1">
         <thead>
             <th></th>
