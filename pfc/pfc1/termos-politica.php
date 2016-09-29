@@ -65,7 +65,7 @@
 
     </nav>
     <h3>Termos de Uso e Política de Privacidade</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nunc massa. Duis ut ipsum fermentum, egestas tellus et, consectetur quam. Phasellus vehicula consequat odio, vel dapibus est ullamcorper a. Nam vitae cursus metus, vel ornare massa. Nulla nunc risus, lobortis at tristique vitae, feugiat a magna. Vestibulum euismod risus nunc. Curabitur vitae ornare diam, tincidunt ultricies enim.
+    <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nunc massa. Duis ut ipsum fermentum, egestas tellus et, consectetur quam. Phasellus vehicula consequat odio, vel dapibus est ullamcorper a. Nam vitae cursus metus, vel ornare massa. Nulla nunc risus, lobortis at tristique vitae, feugiat a magna. Vestibulum euismod risus nunc. Curabitur vitae ornare diam, tincidunt ultricies enim.
 
     Vestibulum sit amet urna molestie, pretium tellus a, ullamcorper lectus. Nunc libero elit, pellentesque id pellentesque ultricies, convallis ac dolor. Ut lacinia orci felis, vitae aliquam elit cursus id. Quisque a ultrices risus. Pellentesque tincidunt ante eu laoreet pretium. Quisque eu metus et felis ornare lobortis. Nullam ornare id turpis eu pretium.
 

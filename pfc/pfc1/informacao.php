@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<head>
+<head xmlns="http://www.w3.org/1999/html">
     <meta charset=utf-8>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -60,10 +60,11 @@
     <div class="row demo-row">
 
     <div class="col-xs-12">
-        <img class="img-rounded img-responsive" src="http://im.ziffdavisinternational.com/ign_br/screenshot/default/fb-image-sd_kqmf.jpg">
-        <blockquote>
-            22 de Setembro de 2016
-        </blockquote>
+        <div class="jumbotron" id="noticia">
+            <blockquote>
+                22 de Setembro de 2016
+            </blockquote>
+            <img class="img-rounded img-responsive" src="http://im.ziffdavisinternational.com/ign_br/screenshot/default/fb-image-sd_kqmf.jpg">
         <h3>TwitchCon 2016 terá arena de e-sports, Steve Aoki e outras atrações</h3>
         <p align="justify">A TwitchCon 2016, evento que ocorre entre 30 de setembro e 2 de outubro em San Diego, nos Estados Unidos, terá diversas atrações com streamers da plataforma de transmissões. Além da arena de eSports, os DJs Steve Aoki, Darude e o rapper T-Pain também vão marcar presença na feira.
             Uma das grandes atrações do evento será a TwitchCon: The Party, uma festa ao som de músicos streamers que possuem canais na Twitch. A feira conta também com a Arena TwitchCon, que terá transmissão ao vivo e a seguinte agenda:
@@ -77,9 +78,13 @@
         O evento ainda vai contar com áreas de transmissões, sessão de pintura com Bob Ross, unboxing da Amazon Game Studios, afterparty e mais. Para mais informações, visite o site oficial da <a href="http://www.twitchcon.com/">TwitchCon 2016</a>.
         </p>
     </div>
+        </div>
+        </br>
 
         <div class="col-xs-12">
-            <h3>League of Legends: Riot Games homenageia jogador brasileiro em documentário</h3>
+            <div class="jumbotron" id="noticia">
+            <blockquote>21 de Setembro de 2016</blockquote>
+                <h3>League of Legends: Riot Games homenageia jogador brasileiro em documentário</h3>
             <p align="justify">
                 Para aumentar o hype para o campeonato mundial de League of Legends, além dos papéis de parede de cada time participante, a Riot Games também disponibilizou os episódios do documentário Legends Rising, que retrata seis grandes jogadores do MOBA.
                 O protagonista do 5º episódio da 2ª temporada é Gabriel “Revolta” Henud, jungler da equipe brasileira INTZ, que venceu a 2ª etapa do CBLoL 2016 e também conquistou a vaga do International Wildcard Qualifier (IWCQ).

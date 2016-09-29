@@ -70,14 +70,16 @@
         </nav>
         <div class="demo-headline">
             </div>
+
         <div class="row demo-row">
 
     <div class="col-xs-12" id="texto_noticia">
 
-        <img class="img-rounded img-responsive" src="imagens/noticia1.jpg">
-        <blockquote>
-            22/08/2016 - 16:45
-        </blockquote>
+        <div class="jumbotron" id="noticia">
+            <blockquote>
+                22/08/2016 - 16:45
+            </blockquote>
+            <img class="img-rounded img-responsive" src="imagens/noticia1.jpg">
         <h3>League of Legends - Mais dois times se classificam para o Mundial</h3>
         <p align="justify">Mais duas equipes garantiram suas vagas no Campeonato Mundial de League of Legends que acontece do fim de setembro ao fim de outubro nos Estados Unidos.
         Agora foi a vez da Team SoloMid (TSM) e Flash Wolves se classificarem.
@@ -97,11 +99,13 @@
         <p>SK Telecom T1 (Coreia do Sul)</p>
         <p>Flash Wolves (Taiwan)</p>
         <p>Team SoloMid (América do Norte)</p>
+        </div>
         <br></br>
-        <img class="img-rounded img-responsive" src="imagens/noticia2.jpg">
-        <blockquote>
-            22/08/2016 - 20:03
-        </blockquote>
+        <div class="jumbotron" id="noticia">
+            <blockquote>
+                22/08/2016 - 20:03
+            </blockquote>
+            <img class="img-rounded img-responsive" src="imagens/noticia2.jpg">
         <h3>League of Legends - Thiago "Djokovic" Maia não é mais técnico da CNB</h3>
 
         <p align="justify">Thiago "Djokovic" Maia está deixando o posto de técnico do CNB e-Sports Club vice-campeão brasileiro de League of Legends.
@@ -110,17 +114,11 @@
         Ele fazia viagens de ônibus rotineiramente entre São Paulo (SP) e Juiz de Fora (MG) para tentar equilibrar os treinos e as provas do curso. Agora, o foco de Djoko fica nos estudos, mas ele ainda vai ajudar a equipe.
         “Apesar de algumas mudanças na rotina do Djoko, devido a sua faculdade de medicina, conseguimos adaptar ele no cargo de analista para continuar trazendo todo seu conhecimento de LoL para o individual de cada jogador e estratégias da equipe,
         "explicou Cleber "fuzi" Fonseca, COO do CNB. "Mesmo ficando um pouco ausente de nosso Centro de Treinamento, ele continuará vindo para SP, esporadicamente, para acompanhar o desenvolvimento da equipe de perto."</p>
+        </div>
 
+        </div>
 
-    </div>
-
-
-
-
-
-
-
-    </div>
+        </div>
 </br>
         <div class="row demo-row">
         <div class="col-xs-4">
@@ -235,6 +233,25 @@
     <footer>
         <div class="container">
         <div class="row demo-row">
+            <div class="col-xs-5">
+                <h6>Nossos Contatos</h6>
+                <a href="https://www.facebook.com/vinycius13" class="fui-facebook"> Vinycius Silveira</a></br>
+                <a href="https://plus.google.com/116622724535038811811" class="fui-google-plus"> viny13.99</a></br>
+                <a href="https://www.facebook.com/leandroandrei.dacunha?fref=ts" class="fui-facebook"> Leandro Cunha</a></br>
+                <a href="https://plus.google.com/102453433601359477942" class="fui-google-plus"> liando619</a></br>
+            </div>
+            <div class="col-xs-2"></div>
+            <div class="col-xs-5">
+                <h6>Contatos do IFC-Araquari</h6>
+                <a href="http://araquari.ifc.edu.br/" class="fui-window"> Site do Instituto</a></br>
+                <a href="https://www.facebook.com/ifc.oficial" class="fui-facebook"> Facebook do Instituto</a></br>
+                <span class="fui-home"> <b>(47) 3803-7200</b></span>
+
+            </div>
+
+
+        </div>
+            <div class="row demo-row">
         <div class="col-xs-4">
         </div>
             <div class="col-xs-4">

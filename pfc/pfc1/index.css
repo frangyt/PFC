@@ -59,10 +59,9 @@ margin-left:7%;
     color: white;
 }
 #noticia{
+    background-color: rgb(52, 73, 94);
+    color: white;
 
-    width: 70%;
-    margin-top: 5%;
-    margin-left: 5%;
 }
 #texto_noticia{
     margin-left: 2%;
@@ -111,5 +110,9 @@ margin-left:7%;
 }
 .flat-table thead{
     background-color: #1abc9c;
+}
+#contato{
+    background-color:#1abc9c;
+    color:rgb(52, 73, 94);
 }
 
