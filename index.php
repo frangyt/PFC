@@ -47,7 +47,14 @@
                         <a href="jogo.php" class="dropdown-toggle" data-toggle="dropdown">Campeonatos<b class="caret"></b></a>
                         <span class="dropdown-arrow"></span>
                         <ul class="dropdown-menu">
-                            <li><a href="jogolista.php">Lista de Jogos</a></li>
+                            <?php
+                            require("conexao.php");
+                            $sintaxesql = "select * from jogo order by jogo_descricao;";
+                            $resultado = mysqli_query($conexao, $sintaxesql);
+                            while ($linha = mysqli_fetch_array($resultado)) {
+                                echo "<li> <a href='jogo_perfil.php?id=".$linha['idjogo']." '>".$linha['jogo_descricao']."</li>";
+                            }
+                            ?>
 
                         </ul>
                     </li>
