@@ -22,7 +22,7 @@ echo "<tr class='active'>
                 <td class='active'>" . $linha["regiao_descricao"] . "</td>
                 <td class='active'>" . $linha["jogo_descricao"] . "</td>
               </tr>";
-echo $idtimes;
+
 $sql2 = "select nome_time from partidas, times, campeonatos, times_partida where idcampeonatos = partidas_idcampeonatos and idtimes = times_partidas_idtimes
 and times_partidas_idpartidas = idpartidas and idcampeonatos = $idcampeonatos;";
 $resultado2 = mysqli_query($conexao, $sql2);
