@@ -64,7 +64,6 @@ margin-left:7%;
 
 }
 #texto_noticia{
-    margin-left: 2%;
     color:#34495e;
 }
 #icone{
@@ -75,9 +74,9 @@ margin-left:7%;
     border-collapse:collapse;
     font-family: 'Lato', Calibri, Arial, sans-serif;
     border: none;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
 }
 .flat-table th, .flat-table td {
     box-shadow: inset 0 -1px rgba(0,0,0,0.25),
@@ -114,5 +113,8 @@ margin-left:7%;
 #contato{
     background-color:#1abc9c;
     color:rgb(52, 73, 94);
+}
+#imagem_noticia{
+    margin: 0 auto;
 }
 

@@ -76,44 +76,35 @@
     <div class="col-xs-12" id="texto_noticia">
 
         <div class="jumbotron" id="noticia">
+
             <blockquote>
                 22/08/2016 - 16:45
             </blockquote>
-            <img class="img-rounded img-responsive" src="imagens/noticia1.jpg">
-        <h3>League of Legends - Mais dois times se classificam para o Mundial</h3>
-        <p align="justify">Mais duas equipes garantiram suas vagas no Campeonato Mundial de League of Legends que acontece do fim de setembro ao fim de outubro nos Estados Unidos.
-        Agora foi a vez da Team SoloMid (TSM) e Flash Wolves se classificarem.
-        A TSM se classificou ao derrotar o CounterLogic Gaming na semifinal da LCS North America Summer 2016. Com isso, a equipe já garantiu 170 pontos no circuito norte-americano.
-        Desta forma, mesmo que eles percam a Grande Final, que será contra a cloud9, a SoloMid vai continuar com a vaga garantida por conta dos pontos.
-        A Team SoloMid é formada por Kevin "Hauntzer" Yarnel (Solo Top), Dennis "Svenskeren" Johnsen (Jungler), Soren "Bjergsen" Bjerg (Mid Laner), Yilliang "Doublelift" Peng (AD Carry) e
-        Vincent "Biofrost" Wang (Support), e até hoje, a organização não ficou de fora de uma edição do Mundial.
-        Enquanto isso, em Taiwan, a Flash Wolves se classificou ao vencer a LSM, derrotando o ahq eSports Club por 3 x 2 na semifinal, e vencendo J Team (antigo Taipei Assassins) por 3 x 0.
-        A equipe é formada por Yu "MMD" Li-Hung (Solo Top), Hung "Karsa" Hau-Hsuan (Jungler), Huang "Maple" Yi-Tang (Mid Laner), Hsiung "NL" Wen-An (AD Carry) e Hu "SwordArt" Shuo-Jie (Support).</p>
-
-        <p>Até agora, estão garantidas no Mundial:</p>
-
-        <p>ROX Tigers (Coreia do Sul)</p>
-        <p>Edward Gaming (China)</p>
-        <p>Royal Never Give Up (China)</p>
-        <p>G2 Esports (Europa)</p>
-        <p>SK Telecom T1 (Coreia do Sul)</p>
-        <p>Flash Wolves (Taiwan)</p>
-        <p>Team SoloMid (América do Norte)</p>
+            <img class="img-rounded img-responsive" id="imagem_noticia" src="http://cdn.espn.com.br/image/wide/622_810dddd3-8a14-3aee-a78a-66a9d0b871db.jpg">
+        <h3>Counter Strike: Dignitas garante vaga para torneio de US$ 1,5 milhão na China</h3>
+        <p align="justify">A Team Dignitas superou 19 adversárias e ficou com a primeira colocação das qualificatórias da Europa e da Comunidade do Estados Independentes para a World Electronic Sports Games 2016 de Counter-Strike: Global Offensive. A seletiva foi disputada durante o final de semana no Stereo Plaza, em Kiev, na Ucrânia.
+            Os dinamarqueses levaram a melhor na decisão contra a Rússia e venceram por 2 a 0, com 16-7 na Mirage e 16-4 na Cobblestone. O resultado rendeu a equipe US$ 30 mil e o primeiro seed europeu da WESG 2016.
+            Além da Dignitas e da Rússia, finalistas do evento, mais seis equipes conseguiram vaga - Virtus.pro, Kinguin, GODSENT, iGame.com, Ucrânia e Team EnVyUs. A grande decepção ficou por conta da Astralis, que terminou a competição no 9-12º lugar e não disputará o evento principal.
+            A qualificatória seguiu as mesmas regras da WESG 2016, por isso diversas equipes não puderam usar sua escalação completa. O regulamento da competição exige que todos os jogadores sejam da mesma nacionalidade, forçando os times a fazerem alterações ou criando equipes temporárias, como a vice-campeã Rússia.
+            As duas finalistas sofreram com essa regra. A Dig não pôde usar o norueguês Ruben "RUBINO" Villarroel, que deu lugar a Philip "aizy" Aistrup, da FaZe Clan, durante a competição. A Rússia, por sua vez, montou uma "seleção" composta por Denis "electronic" Sharipov e Georgi "WorldEdit" Yaskin, da Flipsid3 Tactics, Alexey "ub1que" Polivanov e Savelii "jmqa" Bragin, da Team Preparation e Dmitry "hooch" Bogdanov, ex-Gambit Gaming e atualmente sem clube.
+            A WESG agora volta suas atenções para a seletiva das Américas, que ocorrem entre os dias 21 e 23 de outubro, em São Paulo. O Brasil terá dois representantes na disputa e eles sairão de qualificatórias disputadas online entre as próximas quarta e sexta-feira (12 e 14).
+            O WESG 2016 será realizado em Shangai, na China, e ainda não tem data marcada, mas contará com US$ 1,5 milhão em prêmios - a maior premiação da história do Counter-Strike. A competição conta com o patrocínio do Alibaba Group, principal conglomerado de e-commerce do mundo.</p>
         </div>
         <br></br>
         <div class="jumbotron" id="noticia">
             <blockquote>
                 22/08/2016 - 20:03
             </blockquote>
-            <img class="img-rounded img-responsive" src="imagens/noticia2.jpg">
-        <h3>League of Legends - Thiago "Djokovic" Maia não é mais técnico da CNB</h3>
+            <img class="img-rounded img-responsive" id="imagem_noticia" src="http://cdn.espn.com.br/image/wide/622_f9bc5657-d57c-322a-814d-24b9c6588cc6.jpg">
+        <h3>Counter Strike: Tradicionais em versões passadas, Valve traz 'sprays' de volta</h3>
 
-        <p align="justify">Thiago "Djokovic" Maia está deixando o posto de técnico do CNB e-Sports Club vice-campeão brasileiro de League of Legends.
-        Ele vai focar em terminar a faculdade de medicina, mas continuará parte da organização, agora agindo como analista.
-        Djoko já jogou pela INTZ mas ganhou destaque no cenário competitivo como técnico na CNB, sendo considerado um dos melhores na posição. Entretanto, isso vinha com custos.
-        Ele fazia viagens de ônibus rotineiramente entre São Paulo (SP) e Juiz de Fora (MG) para tentar equilibrar os treinos e as provas do curso. Agora, o foco de Djoko fica nos estudos, mas ele ainda vai ajudar a equipe.
-        “Apesar de algumas mudanças na rotina do Djoko, devido a sua faculdade de medicina, conseguimos adaptar ele no cargo de analista para continuar trazendo todo seu conhecimento de LoL para o individual de cada jogador e estratégias da equipe,
-        "explicou Cleber "fuzi" Fonseca, COO do CNB. "Mesmo ficando um pouco ausente de nosso Centro de Treinamento, ele continuará vindo para SP, esporadicamente, para acompanhar o desenvolvimento da equipe de perto."</p>
+        <p align="justify">Os mais saudosistas jogadores de Counter-Strike se lembram dos velhos "sprays". As dezenas de desenhos espalhados pelos mapas viraram tradição, principalmente nos servidores casuais. Agora, mais de quatro anos depois do lançamento de CS:GO, a funcionalidade finalmente está de volta.
+            A Valve lançou na noite desta quinta-feira (6) uma atualização que habilita os sprays, que agora serão chamados de grafites. As artes estarão disponíveis para compra no mercado da Steam em pacotes e individualmente, além de poderem ser obtidas nos drops semanais.
+            Assim que adquirido, um pacote de grafites vem selado e com 50 aplicações. Caso ele seja aberto, ele não pode ser negociado novamente no mercado da Steam. Se desejar continuar usando o spray após zerar as aplicações, o jogador terá de comprá-lo novamente.
+            Cada jogador poderá usar o grafite a cada round ou a cada 45 segundos. A aplicação dura 7 minutos e vai se apagando gradualmente.
+            Além das artes, o patch também trouxe algumas outras mudanças, principalmente dos sons. A mixagem foi aperfeiçoada, o barulho dos tiros diminuídos e o som da M4A1-S, que era audível de muito longe apesar da arma ser silenciada, foi corrigido.
+            Para ver a relação completa das mudanças na atualização, acesse o <a href="http://blog.counter-strike.net/index.php/2016/10/16255/">blog do Counter-Strike.</a>
+        </p>
         </div>
 
         </div>
@@ -237,8 +228,8 @@
                 <h6>Nossos Contatos</h6>
                 <a href="https://www.facebook.com/vinycius13" class="fui-facebook"> Vinycius Silveira</a></br>
                 <a href="https://plus.google.com/116622724535038811811" class="fui-google-plus"> viny13.99</a></br>
-                <a href="https://www.facebook.com/leandroandrei.dacunha?fref=ts" class="fui-facebook"> Leandro Cunha</a></br>
-                <a href="https://plus.google.com/102453433601359477942" class="fui-google-plus"> liando619</a></br>
+                <a href="https://www.facebook.com/leandro.andrei.cunha?ref=ts&fref=ts" class="fui-facebook"> Leandro Cunha</a></br>
+                <a href="https://plus.google.com/100994567177990828022" class="fui-google-plus"> Leandro</a></br>
             </div>
             <div class="col-xs-2"></div>
             <div class="col-xs-5">
@@ -255,7 +246,7 @@
         <div class="col-xs-4">
         </div>
             <div class="col-xs-4">
-        © Todos os Direitos reservados á sua mãe
+        © Todos os Direitos reservados à sua mãe
         </div>
             <div class="col-xs-4">
             </div>
