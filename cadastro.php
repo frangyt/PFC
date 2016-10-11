@@ -94,7 +94,7 @@
                         <label for="inputemail"><h4>E-mail</h4></label>
                         <div class="input-group">
                             <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-                            <input type="text" class="form-control" id="inputemail" name="email" placeholder="email" value="<?php echo $email; ?>">
+                            <input type="text" class="form-control" id="inputemail" name="email" placeholder="E-mail" value="<?php echo $email; ?>">
                         </div>
                     </div>
                 </div>
@@ -116,6 +116,7 @@
                     <div class="col-xs-2">
                         </div>
                 </div>
+                </br>
                 <div class="row demo-row">
                     <div class="col-xs-2"></div>
                     <div class="col-xs-8">
@@ -126,6 +127,7 @@
                     <div class="col-xs-2"></div>
 
                 </div>
+                </br>
                 <div class="row demo-row">
                     <div class="col-xs-2">
                     </div>
@@ -139,7 +141,7 @@
 
 
         </form>
-
+    </br>
     </div>
         <footer>
             <div class="container">
