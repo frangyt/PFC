@@ -81,6 +81,3 @@ if ($_GET["id"] != NULL) {
     </script>';
 }
 ?>
-
-
-<?php include("footer.php")?>
