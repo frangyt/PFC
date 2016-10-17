@@ -38,10 +38,11 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
                     <span class="sr-only">Toggle navigation</span>
                 </button>
-                <a class="navbar-brand" href="index.php" >E-bet</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse-01">
+                <a class="navbar-brand" href="index.php">E-bet</a>
                 <ul class="nav navbar-nav navbar-left">
+                    <li><a href="login.php">Login</a></li>
                     <li ><a href="pagina admin.php">Admin</a></li>
                     <li class="dropdown">
                         <a href="jogo.php" class="dropdown-toggle" data-toggle="dropdown">Campeonatos<b class="caret"></b></a>
@@ -70,7 +71,7 @@
 
         </nav>
         <div class="demo-headline">
-            </div>
+        </div>
 
         <div class="row demo-row">
 
@@ -254,11 +255,6 @@
         </div>
         </div>
     </footer>
-
-
-    <script>
-        videojs.options.flash.swf = "dist/js/vendors/video-js.swf"
-    </script>
 
  </body>
 </html>

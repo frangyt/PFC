@@ -12,7 +12,9 @@
     <link href="informacao.css" rel="stylesheet">
     <script src="dist/js/vendor/html5shiv.js"></script>
     <script src="dist/js/vendor/respond.min.js"></script>
-
+    <script src="dist/js/vendor/jquery.min.js"></script>
+    <script src="dist/js/flat-ui.min.js"></script>
+    <script src="docs/assets/js/application.js"></script>
     <style>
         body  {
             background-color: white;
@@ -64,7 +66,7 @@
             <blockquote>
                 22 de Setembro de 2016
             </blockquote>
-            <img class="img-rounded img-responsive" src="http://im.ziffdavisinternational.com/ign_br/screenshot/default/fb-image-sd_kqmf.jpg">
+            <img  id="imagem_noticia" class="img-rounded img-responsive" src="http://im.ziffdavisinternational.com/ign_br/screenshot/default/fb-image-sd_kqmf.jpg">
         <h3>TwitchCon 2016 terá arena de e-sports, Steve Aoki e outras atrações</h3>
         <p align="justify">A TwitchCon 2016, evento que ocorre entre 30 de setembro e 2 de outubro em San Diego, nos Estados Unidos, terá diversas atrações com streamers da plataforma de transmissões. Além da arena de eSports, os DJs Steve Aoki, Darude e o rapper T-Pain também vão marcar presença na feira.
             Uma das grandes atrações do evento será a TwitchCon: The Party, uma festa ao som de músicos streamers que possuem canais na Twitch. A feira conta também com a Arena TwitchCon, que terá transmissão ao vivo e a seguinte agenda:</p>
@@ -92,8 +94,39 @@
 
             <iframe width="980" height="550" src="https://www.youtube.com/embed/UaJJp3mVUpQ" frameborder="0" allowfullscreen></iframe>
         </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="jumbotron" id="noticia">
+                    <blockquote>13 de Outubro de 2016</blockquote>
+                    <img  id="imagem_noticia" class="img-rounded img-responsive" src="https://static.omelete.uol.com.br/media/uploads/conteudo/fotos/eBrasileirao.jpg">
+                    <h3>PES 2017 | CBF vai organizar um Brasileirão virtual no jogo</h3>
+                    <p align="justify">
+                        A Confederação Brasileira de Futebol (CBF) vai organizar uma versão virtual do Brasileirão em Pro Evolution Soccer 2017.
+                        Apropriadamente chamado de e-Brasileirão, o torneio vai ter classificatórias online e competições presenciais.
+                        A primeira etapa é online, e rola no PlayStation 4 entre os dias 29 e 30 de setembro.
+                        A CBF vai organizar 20 torneios no formato mata-mata. Cada chave representa uma equipe do Campeonato Brasilerio, e os melhores das mesmas passam a ser o representante daquele clube no e-Brasileirão.
+                        Chapecoense, Coritiba, Cruzeiro, Figueirense, Flamengo, Internacional, São Paulo, Santa Cruz, Sport e Vitória têm seus representantes definidos no dia 29.
+                        Já no dia 30, competem as pessoas que querem jogar com o Atlético Mineiro, Atlético Paranaense, América Mineiro, Botafogo, Corinthians, Fluminense, Grêmio, Palmeiras, Ponte Preta e Santos.
+                        Passando por isso, os oito melhores jogadores de cada clube participam de um torneio presencial para definir quem será o representante final daquela equipe.
+                        A fase final, que terá um jogador para cada um dos 20 times, acontece no dia 1º de dezembro no Rio de Janeiro, na sede da CBF. A premiação acontece no dia 5 de dezembro, na festa de encerramento do Brasileirão tradicional.
+                        Os interessados em participar podem se inscrever, até o dia 27 de outubro, no <a href="http://www.cbf.com.br/e-brasileirao/">site oficial do e-Brasileirão.</a>
+                    </p>
 
+                </div>
 
+        </div>
+        <div class="row demo-row">
+        <div class="col-xs-4"></div>
+            <div class="col-xs-4">
+            <ul class="pagination">
+                <li class="active"><a href="informacao.php">1</a></li>
+                <li><a href="#fakelink">2</a></li>
+                <li><a href="#fakelink">3</a></li>
+                <li><a href="#fakelink">4</a></li>
+                <li><a href="#fakelink">5</a></li>
+            </ul>
+        </div>
+            <div class="col-xs-4"></div>
         </div>
     </div>
     </div>
@@ -132,11 +165,5 @@
 <script src="dist/js/vendor/jquery.min.js"></script>
 <script src="dist/js/flat-ui.min.js"></script>
 <script src="docs/assets/js/application.js"></script>
-
-<script>
-    videojs.options.flash.swf = "dist/js/vendors/video-js.swf"
-</script>
-
-
-    </body>
+</body>
 
