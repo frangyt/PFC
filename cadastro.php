@@ -78,7 +78,7 @@
                             <label for="inputnome"><h4>Nome Completo</h4></label>
                             <div class="input-group">
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-                                <input type="text" class="form-control" id="inputnome" name="nome" placeholder="Nome" value="<?php echo $nome; ?>">
+                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" value="<?php echo $nome; ?>">
                             </div>
                         </div>
                     </div>
@@ -94,7 +94,7 @@
                         <label for="inputemail"><h4>E-mail</h4></label>
                         <div class="input-group">
                             <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-                            <input type="text" class="form-control" id="inputemail" name="email" placeholder="E-mail" value="<?php echo $email; ?>">
+                            <input type="text" class="form-control" id="email" name="email" placeholder="E-mail" value="<?php echo $email; ?>">
                         </div>
                     </div>
                 </div>
@@ -109,14 +109,14 @@
                         <label for="inputsenha"><h4>Senha</h4></label>
                         <div class="input-group">
                             <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-                            <input type="password" class="form-control" id="inputsenha" name="senha" placeholder="Senha" value="<?php echo $senha; ?>">
+                            <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" value="<?php echo $senha; ?>">
                         </div>
                     </div>
                 </div>
                     <div class="col-xs-2">
                         </div>
                 </div>
-                </br>
+
                 <div class="row demo-row">
                     <div class="col-xs-2"></div>
                     <div class="col-xs-8">
@@ -127,7 +127,8 @@
                     <div class="col-xs-2"></div>
 
                 </div>
-                </br>
+
+
                 <div class="row demo-row">
                     <div class="col-xs-2">
                     </div>
