@@ -133,7 +133,7 @@
                     <div class="col-xs-2">
                     </div>
                     <div class="col-xs-8">
-                <a type="submit" class="btn btn-block btn-lg btn-success" value="Salvar"/>Salvar</a>
+                <input type="submit" class="btn btn-block btn-lg btn-success" value="Salvar"/>
                 </div>
                     <div class="col-xs-2">
                     </div>
