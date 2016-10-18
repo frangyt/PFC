@@ -73,7 +73,7 @@
     </nav>
 
         <div class="col-xs-5">
-            <div class="jumbotron">
+            <div class="jumbotron" id="caixa_partida1">
             <img class="img-rounded img-responsive" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ab/Luminosity_Gaming_logo.svg/1024px-Luminosity_Gaming_logo.svg.png">
             <h6 align="center">Luminosity Gaming</h6>
             </div>
@@ -81,7 +81,7 @@
         <div class="col-xs-2">
         </div>
         <div class="col-xs-5">
-            <div class="jumbotron">
+            <div class="jumbotron" id="caixa_partida2">
             <img class="img-rounded img-responsive" src="http://s.sk-gaming.com/logo/SKb_sRGB.png">
                 <h6 align="center">SK Gaming</h6>
 
