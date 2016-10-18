@@ -108,7 +108,7 @@ while ($linha2 = mysqli_fetch_array($resultado2)) {
     </br>";
 }
 
-echo "<p><a class='btn btn-primary btn-large' href='jogador_form.php?id='>Adicionar Jogador <span class='glyphicon glyphicon-plus-sign'></span></a></p>"
+echo "<p><a class='btn btn-primary btn-large' href='partidas_form.php?id='>Adicionar Partidas<span class='glyphicon glyphicon-plus-sign'></span></a></p>"
 
 
 ?>

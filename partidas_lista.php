@@ -70,7 +70,7 @@
     <p><a class="btn btn-primary btn-large" href="partidas_form.php?id=">Adicionar partida <span class="glyphicon glyphicon-plus-sign"></span></a></p>
     <table class="flat-table flat-table-1">
         <tr>
-
+            <td>     </td>
             <td >Data</td>
             <td >Campeonato</td>
             <td >Time</td>
@@ -96,6 +96,7 @@
                 $idtime1 = $linha["idtime1"];
                 $idtime2 = $linha["idtime2"];
                 echo "<tr class='active'>
+                  <td class = 'active'><a class='btn btn-info' href='partidas_perfil.php?id=".$linha["idpartidas"]."'>" .$linha["idpartidas"]. "</a>              </td>
                  <td class='active'>" . $linha["data"] . "</td>
              <td class='active'><a class='btn btn-info' href='campeonato_perfil.php?id=" . $linha["idcampeonatos"] . "'>" . $linha["sigla_campeonato"] . "</a>              </td>";
 
