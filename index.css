@@ -65,6 +65,7 @@ margin-left:7%;
 }
 #texto_noticia{
     color:#34495e;
+    position: relative;
 }
 #icone{
     margin-left:40%;
@@ -121,4 +122,6 @@ margin-left:7%;
 #logo_site{
     margin-top:-10%;
 }
-
+#navbar{
+    border-radius:0.001%;
+}

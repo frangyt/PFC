@@ -1,3 +1,7 @@
 #foto_perfil{
-    background: url("../pfc1/fotos_perfil/usuario.png") ;
+    background: url("../PFC/fotos_perfil/usuario.png") ;
+    border-radius: 20%;
+}
+#navbar{
+    border-radius: 0.001%;
 }
