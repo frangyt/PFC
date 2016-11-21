@@ -11,7 +11,7 @@ if (isset($_POST["email"])) {
                 session_start();
                 $_SESSION["idusuario"] = $linha["idusuario"];
                 $_SESSION["nome"] = $linha["nome"];
-
+                $_SESSION["dinheiros"] = $linha["dinheiros"];
 
                 header('location:index.php');
             }

@@ -94,7 +94,6 @@
 
     </nav>
 
-
         <div class="col-xs-5">
             <div class="jumbotron" id="caixa_partida1">
             <img class="img-rounded img-responsive" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ab/Luminosity_Gaming_logo.svg/1024px-Luminosity_Gaming_logo.svg.png">
@@ -108,7 +107,15 @@
                         if ($slider.length > 0) {
                             $slider.slider({
                                 min: 1,
-                                max: 500,
+                                max: <?php
+                                if (isset($_SESSION["idusuario"])) {
+                                    echo  $_SESSION["dinheiros"];
+
+                                }
+                                else{
+                                    echo 500;
+                                }
+                                ?>,
                                 value: 3,
                                 orientation: "horizontal",
                                 range: "min"
@@ -120,6 +127,7 @@
             </div>
 
         </div>
+
         <div class="col-xs-2">
         </div>
         <div class="col-xs-5">
@@ -135,7 +143,15 @@
                         if ($slider2.length > 0) {
                         $slider2.slider({
                         min: 1,
-                        max: 500,
+                        max: <?php
+                            if (isset($_SESSION["idusuario"])) {
+                            echo  $_SESSION["dinheiros"];
+
+                        }
+                        else{
+                            echo 500;
+                        }
+                         ?>,
                         value: 3,
                         orientation: "horizontal",
                         range: "min"

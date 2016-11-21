@@ -89,7 +89,7 @@
                 where campeonatos_idregiao = idregiao and campeonatos_idjogo = idjogo;";
         $resultado = mysqli_query($conexao, $sql);
         while ($linha = mysqli_fetch_array($resultado)) {
-            echo "<tbody>
+            echo " <tbody>
                     <tr class='active'>
           
                 <td class='active'><a class='btn btn-block btn-lg btn-inverse' href='campeonato_perfil.php?id=".$linha["idcampeonatos"]."'>" .$linha["idcampeonatos"]. "</a>              </td>
@@ -98,7 +98,7 @@
                 <td class='active'>" . $linha["regiao_descricao"] . "</td>
                 <td class='active'>" . $linha["jogo_descricao"] . "</td>
               </tr>
-              </tbody>";
+              </tbody> ";
         }
         ?>
     </table>
