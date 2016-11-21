@@ -59,7 +59,7 @@
                 <li><a href="calendario.php">Calendário</a></li>
                 <li><a href="informacao.php">Notícias</a></li>
             </ul>
-            <form class="navbar-form navbar-right" action="#" role="search">
+            <form class="navbar-form navbar-center" action="#" role="search">
                 <div class="form-group">
                     <div class="input-group">
                         <input class="form-control" id="navbarInput-01" type="search" placeholder="Pesquise aqui!">
@@ -69,6 +69,27 @@
                     </div>
                 </div>
             </form>
+            <ul class="nav navbar-nav navbar-right">
+                <?php
+                session_start();
+                if (isset($_SESSION["idusuario"])) {
+                    echo   "<td class = 'active'><a class='btn btn-info' href='perfil_usuario.php?id=".$_SESSION["idusuario"]."'>" .$_SESSION["nome"]. "</a>              </td>";
+                    echo "<a href='logout.php'>Sair</a>";
+                }
+                else {
+
+                    echo "<form class='navbar-form navbar-right' role='search' action='processalogin.php' method='POST'>
+                                            <div class='form-group'>
+                                                <label class='sr-only' for='email'>Email address</label>
+                                                <input type='email' name ='email' class='form-control' id='email' placeholder='E-mail'>
+                                                <label class='sr-only' for='senha'>Password</label>
+                                                <input type='password'  name='senha' class='form-control' id='senha' placeholder='Senha'>
+                                                <button type='submit' class='btn btn-default'>Entrar</button>
+                                            </div>
+                                     </form>";
+                }
+                ?>
+            </ul>
         </div>
 
     </nav>
