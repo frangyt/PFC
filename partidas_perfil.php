@@ -26,16 +26,9 @@
     </style>
 </head>
 <body>
-<div class="container">
 
 
-
-
-
-
-
-
-    <nav class="navbar navbar-inverse" role="navigation">
+<nav class="navbar navbar-inverse" role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
                 <span class="sr-only">Toggle navigation</span>
@@ -93,7 +86,7 @@
         </div>
 
     </nav>
-
+<div class="container">
         <div class="col-xs-5">
             <div class="jumbotron" id="caixa_partida1">
             <img class="img-rounded img-responsive" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ab/Luminosity_Gaming_logo.svg/1024px-Luminosity_Gaming_logo.svg.png">
