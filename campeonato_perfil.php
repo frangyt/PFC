@@ -23,52 +23,10 @@
     </style>
 </head>
 <body>
-<div class="container">
 
+<?php require ("header.php");
+    ?>
 
-
-
-
-
-
-
-    <nav class="navbar navbar-inverse" role="navigation">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
-                <span class="sr-only">Toggle navigation</span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse-01">
-            <a class="navbar-brand" href="index.php">E-bet</a>
-            <ul class="nav navbar-nav navbar-left">
-                <li><a href="login.php">Login</a></li>
-                <li ><a href="pagina admin.php">Admin</a></li>
-                <li class="dropdown">
-                    <a href="jogo.php" class="dropdown-toggle" data-toggle="dropdown">Campeonatos<b class="caret"></b></a>
-                    <span class="dropdown-arrow"></span>
-                    <ul class="dropdown-menu">
-                        <li> <a href="campeonato_perfil.php?id=1">Counter Strike GO</a></li>
-                        <li> <a href="campeonato_perfil.php?id=2">League of Legends</a></li>
-
-                    </ul>
-                </li>
-                <li><a href="cadastro.php">Cadastrar</a></li>
-                <li><a href="calendario.php">Calendário</a></li>
-                <li><a href="informacao.php">Notícias</a></li>
-            </ul>
-            <form class="navbar-form navbar-right" action="#" role="search">
-                <div class="form-group">
-                    <div class="input-group">
-                        <input class="form-control" id="navbarInput-01" type="search" placeholder="Pesquise aqui!">
-                        <span class="input-group-btn">
-            <button type="submit" class="btn"><span class="fui-search"></span></button>
-          </span>
-                    </div>
-                </div>
-            </form>
-        </div>
-
-    </nav>
 <?php
 require_once("conexao.php");
 
@@ -146,3 +104,4 @@ echo "<p><a class='btn btn-primary btn-large' href='partidas_form.php?id='>Adici
         </div>
     </div>
 </footer>
+</body>
