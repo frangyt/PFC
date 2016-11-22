@@ -79,6 +79,27 @@
                 </div>
             </div>
         </form>
+        <ul class="nav navbar-nav navbar-right">
+            <?php
+            session_start();
+            if (isset($_SESSION["idusuario"])) {
+                echo   "<td class = 'active'><a class='btn btn-info' href='perfil_usuario.php?id=".$_SESSION["idusuario"]."'>" .$_SESSION["nome"]. "</a>              </td>";
+                echo "<a href='logout.php'>Sair</a>";
+            }
+            else {
+
+                echo "<form class='navbar-form navbar-right' role='search' action='processalogin.php' method='POST'>
+                                            <div class='form-group'>
+                                                <label class='sr-only' for='email'>Email address</label>
+                                                <input type='email' name ='email' class='form-control' id='email' placeholder='E-mail'>
+                                                <label class='sr-only' for='senha'>Password</label>
+                                                <input type='password'  name='senha' class='form-control' id='senha' placeholder='Senha'>
+                                                <button type='submit' class='btn btn-default'>Entrar</button>
+                                            </div>
+                                     </form>";
+            }
+            ?>
+        </ul>
     </div>
 
 </nav>
@@ -106,13 +127,16 @@
 
     <div class="row demo-row">
         <div class="col-xs-4"></div>
-         <h6>E-mail:</h6>
+        <?php
+        echo "
+         <h6>E-mail:</h6> <h6>". $_SESSION["email"]. "</h6>
          </br>
-        <div class="col-xs-4"></div>
-        <h6>Senha:</h6>
+        <div class='col-xs-4'></div>
+        <h6>Nome:</h6> <h6>" . $_SESSION["nome"]. "</h6>
         </br>
-        <div class="col-xs-4"></div>
-        <h6>Dinheiros:</h6>
+        <div class='col-xs-4'></div>
+        <h6>Dinheiros:</h6> <h6>" . $_SESSION["dinheiros"]. "</h6> "
+            ?>
         </br>
 
 
