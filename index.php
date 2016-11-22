@@ -24,17 +24,8 @@
         </style>
     </head>
  <body>
-    <div class="container">
 
-
-
-
-
-
-
-
-
-        <nav class="navbar navbar-inverse" role="navigation">
+        <nav class="navbar navbar-inverse" role="navigation" id="navbar">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
                     <span class="sr-only">Toggle navigation</span>
@@ -91,6 +82,9 @@
                 </div>
 
         </nav>
+
+        <div class="container">
+
         <div class="demo-headline">
         </div>
 
@@ -113,7 +107,7 @@
             A WESG agora volta suas atenções para a seletiva das Américas, que ocorrem entre os dias 21 e 23 de outubro, em São Paulo. O Brasil terá dois representantes na disputa e eles sairão de qualificatórias disputadas online entre as próximas quarta e sexta-feira (12 e 14).
             O WESG 2016 será realizado em Shangai, na China, e ainda não tem data marcada, mas contará com US$ 1,5 milhão em prêmios - a maior premiação da história do Counter-Strike. A competição conta com o patrocínio do Alibaba Group, principal conglomerado de e-commerce do mundo.</p>
         </div>
-        <br></br>
+        </br>
         <div class="jumbotron" id="noticia">
             <blockquote>
                 22/08/2016 - 20:03

@@ -12,8 +12,8 @@
         echo "<form action='campeonato_processa.php?cmd=ins' method='post'>";
     }
     ?>
-    <div class="row">
-        <div class="col-md-3">
+    <div class="row demo-row">
+        <div class="col-xs-3">
             <div class="form-group">
                 <label for="inputNome">Nome</label>
                 <div class="input-group">
@@ -23,8 +23,8 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-3">
+    <div class="row demo-row">
+        <div class="col-xs-3">
             <div class="form-group">
                 <label for="inputSigla">Sigla</label>
                 <div class="input-group">
@@ -34,8 +34,8 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-3">
+    <div class="row demo-row">
+        <div class="col-xs-3">
             <div class="form-group">
                 <label for="inputCampeonatos_idjogo">Jogo</label>
                 <div class="input-group">
