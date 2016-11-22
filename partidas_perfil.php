@@ -115,6 +115,7 @@
                             }).addSliderSegments($slider.slider("option").max);
                         }
                     </script>
+                    <input type="submit" class="btn btn-primary btn-large" value="apostar">
                 </form>
 
             </div>
@@ -128,8 +129,8 @@
             <img class="img-rounded img-responsive" src="http://s.sk-gaming.com/logo/SKb_sRGB.png">
                 <h6 align="center">SK Gaming</h6>
                 <form action="processa_aposta.php" method="post">
-                    <div id="slider2">
-                        <div id="custom-handle" class="ui-slider-handle"></div>
+                    <div  id="slider2">
+                        <div   id="custom-handle" class="ui-slider-handle"></div>
                     </div>
                     <script>
                         var $slider2 = $("#slider2");
@@ -151,6 +152,7 @@
                         }).addSliderSegments($slider2.slider("option").max);
                         }
                     </script>
+                    <input type="submit" class="btn btn-primary btn-large" value="apostar">
                 </form>
 
             </div>

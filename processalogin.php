@@ -12,6 +12,7 @@ if (isset($_POST["email"])) {
                 $_SESSION["idusuario"] = $linha["idusuario"];
                 $_SESSION["nome"] = $linha["nome"];
                 $_SESSION["dinheiros"] = $linha["dinheiros"];
+                $_SESSION["email"] = $linha["email"];
 
                 header('location:index.php');
             }
