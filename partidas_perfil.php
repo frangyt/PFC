@@ -73,9 +73,24 @@
             <img class="img-rounded img-responsive" src="http://s.sk-gaming.com/logo/SKb_sRGB.png">
                 <h6 align="center">SK Gaming</h6>
                 <form action="processa_aposta.php" method="post">
-                    <div  id="slider2">
-                        <div   id="custom-handle" class="ui-slider-handle"></div>
-                    </div>
+                    <input type="range" min="0" max= <?php
+                    if (isset($_SESSION["idusuario"])) {
+                        echo  $_SESSION["dinheiros"];
+
+                    }
+                    else{
+                        echo 500;
+                    }
+                    ?>  value="0"  id="custom-hundle" onchange="showValue(this.value)" />
+                    <span id="range">0</span>
+                    <script type="text/javascript">
+                        function showValue(newValue)
+                        {
+                            document.getElementById("range").innerHTML=newValue;
+                        }
+                    </script>
+
+
                     <script>
                         var $slider2 = $("#slider2");
                         if ($slider2.length > 0) {
