@@ -81,8 +81,7 @@
             <div class="form-group">
                 <label for="inputSigla">Campeonato</label>
                 <div class="input-group">
-                    <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle" type="button"> <span class="caret"></span></button>
-                    <select>
+                    <select class="form-control select select-primary" data-toggle="select">
                     <ul role="menu" class="dropdown-menu">
                         <li <?php
                         require("conexao.php");
