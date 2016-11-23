@@ -21,7 +21,7 @@
             <li><a href="calendario.php">Calendário</a></li>
             <li><a href="informacao.php">Notícias</a></li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-header">
             <?php
             session_start();
             if (isset($_SESSION["idusuario"])) {
@@ -30,7 +30,7 @@
             }
             else {
 
-                echo "<form class='navbar-form navbar-right' role='search' action='processalogin.php' method='POST'>
+                echo "<form class='navbar-form navbar-inverse' role='search' action='processalogin.php' method='POST'>
                                             <div class='form-group'>
                                                 <label class='sr-only' for='email'>Email address</label>
                                                 <input type='email' name ='email' class='form-control' id='email' placeholder='E-mail'>
