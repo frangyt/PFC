@@ -29,16 +29,43 @@
 
 
 <?php require ("header.php");
+require("conexao.php");
+$id=$_GET["id"];
 ?>
 <div class="container">
         <div class="col-xs-5">
             <div class="jumbotron" id="caixa_partida1">
             <img class="img-rounded img-responsive" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ab/Luminosity_Gaming_logo.svg/1024px-Luminosity_Gaming_logo.svg.png">
-            <h6 align="center">Luminosity Gaming</h6>
-                <form action="processa_aposta.php" method="post">
-                    <div id="slider1">
-                        <div id="custom-handle" class="ui-slider-handle"></div>
-                    </div>
+            <h6 align="center"><?php
+                $sql1 = "select min(times_partidas_idtimes) from times_partida where times_partidas_idpartidas = $id  ";
+                $resultado1 = mysqli_query($conexao, $sql1);
+                $linha1 = mysqli_fetch_array($resultado1);
+                $idtime1 = $linha1["min(times_partidas_idtimes)"];
+                $sqlM = "select nome_time from times where idtimes = $idtime1";
+                $resultadoM = mysqli_query($conexao, $sqlM);
+                $linhaM = mysqli_fetch_array($resultadoM);
+                echo $linhaM["nome_time"];
+                ?>
+                </h6>
+                <form action="processa_aposta.php?id=<?php echo $id;?>" method="post">
+                    <input type="range" min="0" max= <?php
+                    if (isset($_SESSION["idusuario"])) {
+                        echo  $_SESSION["dinheiros"];
+
+                    }
+                    else{
+                        echo 500;
+                    }
+                    ?>  value="0"  id="custom-hundle" name="valor1" onchange="showValue(this.value)" />
+                    <span id="range1">0</span>
+                    <script type="text/javascript">
+                        function showValue(newValue)
+                        {
+                            document.getElementById("range1").innerHTML=newValue;
+                        }
+                    </script>
+
+
                     <script>
                         var $slider = $("#slider1");
                         if ($slider.length > 0) {
@@ -71,8 +98,17 @@
         <div class="col-xs-5">
             <div class="jumbotron" id="caixa_partida2">
             <img class="img-rounded img-responsive" src="http://s.sk-gaming.com/logo/SKb_sRGB.png">
-                <h6 align="center">SK Gaming</h6>
-                <form action="processa_aposta.php" method="post">
+                <h6 align="center"><?php
+                    $sql2 = "select max(times_partidas_idtimes) from times_partida where times_partidas_idpartidas = $id  ";
+                    $resultado2 = mysqli_query($conexao, $sql2);
+                    $linha2 = mysqli_fetch_array($resultado2);
+                    $idtime2 = $linha2["max(times_partidas_idtimes)"];
+                    $sqlR = "select nome_time from times where idtimes = $idtime2";
+                    $resultadoR = mysqli_query($conexao, $sqlR);
+                    $linhaR = mysqli_fetch_array($resultadoR);
+                    echo $linhaR["nome_time"];
+                    ?></h6>
+                <form action="processa_aposta.php?id=<?php echo $id;?>"  method="post">
                     <input type="range" min="0" max= <?php
                     if (isset($_SESSION["idusuario"])) {
                         echo  $_SESSION["dinheiros"];
@@ -81,12 +117,12 @@
                     else{
                         echo 500;
                     }
-                    ?>  value="0"  id="custom-hundle" onchange="showValue(this.value)" />
-                    <span id="range">0</span>
+                    ?>  value="0" name="valor2" id="custom-hundle" onchange="showValue(this.value)" />
+                    <span id="range2">0</span>
                     <script type="text/javascript">
                         function showValue(newValue)
                         {
-                            document.getElementById("range").innerHTML=newValue;
+                            document.getElementById("range2").innerHTML=newValue;
                         }
                     </script>
 
@@ -111,7 +147,7 @@
                         }).addSliderSegments($slider2.slider("option").max);
                         }
                     </script>
-                    <input type="submit" class="btn btn-primary btn-large" value="apostar">
+                    <input type="submit"  class="btn btn-primary btn-large" value="apostar">
                 </form>
 
             </div>
