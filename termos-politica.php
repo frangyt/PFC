@@ -87,19 +87,8 @@
 
     Praesent fermentum purus pretium odio aliquet, fringilla malesuada libero dapibus. Fusce lorem mauris, maximus non iaculis ut, suscipit tempor ex. Praesent sollicitudin sem elementum, tincidunt erat ac, aliquam ex. Vivamus ut sollicitudin est. Pellentesque malesuada ipsum at enim accumsan ornare. Phasellus neque diam, vehicula sit.</p>
     </div>
-<footer>
-    <div class="container">
-        <div class="row demo-row">
-            <div class="col-xs-4">
-            </div>
-            <div class="col-xs-4">
-                © Todos os Direitos reservados á sua mãe
-            </div>
-            <div class="col-xs-4">
-            </div>
-        </div>
-    </div>
-</footer>
+<?php require ("footer.php");
+?>
 <script src="dist/js/vendor/jquery.min.js"></script>
 <script src="dist/js/flat-ui.min.js"></script>
 <script src="docs/assets/js/application.js"></script>

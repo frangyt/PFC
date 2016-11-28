@@ -1,3 +1,32 @@
+<head>
+    <meta charset=utf-8>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-BET</title>
+
+    <link href="dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/css/flat-ui.css" rel="stylesheet">
+    <link href="docs/assets/css/demo.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+
+    <script src="dist/js/vendor/html5shiv.js"></script>
+    <script src="dist/js/vendor/respond.min.js"></script>
+    <script src="dist/js/vendor/jquery.min.js"></script>
+    <script src="dist/js/flat-ui.min.js"></script>
+    <script src="docs/assets/js/application.js"></script>
+
+
+    <style>
+        body  {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+<?php require ("header.php");
+?>
+<div class="container">
+    <div class="row demo-row">
 <?php
 require_once("conexao.php");
 
@@ -9,41 +38,40 @@ $sql = "select idtimes,  nome_time, sigla_times, jogo_descricao
 $resultado = mysqli_query($conexao, $sql);
 
 $linha = mysqli_fetch_array($resultado);
-echo "<tr class='active'>
-            
-                <td class='active'> Nome do Time</td>
-                 <td class='active'> Sigla</td>
-                 <td class='active'> Jogo</td> 
+echo " <table class='flat-table flat-table-1'>
+                  <thead>
+                  <th>Nome do Time</th>
+                  <th>Sigla</th>
+                  <th>Jogo</th>
+                  </thead>
+                  <tbody style='text-align: center' >
+                  <td>" . $linha["nome_time"] . "</td>
+                  <td>" . $linha["sigla_times"] . "</td>
+                  <td>" . $linha["jogo_descricao"] . "</td>
+                  </tbody>
+                  
+                  </table>
                 ";
-echo '</br>';
-echo "<tr class='active'>
-                
-                <td class='active'>" . $linha["nome_time"] . "</td>
-                <td class='active'>" . $linha["sigla_times"] . "</td>
-                <td class='active'>" . $linha["jogo_descricao"] . "</td>
-              </tr>";
-echo $idtimes;
 $sql2 = "select idjogador, nome_jogador, nick, nome_time from jogador, times where jogador_idtimes = idtimes and idtimes = $idtimes;";
 $resultado2 = mysqli_query($conexao, $sql2);
-echo '</br>';
-echo '</br>';
 
-echo "<tr class='active'>
-            
-                <td class='active'> Nome do Jogador</td>
-                 <td class='active'> Nick</td>
+echo "<table class='flat-table flat-table-1'>
+               <thead>
+                <th> Nome do Jogador</th>
+                 <th> Nick</th>
+                 </thead>
                 ";
-echo '</br>';
     while ($linha2 = mysqli_fetch_array($resultado2)) {
-        echo "<tr class='active'>
+        echo "<tbody>
                 
-                <td class='active'>" . $linha2["nome_jogador"] . "</td>
-                <td class='active'><a class='btn btn-info' href='jogador_perfil.php?id=".$linha2["idjogador"]."'>" .$linha2["nick"]. "</a>              </td>
-              </tr>
-              </br>";
+                <td>" . $linha2["nome_jogador"] . "</td>
+                <td><a class='btn btn-block btn-lg btn-inverse' href='jogador_perfil.php?id=".$linha2["idjogador"]."'>" .$linha2["nick"]. "</a></td>
+              </tbody>
+              ";
     }
-
-echo "<p><a class='btn btn-primary btn-large' href='jogador_form.php?id='>Adicionar Jogador <span class='glyphicon glyphicon-plus-sign'></span></a></p>"
-
-
 ?>
+<p><a class='btn btn-primary btn-large' href='jogador_form.php?id='>Adicionar Jogador <span class='fui-plus'></span></a></p>
+</div>
+</div>
+<?php require ("footer.php")?>
+</body>
