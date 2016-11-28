@@ -26,7 +26,7 @@
 
 <?php require ("header.php");
     ?>
-
+<div class="container">
 <?php
 require_once("conexao.php");
 
@@ -39,7 +39,6 @@ $resultado = mysqli_query($conexao, $sql);
 
 $linha = mysqli_fetch_array($resultado);
 
-echo '</br>';
 echo "          
                 <h4>Campeonato:<h6>" . $linha["nome_campeonato"] . "</h6></h4>
                 <h4>Região:" . $linha["regiao_descricao"] . "</td>
@@ -70,8 +69,8 @@ echo "<p><a class='btn btn-primary btn-large' href='partidas_form.php?id='>Adici
 
 
 ?>
-    </div>
 
+</div>
 <?php require ("footer.php");
 ?>
 </body>
