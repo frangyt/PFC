@@ -38,15 +38,15 @@
     <h4>Partidas</h4>
     <p><a class="btn btn-primary btn-large" href="partidas_form.php?id=">Adicionar partida <span class="glyphicon glyphicon-plus-sign"></span></a></p>
     <table class="flat-table flat-table-1">
-        <tr>
-            <td>     </td>
-            <td >Data</td>
-            <td >Campeonato</td>
-            <td >Time</td>
-            <td > </td>
-            <td > Time</td>
+        <thead>
+            <th>     </th>
+            <th >Data e Horário</th>
+            <th >Campeonato</th>
+            <th >Time</th>
+            <th > </th>
+            <th > Time</th>
 
-        </tr>
+        </thead>
         <?php
         require("conexao.php");
         $sql1 = "select max(idpartidas) from partidas;";
@@ -64,22 +64,22 @@
             while ($linha = mysqli_fetch_array($resultado)) {
                 $idtime1 = $linha["idtime1"];
                 $idtime2 = $linha["idtime2"];
-                echo "<tr class='active'>
-                  <td class = 'active'><a class='btn btn-info' href='partidas_perfil.php?id=".$linha["idpartidas"]."'>" .$linha["idpartidas"]. "</a>              </td>
-                 <td class='active'>" . $linha["data"] . "</td>
-             <td class='active'><a class='btn btn-info' href='campeonato_perfil.php?id=" . $linha["idcampeonatos"] . "'>" . $linha["sigla_campeonato"] . "</a>              </td>";
+                echo "<tbody>
+                  <td><a class='btn btn-block btn-lg btn-inverse' href='partidas_perfil.php?id=".$linha["idpartidas"]."'>" .$linha["idpartidas"]. "</a>              </td>
+                 <td>" . $linha["data"] . "</td>
+             <td><a class='btn btn-block btn-lg btn-inverse' href='campeonato_perfil.php?id=" . $linha["idcampeonatos"] . "'>" . $linha["sigla_campeonato"] . "</a>              </td>";
 
              $sql2 = "select sigla_times from times where idtimes = $idtime1";
              $resultado2 = mysqli_query($conexao, $sql2);
              $linha2 = mysqli_fetch_array($resultado2);
-            echo "<td class='active'><a class='btn btn-info' href='times_perfil.php?id=" . $linha["idtime1"] . "'>" . $linha2["sigla_times"] . "</a>              </td>
-            <td class='active'><a href='partidas_perfil.php?id=".$id."'> <span class='fui-cross'></a></span></td>";
+            echo "<td><a class='btn btn-block btn-lg btn-inverse' href='times_perfil.php?id=" . $linha["idtime1"] . "'>" . $linha2["sigla_times"] . "</a>              </td>
+            <td><a href='partidas_perfil.php?id=".$id."'> <span class='fui-cross'></a></span></td>";
                 $sql3 = "select sigla_times from times where idtimes = $idtime2";
                 $resultado3 = mysqli_query($conexao, $sql3);
                 $linha3 = mysqli_fetch_array($resultado3);
-            echo "<td class='active'><a class='btn btn-info' href='times_perfil.php?id=" . $linha["idtime2"] . "'>" . $linha3["sigla_times"] . "</a>              </td>
+            echo "<td><a class='btn btn-block btn-lg btn-inverse'' href='times_perfil.php?id=" . $linha["idtime2"] . "'>" . $linha3["sigla_times"] . "</a>              </td>
 
-            </tr>";
+            </tbody>";
             }
             $id = $id+1;
             echo "</br>";
