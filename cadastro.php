@@ -48,7 +48,7 @@
                         <div class="form-group">
                             <label for="inputnome"><h4>Nome Completo</h4></label>
                             <div class="input-group">
-                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                <span class="input-group-addon"><span class="fui-user"></span></span>
                                 <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" value="<?php echo $nome; ?>">
                             </div>
                         </div>
