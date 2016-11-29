@@ -23,6 +23,7 @@
 
 
     <?php require ("header.php");
+    $id = $_GET["id"];
     ?>
     <div class="container">
 
@@ -47,7 +48,7 @@
         <?php
         require("conexao.php");
         $sql = "select idcampeonatos, nome_campeonato, sigla_campeonato, regiao_descricao, jogo_descricao from campeonatos, jogo, regiao
-                where campeonatos_idregiao = idregiao and campeonatos_idjogo = idjogo;";
+                where campeonatos_idregiao = idregiao and campeonatos_idjogo = idjogo and idjogo = $id;";
         $resultado = mysqli_query($conexao, $sql);
         while ($linha = mysqli_fetch_array($resultado)) {
             echo " <tbody>
