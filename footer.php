@@ -1,4 +1,5 @@
 <footer>
+
     <div class="container">
         <div class="row demo-row">
             <div class="col-xs-5">

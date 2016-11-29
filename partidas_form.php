@@ -34,7 +34,7 @@
     $ganhador = "";
     $hora = "";
     if ($_GET["id"] == NULL) {
-        echo "<h4>Partidas : Inclusão</h4>";
+
         echo "<form action='partidas_processa.php?cmd=ins' method='post'>";
     }
     else {
@@ -57,7 +57,7 @@
     <div class="row demo-row">
         <div class="col-xs-3">
             <div class="form-groupData">
-                <label for="inputData">Data</label>
+                <label for="inputData"><h4>Data</h4></label>
                 <div class="input-group">
                     <span class="input-group-addon"><span class="fui-calendar-solid"></span></span>
                     <input type="date" class="form-control" id="inputData" name="data"  value="<?php echo $data; ?>">
@@ -68,7 +68,7 @@
     <div class="row demo-row">
         <div class="col-xs-3">
             <div class="form-groupData">
-                <label for="inputHora">Hora</label>
+                <label for="inputHora"><h4>Hora</h4></label>
                 <div class="input-group">
                     <span class="input-group-addon"><span class="fui-calendar"></span></span>
                     <input type="time" class="form-control" id="inputHora" name="hora"  value="<?php echo $hora; ?>">
@@ -79,7 +79,7 @@
     <div class="row demo-row">
         <div class="col-xs-6">
             <div class="form-group">
-                <label for="inputSigla">Campeonato</label>
+                <label for="inputSigla"><h4>Campeonato</h4></label>
                 <div class="input-group">
                     <select class="form-control select select-primary" data-toggle="select">
                     <ul role="menu" class="dropdown-menu">

@@ -14,6 +14,9 @@
 
     <script src="dist/js/vendor/html5shiv.js"></script>
     <script src="dist/js/vendor/respond.min.js"></script>
+    <script src="dist/js/vendor/jquery.min.js"></script>
+    <script src="dist/js/flat-ui.min.js"></script>
+    <script src="docs/assets/js/application.js"></script>
     <style>
         body  {
             background-color: white;
@@ -37,6 +40,8 @@
         ?>
 
             <div class="container">
+            </br>
+                </br>
 
 
 
@@ -64,7 +69,7 @@
                     <div class="form-group">
                         <label for="inputemail"><h4>E-mail</h4></label>
                         <div class="input-group">
-                            <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                            <span class="input-group-addon"><span class="fui-mail"></span></span>
                             <input type="text" class="form-control" id="email" name="email" placeholder="E-mail" value="<?php echo $email; ?>">
                         </div>
                     </div>
@@ -79,50 +84,38 @@
                     <div class="form-group">
                         <label for="inputsenha"><h4>Senha</h4></label>
                         <div class="input-group">
-                            <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                            <span class="input-group-addon"><span class="fui-lock"></span></span>
                             <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" value="<?php echo $senha; ?>">
                         </div>
                     </div>
                 </div>
-                    <div class="col-xs-2">
-                        </div>
                 </div>
-
+                </br>
                 <div class="row demo-row">
                     <div class="col-xs-2"></div>
                     <div class="col-xs-8">
                         Ao clicar em Salvar você concorda com os <a href="termos-politica.php" >Termos de uso</a> e a <a href="termos-politica.php">Política de Privacidade</a>
-
-
                     </div>
-                    <div class="col-xs-2"></div>
-
-                </div>
-
-
+                    </div>
+                </br>
                 <div class="row demo-row">
                     <div class="col-xs-2">
                     </div>
                     <div class="col-xs-8">
                 <input type="submit" class="btn btn-block btn-lg btn-success" value="Salvar"/>
                 </div>
-                    <div class="col-xs-2">
-                    </div>
+
                 </div>
+                </form>
             </div>
 
 
-        </form>
-    </br>
-    </div>
+        </br>
+        </br>
+        </br>
         <?php require ("footer.php");
         ?>
-        <script src="dist/js/vendor/jquery.min.js"></script>
-        <script src="dist/js/flat-ui.min.js"></script>
-        <script src="docs/assets/js/application.js"></script>
 
-        <script>
-            videojs.options.flash.swf = "dist/js/vendors/video-js.swf"
-        </script>
+
     </body>
 </html>
