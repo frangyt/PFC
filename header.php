@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbar-collapse-01">
         <a class="navbar-brand" href="index.php">E-bet</a>
         <ul class="nav navbar-nav navbar-left">
-            <li ><a href="pagina admin.php">Admin</a></li>
+            <li ><a href="login.php">Admin</a></li>
             <li class="dropdown">
                 <a href="jogo.php" class="dropdown-toggle" data-toggle="dropdown">Campeonatos<b class="caret"></b></a>
                 <span class="dropdown-arrow"></span>
