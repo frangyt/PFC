@@ -32,11 +32,56 @@ $email = "";
 $senha = "";
 ?>
 <form method="POST" action="processalogin.php">
-    <label>email:</label><input type="text" name="email" id="email"  value="<?php echo $email; ?>"><br>
-    <label>Senha:</label><input type="password" name="senha" id="senha"  value="<?php echo $senha; ?>"><br>
-    <input type="submit" value="entrar" id="entrar" name="entrar"><br>
+
+    </br>
+    </br>
+    </br>
+    </br>
+    <div class="row demo-row">
+    <div class="col-xs-2">
+    </div>
+        <div class="col-xs-8">
+        <div class="form-group">
+    <label><h4>E-mail:</h4></label>
+    <div class="input-group">
+    <span class="input-group-addon"><span class="fui-user"></span></span>
+    <input type="text" name="email" id="email" placeholder="Nome" class="form-control" value="<?php echo $email; ?>"><br>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="row demo-row">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-8">
+    <div class="form-group">
+        <label><h4>Senha:</h4></label>
+        <div class="input-group">
+            <span class="input-group-addon"><span class="fui-lock"></span></span>
+    <input type="password" name="senha" id="senha"  placeholder="Nome" class="form-control" value="<?php echo $senha; ?>"><br>
+        </div>
+    </div>
+    </div>
+    </div>
+    </br>
+    <div class="row demo-row">
+        <div class="row demo-row">
+        <div class="col-xs-2"></div>
+            <div class="col-xs-8">
+            <input type="submit" value="Entrar" id="entrar" name="entrar" class="btn btn-block btn-lg btn-success"><br>
+        </div>
+        </div>
+    </div>
 </form>
 </div>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
 <?php require ("footer.php");
 ?>
 </body>
