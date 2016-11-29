@@ -12,8 +12,8 @@
                 <a href="jogo.php" class="dropdown-toggle" data-toggle="dropdown">Campeonatos<b class="caret"></b></a>
                 <span class="dropdown-arrow"></span>
                 <ul class="dropdown-menu">
-                    <li> <a href="campeonato_perfil.php?id=1">Counter Strike GO</a></li>
-                    <li> <a href="campeonato_perfil.php?id=2">League of Legends</a></li>
+                    <li> <a href="campeonato_lista.php?id=1">Counter Strike GO</a></li>
+                    <li> <a href="campeonato_lista.php?id=2">League of Legends</a></li>
 
                 </ul>
             </li>
