@@ -25,8 +25,11 @@
             <?php
             session_start();
 
+            if (isset($_SESSION["idusuario"])) {
                 echo   "<td ><a class='btn btn-info' href='perfil_usuario.php?id=".$_SESSION["idusuario"]."'>" .$_SESSION["nome"]. "</a>              </td>";
                 echo "<a href='logout.php'>Sair</a>";
+            }
+
             ?>
         </ul>
 
