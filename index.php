@@ -82,8 +82,7 @@
             <div class="col-xs-4">
             </div>
         </div>
-
-        <div class="row demo-row">
+       <div class="row demo-row">
                 <div class="col-xs-1">
                     </div>
                 <div class="col-xs-4" >
@@ -92,9 +91,15 @@
                         <thead>
                         <th>Ranking</th>
                         </thead>
+                        <?php
+                        require ("conexao.php");
+                        $sql= "Select nome, dinheiros from usuario 
+                        order by dinheios desc;";
+                        echo"
+                        
                         <tbody>
                         <tr>
-                            <td>1° - Usuário 1</td>
+                            <td>1°" . $linha["usuario"] . "</td>
                         </tr>
                         <tr>
                             <td>2° - Usuário 2</td>
@@ -125,6 +130,8 @@
                         </tr>
                         </tbody>
                     </table>
+                    ";
+                        ?>
 
 </div>
                 <div class="col-xs-2" >
