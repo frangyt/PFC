@@ -93,13 +93,14 @@
                         </thead>
                         <?php
                         require ("conexao.php");
-                        $sql= "Select nome, dinheiros from usuario 
-                        order by dinheios desc;";
-                        echo"
+                        $sql= "Select nome, dinheiros from usuario order by dinheios desc;";
+                        $resultado = mysqli_query($conexao, $sql);
+                        while ($linha = mysqli_fetch_array($resultado)) {
+                            echo "
                         
                         <tbody>
                         <tr>
-                            <td>1°" . $linha["usuario"] . "</td>
+                            <td>1°" . $linha["idusuario"] . " / " . $linha["dinheiros"] . "</td>
                         </tr>
                         <tr>
                             <td>2° - Usuário 2</td>
@@ -131,6 +132,7 @@
                         </tbody>
                     </table>
                     ";
+                        }
                         ?>
 
 </div>

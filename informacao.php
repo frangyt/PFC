@@ -63,7 +63,7 @@
                 O protagonista do 5º episódio da 2ª temporada é Gabriel “Revolta” Henud, jungler da equipe brasileira INTZ, que venceu a 2ª etapa do CBLoL 2016 e também conquistou a vaga do International Wildcard Qualifier (IWCQ).
             </p>
 
-            <iframe width="980" height="550" src="https://www.youtube.com/embed/UaJJp3mVUpQ" frameborder="0" allowfullscreen></iframe>
+            <iframe width="820" height="550" src="https://www.youtube.com/embed/UaJJp3mVUpQ" frameborder="0" allowfullscreen></iframe>
         </div>
             </div>
             <div class="col-xs-12">
