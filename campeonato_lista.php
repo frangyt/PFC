@@ -22,7 +22,15 @@
 
 
 
-    <?php require ("header.php");
+<?php
+session_start();
+if ($_SESSION["tipo_usuario"] = 2){
+    require ("header_admin.php");
+}
+else {
+    require("header.php");
+}
+
     $id = $_GET["id"];
     ?>
     <div class="container">

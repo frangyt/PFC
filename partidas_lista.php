@@ -30,7 +30,14 @@
 </script>
 
 
-<?php require ("header.php");
+<?php
+session_start();
+if ($_SESSION["tipo_usuario"] = 2){
+    require ("header_admin.php");
+}
+else {
+    require("header.php");
+}
 ?>
 <div class="container">
 
@@ -45,6 +52,7 @@
             <th >Time</th>
             <th > </th>
             <th > Time</th>
+        <th>vencedor</th>
 
         </thead>
         <?php
@@ -77,7 +85,13 @@
                 $sql3 = "select sigla_times from times where idtimes = $idtime2";
                 $resultado3 = mysqli_query($conexao, $sql3);
                 $linha3 = mysqli_fetch_array($resultado3);
-            echo "<td><a class='btn btn-block btn-lg btn-inverse'' href='times_perfil.php?id=" . $linha["idtime2"] . "'>" . $linha3["sigla_times"] . "</a>              </td>
+            echo "<td><a class='btn btn-block btn-lg btn-inverse' href='times_perfil.php?id=" . $linha["idtime2"] . "'>" . $linha3["sigla_times"] . "</a>              </td>";
+                $sql4 = " select nome_time, idtimes from times, times_partida, partidas where idpartidas = $id and ganhador = 's' and times_partidas_idpartidas = idpartidas and  
+times_partidas_idtimes = idtimes";
+                    $resultado4 = mysqli_query($conexao, $sql4);
+                    $linha4 = mysqli_fetch_array($resultado4);
+                    echo "<td><a class='btn btn-block btn-lg btn-primary' href='times_perfil.php?id=" . $linha["idtimes"] . "'>" . $linha4["nome_time"] . "</a> </td>
+                
 
             </tbody>";
             }

@@ -4,14 +4,13 @@ $email = $_POST["email"];
 $senha = $_POST["senha"];
 $nome = $_POST["nome"];
 $hash = md5($senha);
-echo $hash;
-
+$tipo_usuario = 1;
 
 
 
 if ($_GET["cmd"] == "ins") {
-    $sql = "insert into usuario (email,senha,nome,dinheiros)
-              values ('$email','$hash' , '$nome',  500);";
+    $sql = "insert into usuario (email,senha,nome,dinheiros, tipo_usuario)
+              values ('$email','$hash' , '$nome',  500, 1);";
 
 }
 $resultado = mysqli_query($conexao, $sql);
