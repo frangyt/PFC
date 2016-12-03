@@ -31,7 +31,7 @@
 $email = "";
 $senha = "";
 ?>
-<form method="POST" action="processalogin.php">
+<form method="POST" action="processalogin_admin.php">
 
     </br>
     </br>
