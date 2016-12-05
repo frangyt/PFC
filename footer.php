@@ -24,7 +24,7 @@
             <div class="col-xs-4">
             </div>
             <div class="col-xs-4">
-                © Todos os Direitos reservados à sua mãe
+                © Todos os Direitos à IGN e Outros canais de notícias
             </div>
             <div class="col-xs-4">
             </div>

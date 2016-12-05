@@ -9,7 +9,7 @@
         <ul class="nav navbar-nav navbar-left">
             <li ><a href="login.php">Admin</a></li>
             <li class="dropdown">
-                <a href="jogo.php" class="dropdown-toggle" data-toggle="dropdown">Campeonatos<b class="caret"></b></a>
+                <a href="campeonato_lista.php" class="dropdown-toggle" data-toggle="dropdown">Campeonatos<b class="caret"></b></a>
                 <span class="dropdown-arrow"></span>
                 <ul class="dropdown-menu">
                     <li> <a href="campeonato_lista.php?id=1">Counter Strike GO</a></li>
@@ -18,19 +18,17 @@
                 </ul>
             </li>
             <li><a href="cadastro.php">Cadastrar</a></li>
-            <li><a href="calendario.php">Calendário</a></li>
             <li><a href="informacao.php">Notícias</a></li>
         </ul>
-        <ul class="nav navbar-nav navbar-header">
+        <ul class="nav navbar-nav navbar-right">
             <?php
             session_start();
             if (isset($_SESSION["idusuario"])) {
-                echo   "<td ><a class='btn btn-info' href='perfil_usuario.php?id=".$_SESSION["idusuario"]."'>" .$_SESSION["nome"]. "</a>              </td>";
+                echo   "<td ><a class='btn btn-block btn-lg btn-inverse' href='perfil_usuario.php?id=" . $_SESSION["idusuario"] . "'>" . $_SESSION["nome"] . "</a></td>";
                 echo "<a href='logout.php'>Sair</a>";
             }
             else {
-
-                echo "<form class='navbar-form navbar-inverse' role='search' action='processalogin.php' method='POST'>
+                echo "<form class='navbar-form navbar-inverse' action='processalogin.php' method='POST'>
                                             <div class='form-group'>
                                                 <label class='sr-only' for='email'>Email address</label>
                                                 <input type='email' name ='email' class='form-control' id='email' placeholder='E-mail'>
@@ -42,16 +40,6 @@
             }
             ?>
         </ul>
-        <form class="navbar-form navbar-right" action="#" role="search">
-            <div class="form-group">
-                <div class="input-group">
-                    <input class="form-control" id="navbarInput-01" type="search" placeholder="Pesquise aqui!">
-                    <span class="input-group-btn">
-            <button type="submit" class="btn"><span class="fui-search"></span></button>
-          </span>
-                </div>
-            </div>
-        </form>
     </div>
 
 </nav>
