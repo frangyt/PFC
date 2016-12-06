@@ -69,7 +69,7 @@
         <div class="col-xs-4">
             <ul class="pagination">
                 <li><a href="informacao.php">1</a></li>
-                <li class="active"><a href="informacao2.php">2</a></li>
+                <li><a href="informacao2.php">2</a></li>
                 <li><a href="informacao3.php">3</a></li>
                 <li><a href="informacao4.php">4</a></li>
                 <li class="active"><a href="informacao5.php">5</a></li>

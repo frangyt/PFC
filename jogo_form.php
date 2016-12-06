@@ -69,8 +69,8 @@ else {
             <div class="form-group">
                 <label  for="inputTipojogo_descricao">Tipo do jogo</label>
                 <div class="input-group">
-
-                    <select name=jogo_idtipo_jogo id="inputJogo_idtipo_jogo">
+                    <span class="input-group-addon"><span class="fui-tag"></span></span>
+                    <select class="form-control select select-primary" data-toggle="select" name=jogo_idtipo_jogo id="inputJogo_idtipo_jogo">
                         <?php
                         require("conexao.php");
                         $sintaxesql = "select * from tipo_jogo order by tipojogo_descricao;";

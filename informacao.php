@@ -96,10 +96,10 @@ else {
             <div class="col-xs-4">
             <ul class="pagination">
                 <li class="active"><a href="informacao.php">1</a></li>
-                <li><a href="#fakelink">2</a></li>
-                <li><a href="#fakelink">3</a></li>
-                <li><a href="#fakelink">4</a></li>
-                <li><a href="#fakelink">5</a></li>
+                <li><a href="informacao2.php">2</a></li>
+                <li><a href="informacao3.php">3</a></li>
+                <li><a href="informacao4.php">4</a></li>
+                <li><a href="informacao5.php">5</a></li>
             </ul>
         </div>
             <div class="col-xs-4"></div>
