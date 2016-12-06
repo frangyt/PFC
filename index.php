@@ -26,6 +26,10 @@
  <body>
 
  <?php
+
+ ini_set( 'display_errors', true );
+ error_reporting( E_ALL );
+
  session_start();
  if (isset($_SESSION["idusuario"])) {
      if ($_SESSION["tipo_usuario"] = 2){

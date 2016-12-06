@@ -24,7 +24,7 @@
             <div class="col-xs-4">
             </div>
             <div class="col-xs-4">
-                © Todos os Direitos à IGN e Outros canais de notícias
+                © Todos os Direitos à E-Bet
             </div>
             <div class="col-xs-4">
             </div>
