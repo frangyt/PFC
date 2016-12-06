@@ -35,7 +35,6 @@ else {
     $nome = "";
     $tipojogo_descricao = "";
     if ($_GET["id"] == NULL) {
-        echo "<h2 >Jogo : Inclusão</h2>";
         echo "<form action='jogo_processa.php?cmd=ins' method='post'>";
     }
     else {
@@ -58,7 +57,7 @@ else {
             <div class="form-group">
                 <label  for="inputNome" >Nome</label>
                 <div class="input-group">
-
+                    <span class="input-group-addon"><span class="fui-new"></span></span>
                     <input type="text" class="form-control" id="inputNome" name="nome" placeholder="Nome" value="<?php echo $nome; ?>">
                 </div>
             </div>
@@ -69,7 +68,7 @@ else {
             <div class="form-group">
                 <label  for="inputTipojogo_descricao">Tipo do jogo</label>
                 <div class="input-group">
-                    <span class="input-group-addon"><span class="fui-tag"></span></span>
+
                     <select class="form-control select select-primary" data-toggle="select" name=jogo_idtipo_jogo id="inputJogo_idtipo_jogo">
                         <?php
                         require("conexao.php");
