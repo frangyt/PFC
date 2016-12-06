@@ -42,7 +42,7 @@
     $idtime = "";
     ?>
 
-    <table class="flat-table flat-table-1">
+   <table class="flat-table flat-table-1"></table>
         <thead>
             <th>     </th>
             <th >Data e Horário</th>
@@ -60,57 +60,41 @@
         $linha = mysqli_fetch_array($resultado);
         $idtime1 = $linha["idtime1"];
         $idtime2 = $linha["idtime2"];
-        echo "<td></td>";
-        echo "<td>". $linha["data"]. " </td>";
-      echo  " <td><a class='btn btn-block btn-lg btn-inverse' href='campeonato_perfil.php?id=" . $linha["idcampeonatos"] . "'>" . $linha["sigla_campeonato"] . "</a>              </td>";
-        $sql2 = "select sigla_times from times where idtimes = $idtime1";
+        ?>
+        <td></td>
+        <td><?php echo $linha["data"]?> </td>
+      <td><a class='btn btn-block btn-lg btn-inverse' href='campeonato_perfil.php?id=<?php echo $linha["idcampeonatos"] ?>'><?php echo $linha["sigla_campeonato"] ?></a>              </td>
+        <?php
+        $sql2 = "select sigla_times, nome_time from times where idtimes = $idtime1";
         $resultado2 = mysqli_query($conexao, $sql2);
         $linha2 = mysqli_fetch_array($resultado2);
-        echo "<td>". $linha2["sigla_times"]." </td>";
-        echo "<td></td>";
-        $sql3 = "select sigla_times from times where idtimes = $idtime2";
+        ?>
+        <td><?php echo $linha2["sigla_times"]?> </td>
+        <td></td>
+        <?php
+        $sql3 = "select sigla_times, nome_time from times where idtimes = $idtime2";
         $resultado3 = mysqli_query($conexao, $sql3);
         $linha3 = mysqli_fetch_array($resultado3);
-        echo "<td> ". $linha3["sigla_times"]."</td>";
-        echo "<form action='processa_resultado.php' method='post'>";
-        echo "<td> <select name=campeonatos_idregiao id='inputCampeonatos_idregiao' class='form-control select select-primary' data-toggle='select'>
+        ?>
+        <td> <?php  echo $linha3["sigla_times"] ?></td>
+        <td><form action='processa_resultado.php' method='post'> </td>
+        <td> <select name=sigla_time id='inputsigla_time' class='form-control select select-primary' data-toggle='select'>
                         
-                       <option value=".$linha2["sigla_times"].">'.$linha4['regiao_descricao'].'<option>';
-                        }
-                        ?>
-                    </select> ";
-?>
+                       <option value=<?php echo $linha2["sigla_times"]?> > <?php echo $linha2['nome_time']?><option>
+                       <option value=<?php echo $linha3["sigla_times"]?> > <?php echo $linha3['nome_time']?><option>
+
+                    </select> </td>
+            <td><input type="submit" class="btn btn-block btn-lg btn-success" value="Salvar"/> </td>
+            </form>
+            </tbody>
 
 
-        </div>
-        <div class="col-xs-8">
-            <div class="form-group">
-                <label for="inputCampeonatos_idregiao"><h4>Regiao</h4></label>
-                <div class="input-group">
 
-                    <select name=campeonatos_idregiao id="inputCampeonatos_idregiao" class="form-control select select-primary" data-toggle="select">
-                        <?php
-                        require("conexao.php");
-                        $sintaxesql = "select * from regiao order by regiao_descricao;";
-                        $resultado = mysqli_query($conexao, $sintaxesql);
-                        while ($linha = mysqli_fetch_array($resultado)) {
-                            echo "<option value=".$linha['idregiao'].">".$linha['regiao_descricao']."</option>";
-                        }
-                        ?>
-                    </select>
-                </div>
-            </div>
-        </div>
+
+</table>
     </div>
-    <div class="row demo-row">
-        <div class="col-xs-2"></div>
-        <div class="col-xs-8">
-            <input type="submit" class="btn btn-block btn-lg btn-success" value="Salvar"/>
-        </div>
-        <div class="col-xs-2"></div>
-    </div>
-    </form>
-</div>
-</br>
+
+
+
 <?php require ("footer.php");
 ?>
