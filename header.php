@@ -22,7 +22,7 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <?php
-          
+
             if (isset($_SESSION["idusuario"])) {
                 echo   "<td ><a class='btn btn-block btn-lg btn-inverse' href='perfil_usuario.php?id=" . $_SESSION["idusuario"] . "'>" . $_SESSION["nome"] . "</a></td>";
                 echo "<a href='logout.php'>Sair</a>";

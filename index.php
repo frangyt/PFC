@@ -26,10 +26,6 @@
  <body>
 
  <?php
-
- ini_set( 'display_errors', true );
- error_reporting( E_ALL );
-
  session_start();
  if (isset($_SESSION["idusuario"])) {
      if ($_SESSION["tipo_usuario"] = 2){
@@ -43,6 +39,7 @@
 
         <div class="container">
             <!-- CAROUSEL -->
+            <div class="section  dark  " style="padding-top:5px;padding-bottom:20px;background-repeat:no-repeat;background-position:center bottom;margin-bottom:10px;"><div style="width: 90%; text-align: center; margin: auto;padding: 5px;"><h2 class="title" style="color:#34495e;font-family: "Lato", Helvetica, Arial, sans-serif;;font-weight: 300;" >Bem vindo ao E-Bet</h2></div></div>
 
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
@@ -55,7 +52,7 @@
                 </ol>
 
                 <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
+                 <!--<div class="carousel-inner" role="listbox">
                     <div class="item active">
                         <img src="http://sm.ign.com/ign_br/screenshot/default/15304272-1197890430302183-6550980126968818995-o_zjxg.jpg">
                         <div class="carousel-caption">
@@ -94,8 +91,47 @@
                             <p>Bengi e Duke estão fora</p>
                         </div>
                     </div>
-                </div>
+                </div>-->
+                <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="http://sm.ign.com/ign_br/screenshot/default/15304272-1197890430302183-6550980126968818995-o_zjxg.jpg" alt="Chania" style="position: relative">
+      <div class="carousel-caption">
+        <h3>BRASILEIRO COLDZERA VENCE PRÊMIO DE MELHOR JOGADOR DE ESPORTS DO ANO NO GAME AWARDS 2016</h3>
+        <p>Jogador de Counter-Strike da SK Gaming foi o mais votado em eleição pública</p>
+      </div>
+    </div>
 
+    <div class="item">
+      <img src="http://sm.ign.com/ign_br/screenshot/default/featured-homepage-smoke_wkkq.jpg" alt="Chania" style="position: relative">
+      <div class="carousel-caption">
+        <h3>CAPCOM CUP TRAZ BRASILEIRO NA DISPUTA E MAIS DE US$ 350 MIL EM PRÊMIOS</h3>
+        <p>Vai, Brasil!</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="http://sm.ign.com/ign_br/screenshot/default/s2_mnfa.jpg" alt="Flower" style="position: relative">
+      <div class="carousel-caption">
+        <h3>CONVERSAMOS COM A ÚNICA JOGADORA PROFISSIONAL DE RAINBOW SIX DA AMÉRICA LATINA</h3>
+        <p>"Quando se é o centro das atenções, cada passo deve ser planejado"</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="http://sm.ign.com/ign_br/screenshot/default/25790561206-ece1affad2-k-1_pvvy.jpg" alt="Flower" style="position: relative">
+      <div class="carousel-caption">
+        <h3>COMO É SER UMA JOGADORA PROFISSIONAL DE CS:GO DENTRO E FORA DO BRASIL?</h3>
+        <p>Uma canadense e uma brasileira comentam suas experiências no cenário competitivo do shooter</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://sm.ign.com/ign_br/screenshot/default/i_6nvp.jpg" alt="Chania" style="position: relative">
+      <div class="carousel-caption">
+        <h3>LEAGUE OF LEGENDS: EQUIPE COREANA SKT T1 RENOVA CONTRATO COM FAKER</h3>
+        <p>Bengi e Duke estão fora</p>
+      </div>
+    </div>
+    </div>
                 <!-- Left and right controls -->
                 <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -106,13 +142,8 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-
-            <div class="section  dark  " style="padding-top:10px;padding-bottom:40px;background-image:url (data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARwAAACxCAMAAAAh3/JWAAAAHlBMVEUAAAAFBQUNDQ0TExMICAgUFBQQEBAZGRkbGxsXFxeC1EQlAAABN0lEQVR4nO3ZzWrCQACF0flLtO//wtV1KU1M0TvDObiIoB+zSi5aCsCb1V8v6s+Lv7+0VAYAYFlZsysrAwDM7cxj/qVlMXHm0F66dJyJMwDA3I5sgxOfXSpzZANdPM68GQBgbv/05+CSGQCAZWXNrqwMAMCysmZXVgYAYFlZsysrAwCwrKzZlZUBAOZ25jH/0rKYOHNoL106zsQZmFGr+2h7G72W3rZR6l4eb3vr+6dPFqCPcW/ttrU+2tZvZbuXvvWvfe+fPlmAMcqoj3tke77qeN4u6+OiDvdEppb181JWJmyTZmUAgLllza6sDADAsrJmV1YGAGBZWbMrKwMAsKys2ZWVAQBYVtbsysoAAHM7sg1OfHapTNhxsjIAwNyyfl7KygAALCtrdmVlAACWlTW7sjIA7/INe2sEbewTwGAAAAAASUVORK5CYII=);background-repeat:no-repeat;background-position:center bottom;margin-bottom:20px;">
-                <div style="width: 90%; text-align: center; margin: auto;padding: 10px;">
-                    <h2 class="title" style="color:#fff;font-family: 'Lato', Arial, Tahoma, sans-serif;font-weight: 300;">E-BET</h2>
-                </div>
-            </div>
-        <div class="row demo-row">
+           </br>
+           <div class="row demo-row">
 
     <div class="col-xs-12" id="texto_noticia">
 

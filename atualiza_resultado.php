@@ -22,7 +22,7 @@
         }
     </style>
 </head>
-
+<body>
 
     <?php
     session_start();
@@ -98,3 +98,4 @@
 
 <?php require ("footer.php");
 ?>
+</body>
