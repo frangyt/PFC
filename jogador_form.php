@@ -38,7 +38,6 @@ $nome_jogador = "";
 $nick = "";
 $jogador_idtimes = "";
 if ($_GET["id"] == NULL) {
-    echo "<h2>Jogador : Inclusão</h2>";
     echo "<form action='jogador_processa.php?cmd=ins' method='post'>";
 }
 else {
@@ -61,7 +60,7 @@ else {
         <div class="form-group">
             <label for="inputNome_jogador">Nome do Jogador</label>
             <div class="input-group">
-
+                <span class="input-group-addon"><span class="fui-user"></span></span>
                 <input type="text" class="form-control" id="inputNome_jogador" name="nome_jogador" placeholder="Nome" value="<?php echo $nome_jogador; ?>">
             </div>
         </div>
@@ -72,7 +71,7 @@ else {
         <div class="form-group">
             <label for="inputNick">Nick do jogador</label>
             <div class="input-group">
-
+                <span class="input-group-addon"><span class="fui-new"></span></span>
                 <input type="text" class="form-control" id="inputNick" name="nick" placeholder="Nick" value="<?php echo $nick; ?>">
             </div>
         </div>
@@ -84,7 +83,7 @@ else {
             <label for="inputTimes">Time</label>
             <div class="input-group">
 
-                <select name=jogador_idtimes id="inputjogador_idtimes">
+                <select name=jogador_idtimes id="inputjogador_idtimes" class="form-control select select-primary" data-toggle="select">
                     <?php
                     require("conexao.php");
                     $sintaxesql = "select * from times order by nome_time;";

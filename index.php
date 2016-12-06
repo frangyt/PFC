@@ -94,7 +94,7 @@
                 </div>-->
                 <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="http://sm.ign.com/ign_br/screenshot/default/15304272-1197890430302183-6550980126968818995-o_zjxg.jpg" alt="Chania" style="position: relative">
+      <img src="http://sm.ign.com/ign_br/screenshot/default/15304272-1197890430302183-6550980126968818995-o_zjxg.jpg" alt="Coldzera" style="position: relative">
       <div class="carousel-caption">
         <h3>BRASILEIRO COLDZERA VENCE PRÊMIO DE MELHOR JOGADOR DE ESPORTS DO ANO NO GAME AWARDS 2016</h3>
         <p>Jogador de Counter-Strike da SK Gaming foi o mais votado em eleição pública</p>
@@ -102,7 +102,7 @@
     </div>
 
     <div class="item">
-      <img src="http://sm.ign.com/ign_br/screenshot/default/featured-homepage-smoke_wkkq.jpg" alt="Chania" style="position: relative">
+      <img src="http://sm.ign.com/ign_br/screenshot/default/featured-homepage-smoke_wkkq.jpg" alt="CapcomCup" style="position: relative">
       <div class="carousel-caption">
         <h3>CAPCOM CUP TRAZ BRASILEIRO NA DISPUTA E MAIS DE US$ 350 MIL EM PRÊMIOS</h3>
         <p>Vai, Brasil!</p>
@@ -110,7 +110,7 @@
     </div>
 
     <div class="item">
-      <img src="http://sm.ign.com/ign_br/screenshot/default/s2_mnfa.jpg" alt="Flower" style="position: relative">
+      <img src="http://sm.ign.com/ign_br/screenshot/default/s2_mnfa.jpg" alt="ÚnicaMulherR6" style="position: relative">
       <div class="carousel-caption">
         <h3>CONVERSAMOS COM A ÚNICA JOGADORA PROFISSIONAL DE RAINBOW SIX DA AMÉRICA LATINA</h3>
         <p>"Quando se é o centro das atenções, cada passo deve ser planejado"</p>
@@ -118,14 +118,14 @@
     </div>
 
     <div class="item">
-      <img src="http://sm.ign.com/ign_br/screenshot/default/25790561206-ece1affad2-k-1_pvvy.jpg" alt="Flower" style="position: relative">
+      <img src="http://sm.ign.com/ign_br/screenshot/default/25790561206-ece1affad2-k-1_pvvy.jpg" alt="JogadoraCS" style="position: relative">
       <div class="carousel-caption">
         <h3>COMO É SER UMA JOGADORA PROFISSIONAL DE CS:GO DENTRO E FORA DO BRASIL?</h3>
         <p>Uma canadense e uma brasileira comentam suas experiências no cenário competitivo do shooter</p>
       </div>
     </div>
     <div class="item">
-      <img src="http://sm.ign.com/ign_br/screenshot/default/i_6nvp.jpg" alt="Chania" style="position: relative">
+      <img src="http://sm.ign.com/ign_br/screenshot/default/i_6nvp.jpg" alt="SKTFaker" style="position: relative">
       <div class="carousel-caption">
         <h3>LEAGUE OF LEGENDS: EQUIPE COREANA SKT T1 RENOVA CONTRATO COM FAKER</h3>
         <p>Bengi e Duke estão fora</p>
@@ -199,52 +199,35 @@
 
                     <table  class="flat-table flat-table-1">
                         <thead>
+                        <th></th>
                         <th>Ranking</th>
+                        <th></th>
+                        <thead>
+                        <th>Posição</th>
+                        <th>Usuário</th>
+                        <th>Dinheiro</th>
+                        </thead>
                         </thead>
                         <?php
                         require ("conexao.php");
-                        $sql= "Select nome, dinheiros from usuario order by dinheios desc;";
+                        $sql= "Select nome, dinheiros from usuario order by dinheiros desc;";
                         $resultado = mysqli_query($conexao, $sql);
+                        $id = 1;
                         while ($linha = mysqli_fetch_array($resultado)) {
                             echo "
                         
                         <tbody>
                         <tr>
-                            <td>1°" . $linha["idusuario"] . " / " . $linha["dinheiros"] . "</td>
+                            <td align='center'>".$id."</td><td>" . $linha["nome"] . "</td><td>" . $linha["dinheiros"] . "</td>
                         </tr>
-                        <tr>
-                            <td>2°" . $linha["idusuario"] . " / " . $linha["dinheiros"] . "</td>
-                        </tr>
-                        <tr>
-                            <td>3°" . $linha["idusuario"] . " / " . $linha["dinheiros"] . "</td>
-                        </tr>
-                        <tr>
-                            <td>4°" . $linha["idusuario"] . " / " . $linha["dinheiros"] . "</td>
-                        </tr>
-                        <tr>
-                            <td>5°" . $linha["idusuario"] . " / " . $linha["dinheiros"] . "</td>
-                        </tr>
-                        <tr>
-                            <td>6°" . $linha["idusuario"] . " / " . $linha["dinheiros"] . "</td>
-                        </tr>
-                        <tr>
-                            <td>7°" . $linha["idusuario"] . " / " . $linha["dinheiros"] . "</td>
-                        </tr>
-                        <tr>
-                            <td>8°" . $linha["idusuario"] . " / " . $linha["dinheiros"] . "</td>
-                        </tr>
-                        <tr>
-                            <td>9°" . $linha["idusuario"] . " / " . $linha["dinheiros"] . "</td>
-                        </tr>
-                        <tr>
-                            <td>10°" . $linha["idusuario"] . " / " . $linha["dinheiros"] . "</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    ";
+                       
+                        ";
+                            $id = $id+1;
                         }
+                        echo "</tbody>
+                    ";
                         ?>
-
+                    </table>
 </div>
                 <div class="col-xs-2" >
                 </div>
@@ -259,6 +242,8 @@
 
 
                         </thead>
+
+
                         <tbody>
                         <tr>
                             <td>TimeA</td>

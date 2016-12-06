@@ -30,7 +30,7 @@ else {
     require("header.php");
 }
 ?>
-
+<div class="container">
 <script language="Javascript">
     function confirma(id) {
         if (confirm("Deseja remover esse item?"))
@@ -57,9 +57,9 @@ else {
         $resultado = mysqli_query($conexao, $sql);
         while ($linha = mysqli_fetch_array($resultado)) {
             echo "<tbody>
-                <td class='active'><a class='btn btn-block btn-lg btn-inverse' href='times_perfil.php?id=".$linha["idtimes"]."'>" .$linha["idtimes"]. "</a>              </td>
-                <td class='active'>" . $linha["nome_time"] . "</td>
-                <td class='active'>" . $linha["sigla_times"] . "</td>
+                <td class='active'><a class='btn btn-block btn-lg btn-inverse' href='times_perfil.php?id=".$linha["idtimes"]."'>" .$linha["idtimes"]. "</a></td>
+                <td class='active'><a class='btn btn-block btn-lg btn-inverse' href='times_perfil.php?id=" . $linha["nome_time"] . "'>" . $linha["nome_time"] . "</td>
+                <td class='active'><a class='btn btn-block btn-lg btn-inverse' href='times_perfil.php?id=" . $linha["sigla_times"] . "'>" . $linha["sigla_times"] . "</td>
                 <td class='active'>" . $linha["jogo_descricao"] . "</td>
               </tbody>";
         }

@@ -21,13 +21,12 @@
             <li><a href="time_lista.php">Time</a></li>
             <li><a href="partidas_lista.php">Partidas</a></li>
         </ul>
-        <ul class="nav navbar-nav navbar-header">
+        <ul class="nav navbar-nav navbar-right">
             <?php
 
 
             if (isset($_SESSION["idusuario"])) {
-                echo   "<td ><a class='btn btn-info' href='perfil_usuario.php?id=".$_SESSION["idusuario"]."'>" .$_SESSION["nome"]. "</a>              </td>";
-                echo "<a href='logout.php'>Sair</a>";
+                echo   "<td><a class='btn btn-primary btn-lg btn-inverse' href='perfil_usuario.php?id=".$_SESSION["idusuario"]."'>" .$_SESSION["nome"]. "</a><a class='btn btn-primary btn-lg btn-inverse' href='logout.php'>Sair</a></td>";
             }
 
             ?>

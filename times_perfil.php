@@ -34,6 +34,7 @@ else {
 ?>
 <div class="container">
     <div class="row demo-row">
+        <div class="col-xs-12">
 <?php
 require_once("conexao.php");
 
@@ -45,13 +46,14 @@ $sql = "select idtimes,  nome_time, sigla_times, jogo_descricao
 $resultado = mysqli_query($conexao, $sql);
 
 $linha = mysqli_fetch_array($resultado);
+
 echo " <table class='flat-table flat-table-1'>
                   <thead>
                   <th>Nome do Time</th>
                   <th>Sigla</th>
                   <th>Jogo</th>
                   </thead>
-                  <tbody style='text-align: center' >
+                  <tbody>
                   <td>" . $linha["nome_time"] . "</td>
                   <td>" . $linha["sigla_times"] . "</td>
                   <td>" . $linha["jogo_descricao"] . "</td>
@@ -59,26 +61,30 @@ echo " <table class='flat-table flat-table-1'>
                   
                   </table>
                 ";
-$sql2 = "select idjogador, nome_jogador, nick, nome_time from jogador, times where jogador_idtimes = idtimes and idtimes = $idtimes;";
+$sql2 = "select idjogador, nome_jogador, nick, nome_time 
+                    from jogador, times where jogador_idtimes = idtimes and idtimes = $idtimes;
+                    ";
+
 $resultado2 = mysqli_query($conexao, $sql2);
+
+$linha2 = mysqli_fetch_array($resultado2);
 
 echo "<table class='flat-table flat-table-1'>
                <thead>
-                <th> Nome do Jogador</th>
-                 <th> Nick</th>
+                <th>Nome do Jogador</th>
+                 <th>Nick</th>
                  </thead>
-                ";
-    while ($linha2 = mysqli_fetch_array($resultado2)) {
-        echo "<tbody>
-                
+                <tbody>
                 <td>" . $linha2["nome_jogador"] . "</td>
-                <td><a class='btn btn-block btn-lg btn-inverse' href='jogador_perfil.php?id=".$linha2["idjogador"]."'>" .$linha2["nick"]. "</a></td>
+                <td><a class='btn btn-block btn-lg btn-inverse' " . $linha2["idjogador"] . "" .$linha2["nick"]. "</a></td>
               </tbody>
               ";
-    }
+
 ?>
 <p><a class='btn btn-primary btn-large' href='jogador_form.php?id='>Adicionar Jogador <span class='fui-plus'></span></a></p>
 </div>
+    </div>
 </div>
-<?php require ("footer.php")?>
 </body>
+<?php require ("footer.php")?>
+
