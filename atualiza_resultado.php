@@ -51,6 +51,7 @@
             <th > </th>
             <th > Time</th>
             <th> vencedor</th>
+            <th>perdedor</th>
         </thead>
         </tbody>
         <?php
@@ -61,7 +62,8 @@
         $idtime1 = $linha["idtime1"];
         $idtime2 = $linha["idtime2"];
         ?>
-        <td></td>
+    <td><form action="processa_resultado.php?id=<?php echo $id?>" method="post"> </td>
+
         <td><?php echo $linha["data"]?> </td>
       <td><a class='btn btn-block btn-lg btn-inverse' href='campeonato_perfil.php?id=<?php echo $linha["idcampeonatos"] ?>'><?php echo $linha["sigla_campeonato"] ?></a>              </td>
         <?php
@@ -77,13 +79,19 @@
         $linha3 = mysqli_fetch_array($resultado3);
         ?>
         <td> <?php  echo $linha3["sigla_times"] ?></td>
-        <td><form action='processa_resultado.php' method='post'> </td>
-        <td> <select name=sigla_time id='inputsigla_time' class='form-control select select-primary' data-toggle='select'>
+        <td></td>
+        <td> <select name=idtimeV id='inputsigla_time' class='form-control select select-primary' data-toggle='select'>
                         
-                       <option value=<?php echo $linha2["sigla_times"]?> > <?php echo $linha2['nome_time']?><option>
-                       <option value=<?php echo $linha3["sigla_times"]?> > <?php echo $linha3['nome_time']?><option>
+                       <option value=<?php echo $idtime1?> > <?php echo $linha2['nome_time']?><option>
+                       <option value=<?php echo $idtime2?> > <?php echo $linha3['nome_time']?><option>
 
                     </select> </td>
+    <td> <select name=idtimeP id='inputsigla_time' class='form-control select select-primary' data-toggle='select'>
+
+            <option value=<?php echo $idtime1?> > <?php echo $linha2['nome_time']?><option>
+            <option value=<?php echo $idtime2?> > <?php echo $linha3['nome_time']?><option>
+
+        </select> </td>
             <td><input type="submit" class="btn btn-block btn-lg btn-success" value="Salvar"/> </td>
             </form>
             </tbody>

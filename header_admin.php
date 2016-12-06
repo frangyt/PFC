@@ -23,7 +23,7 @@
         </ul>
         <ul class="nav navbar-nav navbar-header">
             <?php
-            session_start();
+
 
             if (isset($_SESSION["idusuario"])) {
                 echo   "<td ><a class='btn btn-info' href='perfil_usuario.php?id=".$_SESSION["idusuario"]."'>" .$_SESSION["nome"]. "</a>              </td>";
