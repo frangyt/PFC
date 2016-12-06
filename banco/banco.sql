@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.7.13, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.15, for Linux (x86_64)
 --
 -- Host: localhost    Database: pfc
 -- ------------------------------------------------------
--- Server version	5.7.13-0ubuntu0.16.04.2
+-- Server version	5.7.15-0ubuntu0.16.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -36,7 +36,7 @@ CREATE TABLE `apostas` (
   CONSTRAINT `apostas-partidas` FOREIGN KEY (`apostas_idpartidas`) REFERENCES `partidas` (`idpartidas`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `apostas-times` FOREIGN KEY (`apostas_idtimes`) REFERENCES `times` (`idtimes`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `apostas-usuario` FOREIGN KEY (`apostas_idusuario`) REFERENCES `usuario` (`idusuario`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -45,6 +45,7 @@ CREATE TABLE `apostas` (
 
 LOCK TABLES `apostas` WRITE;
 /*!40000 ALTER TABLE `apostas` DISABLE KEYS */;
+INSERT INTO `apostas` VALUES (1,9.00,1,2,18,NULL),(2,120.00,1,2,19,NULL),(3,5.00,1,3,18,NULL),(4,2.00,1,3,18,NULL),(5,4.00,1,3,18,NULL);
 /*!40000 ALTER TABLE `apostas` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -131,35 +132,6 @@ CREATE TABLE `conquista` (
 LOCK TABLES `conquista` WRITE;
 /*!40000 ALTER TABLE `conquista` DISABLE KEYS */;
 /*!40000 ALTER TABLE `conquista` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `denuncia`
---
-
-DROP TABLE IF EXISTS `denuncia`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `denuncia` (
-  `iddenuncia` int(11) NOT NULL AUTO_INCREMENT,
-  `denuncia_idcomentario` int(11) DEFAULT NULL,
-  `datadenuncia` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `denuncia_idusuario` int(11) DEFAULT NULL,
-  PRIMARY KEY (`iddenuncia`),
-  KEY `denuncia-comentario_idx` (`denuncia_idcomentario`),
-  KEY `denuncia-usuario_idx` (`denuncia_idusuario`),
-  CONSTRAINT `denuncia-comentario` FOREIGN KEY (`denuncia_idcomentario`) REFERENCES `comentario` (`idcomentario`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `denuncia-usuario` FOREIGN KEY (`denuncia_idusuario`) REFERENCES `usuario` (`idusuario`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `denuncia`
---
-
-LOCK TABLES `denuncia` WRITE;
-/*!40000 ALTER TABLE `denuncia` DISABLE KEYS */;
-/*!40000 ALTER TABLE `denuncia` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -415,8 +387,9 @@ CREATE TABLE `usuario` (
   `senha` varchar(65) NOT NULL,
   `nome` varchar(60) NOT NULL,
   `dinheiros` decimal(15,2) NOT NULL,
+  `tipo_usuario` int(11) NOT NULL,
   PRIMARY KEY (`idusuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -425,7 +398,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'matheus@bla.com','123','Matheus Duarte',500.00),(2,'joao@mail.com','$2y$10$ncUgPftjjtFlRqHttS3O5.3G2pHXPfp8mzUWEsC6k.UeX2SJhU3h6','joão',500.00),(3,'maumau@mail.com','$2y$10$NyXjP218Cu416lZYIsDNteQEgUXHNFREQmIsnK3jU5FJp7gCvtz2q','maurici',500.00),(4,'marcoos@mail.com','$2y$10$L0vnJIfaslIHB0eAbpvdqeb8bq2k0rQZ1JRklQVQVjbxHQXUNAjey','marcos',500.00),(5,'duda@mail.com','$2y$10$3dB3mLB3PZjN2RMjn8h/3eRSnG4Pzt3vEtfkSljk7lL5PDvyDrMOS','maria eduarda',500.00),(6,'dudinha@mail.com','$2y$10$R3ARoLrGjlJh5x6ywgQYxuYkLRogzRDlwq/q9UGdwbUPVwrZIVPU2','maria eduarda a',500.00),(7,'rafinha96@mail.com','$2y$10$GpQWFPaA6mIUkyO6Jhq4e.UvuAqv80hL.HzAAO6WK5qSFt7vgEPTW','rafaeli',500.00),(8,'nadi@mail.com','$2y$10$ifyP/UZ00lXiDM/F1/FDkuCcVxEe3ss3O/KJOR9wE6Z0Q7608ygUS','nadine',500.00),(9,'vinicius@mail.com','$2y$10$AY4p/AzTPwbe9Tqmf86pX.Bj94VT4w/qjgHw5LOgM9csc.CXjTWAm','vinicius luz',500.00),(10,'vinycius@mail.com','$2y$10$qlYJMv5JpNBBIMU2LWx5HuVotST5nGrBwJU2qC8wZLrainhFIjpVa','vinycius',500.00),(11,'leandro@mail.com','$2y$10$s5vxAMXSwiOwNkbeww/sEuBj4eDO8BqsnhHtRMcDPFg3ebBLmJlSW','Leandro',500.00),(12,'milena@mail.com','$2y$10$P92xobeP95fCoS7Gvda3JurqkPDalOnBcfOkBPBGxg/88dpIe1rZG','milena',500.00),(13,'jucelene@mail.com','$2y$10$zxG9B70UAIsFMoVorLslBuG1WsQcH5gTxs3qS4aOspyVyG/9zzpTK','jucelene',500.00),(14,'konorat@mail.com','$2y$10$Dye9tbyDaCp5rW8aA8gm2.OjntLic36.86ZmDqiFW3YDIR59eqSSq','mateus konorat',500.00),(15,'pedro@jec.com','$2y$10$b4DlvO0V/SoJhDo4uyC3LO4ZBUXEgc2A2YsATXd48V/iHIZA/3XDO','pedro h. franco',500.00);
+INSERT INTO `usuario` VALUES (18,'jose@mail.com','44fb38a3c1dd34b33dc5bdbe544fa6e9','josé',0.00,1),(19,'teste@mail.com','698dc19d489c4e4db73e28a713eab07b','Teste de teste',20.00,1),(20,'stre@gmail.com','3d2172418ce305c7d16d4b05597c6a59','cris',500.00,1),(21,'admin@mail.com','21232f297a57a5a743894a0e4a801fc3','admin',500.00,2);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -438,4 +411,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-09-27 16:40:49
+-- Dump completed on 2016-12-06  8:25:59
