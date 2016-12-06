@@ -64,10 +64,10 @@ $id=$_GET["id"];
                     else{
                         echo 500;
                     }
-                    ?>  value="0"  id="custom-hundle" name="valor1" onchange="showValue(this.value)" />
+                    ?>  value="0"  id="custom-hundle" name="valor1" onchange="showValue2(this.value)" />
                     <span id="range1">0</span>
                     <script type="text/javascript">
-                        function showValue(newValue)
+                        function showValue2(newValue)
                         {
                             document.getElementById("range1").innerHTML=newValue;
                         }
@@ -125,10 +125,10 @@ $id=$_GET["id"];
                     else{
                         echo 500;
                     }
-                    ?>  value="0" name="valor2" id="custom-hundle" onchange="showValue(this.value)" />
+                    ?>  value="0" name="valor2" id="custom-hundle" onchange="showValue1(this.value)" />
                     <span id="range2">0</span>
                     <script type="text/javascript">
-                        function showValue(newValue)
+                        function showValue1(newValue)
                         {
                             document.getElementById("range2").innerHTML=newValue;
                         }

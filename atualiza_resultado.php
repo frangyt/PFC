@@ -45,11 +45,11 @@
    <table class="flat-table flat-table-1"></table>
         <thead>
             <th>     </th>
-            <th >Data e Horário</th>
-            <th >Campeonato</th>
-            <th >Time</th>
-            <th > </th>
-            <th > Time</th>
+            <th>Data e Horário</th>
+            <th>Campeonato</th>
+            <th>Time</th>
+            <th> </th>
+            <th> Time</th>
             <th> vencedor</th>
             <th>perdedor</th>
         </thead>
