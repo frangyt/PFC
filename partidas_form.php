@@ -25,10 +25,15 @@
 
 <?php
 session_start();
-if ($_SESSION["tipo_usuario"] = 2){
-    require ("header_admin.php");
+if (isset($_SESSION["idusuario"])) {
+    if ($_SESSION["tipo_usuario"] == 2) {
+        require("header_admin.php");
+    }
+    else {
+        require("header.php");
+    }
 }
-else {
+else{
     require("header.php");
 }
 ?>

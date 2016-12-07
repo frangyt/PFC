@@ -24,17 +24,20 @@
 </head>
 <body>
 
-    <?php
-    session_start();
-    require("conexao.php");
-    if ($_SESSION["tipo_usuario"] = 2){
-        require ("header_admin.php");
+<?php
+session_start();
+if (isset($_SESSION["idusuario"])) {
+    if ($_SESSION["tipo_usuario"] == 2) {
+        require("header_admin.php");
     }
     else {
         require("header.php");
     }
-    ?>
-
+}
+else{
+    require("header.php");
+}
+?>
 
 <div class="container">
     <?php

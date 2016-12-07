@@ -19,6 +19,7 @@
             </li>
             <li><a href="cadastro.php">Cadastrar</a></li>
             <li><a href="informacao.php">Notícias</a></li>
+            <li><a href="partidas_lista_usuario.php">Partidas</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <?php
