@@ -27,14 +27,11 @@
 <?php
 session_start();
 if (isset($_SESSION["idusuario"])) {
-    if ($_SESSION["tipo_usuario"] == 2) {
+    if ($_SESSION["tipo_usuario"] = 2){
         require("header_admin.php");
     }
-    else {
-        require("header.php");
-    }
 }
-else{
+else {
     require("header.php");
 }
 ?>
@@ -47,7 +44,7 @@ else{
     <div class="col-xs-12">
         <div class="jumbotron" id="noticia">
             <blockquote>
-                5 de dezembro de 2016
+                5 de dezembro de 2016<p align="right">Fonte: IGN</p>
             </blockquote>
             <img  id="imagem_noticia" class="img-rounded img-responsive" src="http://sm.ign.com/ign_br/screenshot/default/15350666-1395205707158644-365164269417647280-n_p4h4.jpg">
         <h3>League of Legends: Pain Gaming vence XLG Super Cup</h3>
@@ -64,7 +61,8 @@ else{
 
         <div class="col-xs-12">
             <div class="jumbotron" id="noticia">
-            <blockquote>2 de dezembro de 2016</blockquote>
+            <blockquote>2 de dezembro de 2016 <p align="right">Fonte: IGN</p>
+             </blockquote>
                 <img  id="imagem_noticia" class="img-rounded img-responsive" src="http://sm.ign.com/ign_br/screenshot/default/15304272-1197890430302183-6550980126968818995-o_zjxg.jpg">
                 <h3>Brasileiro Coldzera vence prêmio de melhor jogador de E-Sports do Ano no Game Awards 2016</h3>
             <p align="justify">
@@ -78,19 +76,17 @@ else{
             </div>
             <div class="col-xs-12">
                 <div class="jumbotron" id="noticia">
-                    <blockquote>13 de Outubro de 2016</blockquote>
+                    <blockquote>2 de Dezembro de 2016 <p align="right">Fonte: IGN</p>
+                    </blockquote>
                     <img  id="imagem_noticia" class="img-rounded img-responsive" src="https://static.omelete.uol.com.br/media/uploads/conteudo/fotos/eBrasileirao.jpg">
-                    <h3>PES 2017 | CBF vai organizar um Brasileirão virtual no jogo</h3>
+                    <h3>Capcom Cup traz brasileiro na disputa e mais de US$ 350 mil em prêmios</h3>
                     <p align="justify">
-                        A Confederação Brasileira de Futebol (CBF) vai organizar uma versão virtual do Brasileirão em Pro Evolution Soccer 2017.
-                        Apropriadamente chamado de e-Brasileirão, o torneio vai ter classificatórias online e competições presenciais.
-                        A primeira etapa é online, e rola no PlayStation 4 entre os dias 29 e 30 de setembro.
-                        A CBF vai organizar 20 torneios no formato mata-mata. Cada chave representa uma equipe do Campeonato Brasilerio, e os melhores das mesmas passam a ser o representante daquele clube no e-Brasileirão.
-                        Chapecoense, Coritiba, Cruzeiro, Figueirense, Flamengo, Internacional, São Paulo, Santa Cruz, Sport e Vitória têm seus representantes definidos no dia 29.
-                        Já no dia 30, competem as pessoas que querem jogar com o Atlético Mineiro, Atlético Paranaense, América Mineiro, Botafogo, Corinthians, Fluminense, Grêmio, Palmeiras, Ponte Preta e Santos.
-                        Passando por isso, os oito melhores jogadores de cada clube participam de um torneio presencial para definir quem será o representante final daquela equipe.
-                        A fase final, que terá um jogador para cada um dos 20 times, acontece no dia 1º de dezembro no Rio de Janeiro, na sede da CBF. A premiação acontece no dia 5 de dezembro, na festa de encerramento do Brasileirão tradicional.
-                        Os interessados em participar podem se inscrever, até o dia 27 de outubro, no <a href="http://www.cbf.com.br/e-brasileirao/">site oficial do e-Brasileirão.</a>
+                        A Capcom Cup 2016, campeonato mundial de Street Fighter V, começou nesta sexta-feira (2) já trazendo Thomas "Brolynho", nosso representante brasileiro, nas primeiras disputas do evento.
+                        Ao todo, 32 jogadores vão disputar pelo título do mundial, todos selecionados pelo circuito de torneios oficial da empresa, o Capcom Pro Tour. O Centro de Convenções de Anaheim, nos Estados Unidos,
+                        vai abrigar os competidores, que vão lutar pelas oito vagas para a grande final, realizada durante a PlayStation Experience (PSX).
+                        A grande final da Capcom Cup vai acontecer em 3 de dezembro e este ano está com um formato diferente de premiação total. Em 2015, o torneio premiava o primeiro lugar com US$ 250 mil, mas em 2016,
+                        cada DLC do conjunto Capcom Pro Tour de Street Fighter V vendida vai acumular uma porcentagem à premiação total -- isso inclui o estágio Ring of Destiny e roupas especiais para Cammy, Chun-Li e Necalli.
+                        Até o mês de setembro, a premiação extra do conteúdo pago estava em US$ 90 mil.
                     </p>
 
                 </div>

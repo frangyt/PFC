@@ -46,12 +46,13 @@ else {
                 header("location:erro.php?erro=".$erro1);
             }
             else {
-              header("location:partidas_lista.php");
+                header("location:partidas_lista.php");
 
             }
 
 
    }
+    header("location:partidas_lista.php");
 
 
 }

@@ -28,14 +28,11 @@
  <?php
  session_start();
  if (isset($_SESSION["idusuario"])) {
-     if ($_SESSION["tipo_usuario"] == 2) {
+     if ($_SESSION["tipo_usuario"] = 2){
          require("header_admin.php");
      }
-     else {
-         require("header.php");
-     }
  }
- else{
+ else {
      require("header.php");
  }
  ?>
@@ -53,48 +50,7 @@
                     <li data-target="#myCarousel" data-slide-to="3"></li>
                     <li data-target="#myCarousel" data-slide-to="4"></li>
                 </ol>
-
-                <!-- Wrapper for slides -->
-                 <!--<div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="http://sm.ign.com/ign_br/screenshot/default/15304272-1197890430302183-6550980126968818995-o_zjxg.jpg">
-                        <div class="carousel-caption">
-                            <h3>BRASILEIRO COLDZERA VENCE PRÊMIO DE MELHOR JOGADOR DE ESPORTS DO ANO NO GAME AWARDS 2016</h3>
-                            <p>Jogador de Counter-Strike da SK Gaming foi o mais votado em eleição pública</p>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <img src="http://sm.ign.com/ign_br/screenshot/default/featured-homepage-smoke_wkkq.jpg">
-                        <div class="carousel-caption">
-                            <h3>CAPCOM CUP TRAZ BRASILEIRO NA DISPUTA E MAIS DE US$ 350 MIL EM PRÊMIOS</h3>
-                            <p>Vai, Brasil!</p>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <img src="http://sm.ign.com/ign_br/screenshot/default/s2_mnfa.jpg">
-                        <div class="carousel-caption">
-                            <h3>CONVERSAMOS COM A ÚNICA JOGADORA PROFISSIONAL DE RAINBOW SIX DA AMÉRICA LATINA</h3>
-                            <p>"Quando se é o centro das atenções, cada passo deve ser planejado"</p>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <img src="http://sm.ign.com/ign_br/screenshot/default/25790561206-ece1affad2-k-1_pvvy.jpg">
-                        <div class="carousel-caption">
-                            <h3>COMO É SER UMA JOGADORA PROFISSIONAL DE CS:GO DENTRO E FORA DO BRASIL?</h3>
-                            <p>Uma canadense e uma brasileira comentam suas experiências no cenário competitivo do shooter</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="http://sm.ign.com/ign_br/screenshot/default/i_6nvp.jpg">
-                        <div class="carousel-caption">
-                            <h3>LEAGUE OF LEGENDS: EQUIPE COREANA SKT T1 RENOVA CONTRATO COM FAKER</h3>
-                            <p>Bengi e Duke estão fora</p>
-                        </div>
-                    </div>
-                </div>-->
+                <!--wrapper slides-->
                 <div class="carousel-inner" role="listbox">
     <div class="item active">
       <img src="http://sm.ign.com/ign_br/screenshot/default/15304272-1197890430302183-6550980126968818995-o_zjxg.jpg" alt="Coldzera" style="position: relative">
@@ -153,33 +109,27 @@
         <div class="jumbotron" id="noticia">
 
             <blockquote>
-                22 de Agosto de 2016
+                6 de Dezembro de 2016
             </blockquote>
-            <img class="img-rounded img-responsive" id="imagem_noticia" src="http://cdn.espn.com.br/image/wide/622_810dddd3-8a14-3aee-a78a-66a9d0b871db.jpg">
-        <h3>Counter Strike: Dignitas garante vaga para torneio de US$ 1,5 milhão na China</h3>
-        <p align="justify">A Team Dignitas superou 19 adversárias e ficou com a primeira colocação das qualificatórias da Europa e da Comunidade do Estados Independentes para a World Electronic Sports Games 2016 de Counter-Strike: Global Offensive. A seletiva foi disputada durante o final de semana no Stereo Plaza, em Kiev, na Ucrânia.
-            Os dinamarqueses levaram a melhor na decisão contra a Rússia e venceram por 2 a 0, com 16-7 na Mirage e 16-4 na Cobblestone. O resultado rendeu a equipe US$ 30 mil e o primeiro seed europeu da WESG 2016.
-            Além da Dignitas e da Rússia, finalistas do evento, mais seis equipes conseguiram vaga - Virtus.pro, Kinguin, GODSENT, iGame.com, Ucrânia e Team EnVyUs. A grande decepção ficou por conta da Astralis, que terminou a competição no 9-12º lugar e não disputará o evento principal.
-            A qualificatória seguiu as mesmas regras da WESG 2016, por isso diversas equipes não puderam usar sua escalação completa. O regulamento da competição exige que todos os jogadores sejam da mesma nacionalidade, forçando os times a fazerem alterações ou criando equipes temporárias, como a vice-campeã Rússia.
-            As duas finalistas sofreram com essa regra. A Dig não pôde usar o norueguês Ruben "RUBINO" Villarroel, que deu lugar a Philip "aizy" Aistrup, da FaZe Clan, durante a competição. A Rússia, por sua vez, montou uma "seleção" composta por Denis "electronic" Sharipov e Georgi "WorldEdit" Yaskin, da Flipsid3 Tactics, Alexey "ub1que" Polivanov e Savelii "jmqa" Bragin, da Team Preparation e Dmitry "hooch" Bogdanov, ex-Gambit Gaming e atualmente sem clube.
-            A WESG agora volta suas atenções para a seletiva das Américas, que ocorrem entre os dias 21 e 23 de outubro, em São Paulo. O Brasil terá dois representantes na disputa e eles sairão de qualificatórias disputadas online entre as próximas quarta e sexta-feira (12 e 14).
-            O WESG 2016 será realizado em Shangai, na China, e ainda não tem data marcada, mas contará com US$ 1,5 milhão em prêmios - a maior premiação da história do Counter-Strike. A competição conta com o patrocínio do Alibaba Group, principal conglomerado de e-commerce do mundo.</p>
+            <img class="img-rounded img-responsive" id="imagem_noticia" src="http://sm.ign.com/t/ign_br/screenshot/default/30564249281-c9be7ec2c3-z_e8ec.640.jpg">
+        <h3>Mundial de League of Legends teve mais de 14,3 milhões de espectadores simultâneos</h3>
+        <p align="justify">Com direito até a um infográfico, a Riot Games divulgou nesta terça-feira (6) que o Worlds 2016, Campeonato Mundial de League of Legends -- que aconteceu entre 29 de setembro e 29 de outubro --, bateu recordes de audiência e duração.
+            A melhor de cinco partidas que definiu a SK Telecom T1 como tricampeã no campeonato na grande final teve duração total de 252 minutos (aproximadamente quatro horas), e foi assistida por mais de 43 milhões de pessoas do mundo inteiro. A partida teve pico de audiência de 14,3 milhões de espectadores simultâneos nas plataformas de streaming online.
+            “Estamos muito felizes com esse resultado, acreditamos que reunimos uma grande audiência considerando a predominância de times internacionais em um horário mais tarde do que o habitual para as transmissões do CBLOL”, declarou Roberto Iervolino, gerente geral da Riot Games Brasil. “Cada vez mais, o fã brasileiro de League of Legends se integra ao cenário internacional, tendo acesso e dando valor ao conteúdo de grandes partidas, grandes equipes e eventos”, completou.
+            A premiação do primeiro lugar do Worlds foi a mais alta já paga em um Mundial. A SKT T1 levou para casa nada menos do que US$ 6,7 milhões (aproximadamente R$ 23 milhões). Além disso, foram adicionados à premiação original de US$ 2,1 milhões cerca de US$ 1,6 milhão com conteúdo in-game dos times (ícones) e mais US$ 3 milhões de contribuição dos fãs com conteúdos in-game (como a venda de skins Zed Campeonato).</p>
         </div>
         </br>
         <div class="jumbotron" id="noticia">
             <blockquote>
-                22 Agosto de 2016
+                6 de Dezembro de 2016
             </blockquote>
-            <img class="img-rounded img-responsive" id="imagem_noticia" src="http://cdn.espn.com.br/image/wide/622_f9bc5657-d57c-322a-814d-24b9c6588cc6.jpg">
-        <h3>Counter Strike: Tradicionais em versões passadas, Valve traz 'sprays' de volta</h3>
+            <img class="img-rounded img-responsive" id="imagem_noticia" src="http://sm.ign.com/ign_br/screenshot/default/czavbq-wqaar4kw_b2xe.jpg">
+        <h3>League of Legends: KaBuM! IDM Gaming anuncia line-up para CBLoL 2017</h3>
 
-        <p align="justify">Os mais saudosistas jogadores de Counter-Strike se lembram dos velhos "sprays". As dezenas de desenhos espalhados pelos mapas viraram tradição, principalmente nos servidores casuais. Agora, mais de quatro anos depois do lançamento de CS:GO, a funcionalidade finalmente está de volta.
-            A Valve lançou na noite desta quinta-feira (6) uma atualização que habilita os sprays, que agora serão chamados de grafites. As artes estarão disponíveis para compra no mercado da Steam em pacotes e individualmente, além de poderem ser obtidas nos drops semanais.
-            Assim que adquirido, um pacote de grafites vem selado e com 50 aplicações. Caso ele seja aberto, ele não pode ser negociado novamente no mercado da Steam. Se desejar continuar usando o spray após zerar as aplicações, o jogador terá de comprá-lo novamente.
-            Cada jogador poderá usar o grafite a cada round ou a cada 45 segundos. A aplicação dura 7 minutos e vai se apagando gradualmente.
-            Além das artes, o patch também trouxe algumas outras mudanças, principalmente dos sons. A mixagem foi aperfeiçoada, o barulho dos tiros diminuídos e o som da M4A1-S, que era audível de muito longe apesar da arma ser silenciada, foi corrigido.
-            Para ver a relação completa das mudanças na atualização, acesse o <a href="http://blog.counter-strike.net/index.php/2016/10/16255/">blog do Counter-Strike.</a>
-        </p>
+        <p align="justify">A Kabum! IDM Gaming, equipe criada a partir do grupo de Facebook da Ilha da Macacada, anunciou nesta terça-feira (6) a sua line-up para o Campeonato Brasileiro de League of Legends 2017.
+            Em suas redes sociais, a organização revelou que a sua equipe vai contar com Luccas "Zantins" Zanqueta, Daniel "Danagorn" Augusto, Renato "TheFox" de Souza, Marcelo "Riyev" Carrara e Vinicius "Neki" Guilhardi.
+            A equipe KaBuM! IDM Gaming surgiu a partir de uma parceria entre o grupo de Facebook Ilha da Macacada e a loja de produtos eletrônicos KaBuM!. Ao que tudo indica, a empresa já estava procurando novas oportunidades e analisando opções para vender ou não a sua vaga no CBLoL, mas a decisão veio depois de "conhecer de perto o trabalho e as propostas da IDM", de acordo com Guilherme Fonte, diretor do KaBuM! e-Sports.
+            O primeiro split do Campeonato Brasileiro de League of Legends vai começar em fevereiro de 2017.</p>
         </div>
 
         </div>
@@ -245,43 +195,38 @@
 
 
                         </thead>
+
+
                         <tbody>
-                        <?php
-                        require("conexao.php");
-                        $id = 1;
-                        $sql1 = "select max(idpartidas) from partidas;";
-                        $resultado1 = mysqli_query($conexao,$sql1);
-                        $linha1 = mysqli_fetch_array($resultado1);
-                        $idmax = $linha1["max(idpartidas)"];
-                        while ($id <= $idmax) {
-                            $sql = "select   idpartidas, max(idtimes) as idtime1, min(idtimes) as idtime2 from partidas, times_partida, times  where idpartidas = times_partidas_idpartidas
-                       and  idtimes = times_partidas_idtimes and idpartidas=$id ;";
-                            $resultado = mysqli_query($conexao, $sql);
-                            while ($linha = mysqli_fetch_array($resultado)) {
-                                $idtime1 = $linha["idtime1"];
-                                $idtime2 = $linha["idtime2"];
+                        <tr>
+                            <td>TimeA</td>
+                            <td><span id="icone" class="fui-cross"></span></td>
+                            <td>TimeB</td>
+                        </tr>
+                        <tr>
+                            <td>TimeC</td>
 
-                                $sql2 = "select sigla_times from times where idtimes = $idtime1";
-                                $resultado2 = mysqli_query($conexao, $sql2);
-                                $linha2 = mysqli_fetch_array($resultado2);
-                                echo "<td><a class='btn btn-block btn-lg btn-inverse' href='times_perfil.php?id=" . $linha["idtime1"] . "'>" . $linha2["sigla_times"] . "</a>              </td>
-            <td><a href='partidas_perfil.php?id=" . $id . "'> <span class='fui-cross'></a></span></td>";
-                                $sql3 = "select sigla_times from times where idtimes = $idtime2";
-                                $resultado3 = mysqli_query($conexao, $sql3);
-                                $linha3 = mysqli_fetch_array($resultado3);
-                                echo "<td><a class='btn btn-block btn-lg btn-inverse' href='times_perfil.php?id=" . $linha["idtime2"] . "'>" . $linha3["sigla_times"] . "</a>              </td>";
+                            <td><span id="icone" class="fui-cross"></span></td>
 
+                            <td>TimeD</td>
+                        </tr>
+                        <tr>
+                            <td>TimeE</td>
 
-                                echo "</tbody>";
-                            }
-                            $id = $id + 1;
-                            echo "</br>";
-                        }
-                        ?>
+                            <td><span id="icone" class="fui-cross"></span></td>
+
+                            <td>TimeF</td>
+                        </tr>
+                        <tr>
+                            <td>TimeG</td>
+
+                            <td><span id="icone" class="fui-cross"></span></td>
+
+                            <td>TimeH</td>
+                        </tr>
+                        </tbody>
                     </table>
                 </div>
-
-
             <div class="col-xs-2">
             </div>
 

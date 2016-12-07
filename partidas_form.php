@@ -89,27 +89,26 @@ else{
         </div>
     </div>
     <div class="row demo-row">
-        <div class="col-xs-6">
+
+        <div class="col-xs-8">
             <div class="form-group">
-                <label for="inputSigla"><h4>Campeonato</h4></label>
+                <label for="inputJogo"><h4>Campeonato</h4></label>
                 <div class="input-group">
-                    <select  id="inputidcampeonato" name="partidas_idcampeonato" class="form-control select select-primary" data-toggle="select">
 
-                             <?php
-
+                    <select  id="inputtimes_idjogo" name="partidas_idcampeonatos" class="form-control select select-primary" data-toggle="select">
+                        <?php
+                        require("conexao.php");
                         $sintaxesql = "select * from campeonatos order by nome_campeonato;";
                         $resultado2 = mysqli_query($conexao, $sintaxesql);
                         while ($linha2 = mysqli_fetch_array($resultado2)) {
-                            echo " <option value= ". $linha2["idcampeonatos"] ." > ". $linha2["sigla_campeonato"] ." </option>";
+                            echo "<option value=".$linha2['idcampeonatos'].">".$linha2['sigla_campeonato']."</option>";
                         }
                         ?>
-
                     </select>
-                    </div>
                 </div>
             </div>
         </div>
-
+    </div>
 
     <input type="submit" class="btn btn-primary btn-large" value="Salvar"/>
     </form>
