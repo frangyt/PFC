@@ -49,7 +49,7 @@ else{
 
     <table class="flat-table flat-table-1">
         <thead>
-        <th>     </th>
+        <th>   ID  </th>
         <th >Data e Horário</th>
         <th >Campeonato</th>
         <th >Time</th>
@@ -72,7 +72,7 @@ else{
         while ($id <= $idmax) {
             $sql = "select   idpartidas, max(idtimes) as idtime1, min(idtimes) as idtime2,  idcampeonatos, data, sigla_campeonato
                      from partidas, times_partida, campeonatos, times  where idpartidas = times_partidas_idpartidas
-                       and partidas_idcampeonatos = idcampeonatos and idtimes = times_partidas_idtimes and idpartidas=$id ;
+                       and partidas_idcampeonatos = idcampeonatos and idtimes = times_partidas_idtimes and idpartidas=$idmax ;
                      ";
             $resultado = mysqli_query($conexao, $sql);
             while ($linha = mysqli_fetch_array($resultado)) {
@@ -94,15 +94,15 @@ else{
                     $linha3 = mysqli_fetch_array($resultado3);
                     echo "<td><a class='btn btn-block btn-lg btn-inverse' href='times_perfil.php?id=" . $linha["idtime2"] . "'>" . $linha3["sigla_times"] . "</a>              </td>";
 
-                    $sql5 = "select ganhador from times_partida where times_partidas_idpartidas = $id";
+                    $sql5 = "select ganhador from times_partida where times_partidas_idpartidas = $idmax";
                     $resultado5 = mysqli_query($conexao, $sql5);
                     $linha5 = mysqli_fetch_array($resultado5);
                     if ($linha5["ganhador"] == null) {
 
 
-                        echo "<td><a class='btn btn-block btn-lg btn-primary' href = 'partidas_perfil.php?id=" . $id . "' > Apostar </a > </td >";
+                        echo "<td><a class='btn btn-block btn-lg btn-primary' href = 'partidas_perfil.php?id=" . $idmax . "' > Apostar </a > </td >";
                     } else {
-                        $sql4 = " select nome_time, idtimes from times, times_partida, partidas where idpartidas = $id and ganhador = 's' and times_partidas_idpartidas = idpartidas and  
+                        $sql4 = " select nome_time, idtimes from times, times_partida, partidas where idpartidas = $idmax and ganhador = 's' and times_partidas_idpartidas = idpartidas and  
                         times_partidas_idtimes = idtimes";
                         $resultado4 = mysqli_query($conexao, $sql4);
                         $linha4 = mysqli_fetch_array($resultado4);
@@ -113,7 +113,7 @@ else{
                     echo " </tbody>";
                 }
             }
-            $id = $id+1;
+            $idmax = $idmax-1;
 
         }
 
