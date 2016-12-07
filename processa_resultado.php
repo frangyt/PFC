@@ -46,11 +46,7 @@ else {
                 header("location:erro.php?erro=".$erro1);
             }
             else {
-                echo $idmin;
-                echo "</br>";
-                echo $sql7;
-
-                echo "</br>";
+              header("location:partidas_lista.php");
 
             }
 

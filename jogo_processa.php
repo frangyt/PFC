@@ -18,7 +18,7 @@ if ($resultado == false) {
     header("location:erro.php?erro=".$erro);
 }
 else {
-    header("location:jogo_lista.php");
+    header("location:jogolista.php");
 }
 
 ?>

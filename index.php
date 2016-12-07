@@ -242,38 +242,43 @@
 
 
                         </thead>
-
-
                         <tbody>
-                        <tr>
-                            <td>TimeA</td>
-                            <td><span id="icone" class="fui-cross"></span></td>
-                            <td>TimeB</td>
-                        </tr>
-                        <tr>
-                            <td>TimeC</td>
+                        <?php
+                        require("conexao.php");
+                        $id = 1;
+                        $sql1 = "select max(idpartidas) from partidas;";
+                        $resultado1 = mysqli_query($conexao,$sql1);
+                        $linha1 = mysqli_fetch_array($resultado1);
+                        $idmax = $linha1["max(idpartidas)"];
+                        while ($id <= $idmax) {
+                            $sql = "select   idpartidas, max(idtimes) as idtime1, min(idtimes) as idtime2 from partidas, times_partida, times  where idpartidas = times_partidas_idpartidas
+                       and  idtimes = times_partidas_idtimes and idpartidas=$id ;";
+                            $resultado = mysqli_query($conexao, $sql);
+                            while ($linha = mysqli_fetch_array($resultado)) {
+                                $idtime1 = $linha["idtime1"];
+                                $idtime2 = $linha["idtime2"];
 
-                            <td><span id="icone" class="fui-cross"></span></td>
+                                $sql2 = "select sigla_times from times where idtimes = $idtime1";
+                                $resultado2 = mysqli_query($conexao, $sql2);
+                                $linha2 = mysqli_fetch_array($resultado2);
+                                echo "<td><a class='btn btn-block btn-lg btn-inverse' href='times_perfil.php?id=" . $linha["idtime1"] . "'>" . $linha2["sigla_times"] . "</a>              </td>
+            <td><a href='partidas_perfil.php?id=" . $id . "'> <span class='fui-cross'></a></span></td>";
+                                $sql3 = "select sigla_times from times where idtimes = $idtime2";
+                                $resultado3 = mysqli_query($conexao, $sql3);
+                                $linha3 = mysqli_fetch_array($resultado3);
+                                echo "<td><a class='btn btn-block btn-lg btn-inverse' href='times_perfil.php?id=" . $linha["idtime2"] . "'>" . $linha3["sigla_times"] . "</a>              </td>";
 
-                            <td>TimeD</td>
-                        </tr>
-                        <tr>
-                            <td>TimeE</td>
 
-                            <td><span id="icone" class="fui-cross"></span></td>
-
-                            <td>TimeF</td>
-                        </tr>
-                        <tr>
-                            <td>TimeG</td>
-
-                            <td><span id="icone" class="fui-cross"></span></td>
-
-                            <td>TimeH</td>
-                        </tr>
-                        </tbody>
+                                echo "</tbody>";
+                            }
+                            $id = $id + 1;
+                            echo "</br>";
+                        }
+                        ?>
                     </table>
                 </div>
+
+
             <div class="col-xs-2">
             </div>
 
