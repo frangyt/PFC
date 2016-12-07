@@ -57,7 +57,7 @@ else{
         <th >Time</th>
         <th > </th>
         <th > Time</th>
-
+        <th>vencedor</th>
 
         </thead>
         <?php
@@ -89,25 +89,27 @@ else{
                 $resultado2 = mysqli_query($conexao, $sql2);
                 $linha2 = mysqli_fetch_array($resultado2);
                 echo "<td><a class='btn btn-block btn-lg btn-inverse' href='times_perfil.php?id=" . $linha["idtime1"] . "'>" . $linha2["sigla_times"] . "</a>              </td>
-            <td>";
-            $sql5 = "select ganhador from times_partida where times_partidas_idpartidas = $id";
+            <td> <span class='fui-cross'></span></td>";
+                $sql3 = "select sigla_times from times where idtimes = $idtime2";
+                $resultado3 = mysqli_query($conexao, $sql3);
+                $linha3 = mysqli_fetch_array($resultado3);
+                echo "<td><a class='btn btn-block btn-lg btn-inverse' href='times_perfil.php?id=" . $linha["idtime2"] . "'>" . $linha3["sigla_times"] . "</a>              </td>";
+
+                $sql5 = "select ganhador from times_partida where times_partidas_idpartidas = $id";
                 $resultado5 = mysqli_query($conexao, $sql5);
                 $linha5 = mysqli_fetch_array($resultado5);
                 if ($linha5["ganhador"] == null){
 
 
-                    echo "<a href='partidas_perfil.php?id=".$id."'> <span class='fui-cross'></a></span>";
+                    echo "<td><a class='btn btn-block btn-lg btn-primary' href = 'partidas_perfil.php?id=" . $id . "' > Apostar </a > </td >";
                 }
                 else{
-                    echo "<span class='fui-cross'></span>";
+                    $sql4 = " select nome_time, idtimes from times, times_partida, partidas where idpartidas = $id and ganhador = 's' and times_partidas_idpartidas = idpartidas and  
+                        times_partidas_idtimes = idtimes";
+                    $resultado4 = mysqli_query($conexao, $sql4);
+                    $linha4 = mysqli_fetch_array($resultado4);
+                    echo "<td><a class='btn btn-block btn-lg btn-primary' href='times_perfil.php?id=" . $linha4["idtimes"] . "' > ". $linha4["nome_time"] ."</a> </td>";
                 }
-
-
-            echo "</td>";
-                $sql3 = "select sigla_times from times where idtimes = $idtime2";
-                $resultado3 = mysqli_query($conexao, $sql3);
-                $linha3 = mysqli_fetch_array($resultado3);
-                echo "<td><a class='btn btn-block btn-lg btn-inverse' href='times_perfil.php?id=" . $linha["idtime2"] . "'>" . $linha3["sigla_times"] . "</a>              </td>";
 
 
 

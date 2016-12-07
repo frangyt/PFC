@@ -37,6 +37,8 @@ if (isset($_SESSION["idusuario"])) {
 else{
     require("header.php");
 }
+require("conexao.php");
+
 ?>
 
 <div class="container">
@@ -44,19 +46,18 @@ else{
     $id = $_GET["id"];
     $idtime = "";
     ?>
-
-   <table class="flat-table flat-table-1"></table>
+<div class="row demo-row">
+    <div class="col-xs-12">
+   <table class="flat-table flat-table-1">
         <thead>
-            <th>     </th>
+            <th></th>
             <th>Data e Horário</th>
             <th>Campeonato</th>
-            <th>Time</th>
-            <th> </th>
-            <th> Time</th>
             <th> vencedor</th>
             <th>perdedor</th>
+            <th></th>
+            <th></th>
         </thead>
-        </tbody>
         <?php
         $sql="select data, idcampeonatos, max(idtimes) as idtime1, min(idtimes) as idtime2, sigla_campeonato from partidas, times_partida, campeonatos, times where idpartidas = times_partidas_idpartidas
                        and partidas_idcampeonatos = idcampeonatos and idtimes = times_partidas_idtimes and idpartidas= $id";
@@ -65,31 +66,31 @@ else{
         $idtime1 = $linha["idtime1"];
         $idtime2 = $linha["idtime2"];
         ?>
-    <td><form action="processa_resultado.php?id=<?php echo $id?>" method="post"> </td>
+            <tbody>
+        <td><form action="processa_resultado.php?id=<?php echo $id?>" method="post"> </td>
 
         <td><?php echo $linha["data"]?> </td>
-      <td><a class='btn btn-block btn-lg btn-inverse' href='campeonato_perfil.php?id=<?php echo $linha["idcampeonatos"] ?>'><?php echo $linha["sigla_campeonato"] ?></a>              </td>
+        <td><a class='btn btn-block btn-lg btn-inverse' href='campeonato_perfil.php?id=<?php echo $linha["idcampeonatos"] ?>'><?php echo $linha["sigla_campeonato"] ?></a>              </td>
         <?php
         $sql2 = "select sigla_times, nome_time from times where idtimes = $idtime1";
         $resultado2 = mysqli_query($conexao, $sql2);
         $linha2 = mysqli_fetch_array($resultado2);
         ?>
-        <td><?php echo $linha2["sigla_times"]?> </td>
-        <td></td>
+
         <?php
         $sql3 = "select sigla_times, nome_time from times where idtimes = $idtime2";
         $resultado3 = mysqli_query($conexao, $sql3);
         $linha3 = mysqli_fetch_array($resultado3);
         ?>
-        <td> <?php  echo $linha3["sigla_times"] ?></td>
-        <td></td>
-        <td> <select name=idtimeV id='inputsigla_time' class='form-control select select-primary' data-toggle='select'>
+
+
+        <td> <select name='idtimeV' id='inputsigla_time' class='form-control select select-primary' data-toggle='select'>
                         
                        <option value=<?php echo $idtime1?> > <?php echo $linha2['nome_time']?><option>
                        <option value=<?php echo $idtime2?> > <?php echo $linha3['nome_time']?><option>
 
                     </select> </td>
-    <td> <select name=idtimeP id='inputsigla_time' class='form-control select select-primary' data-toggle='select'>
+    <td> <select name='idtimeP' id='inputsigla_time' class='form-control select select-primary' data-toggle='select'>
 
             <option value=<?php echo $idtime1?> > <?php echo $linha2['nome_time']?><option>
             <option value=<?php echo $idtime2?> > <?php echo $linha3['nome_time']?><option>
@@ -103,8 +104,9 @@ else{
 
 
 </table>
+</div>
     </div>
-
+</div>
 
 
 <?php require ("footer.php");
