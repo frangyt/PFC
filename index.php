@@ -148,7 +148,7 @@
                         <thead>
 
                         <th></th>
-                        <th>Jogos</th>
+                        <th>jogos</th>
                         <th></th>
 
 
