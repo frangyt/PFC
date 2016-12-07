@@ -28,11 +28,13 @@
  <?php
  session_start();
  if (isset($_SESSION["idusuario"])) {
-     if ($_SESSION["tipo_usuario"] = 2){
+     if ($_SESSION["tipo_usuario"] == 2) {
          require("header_admin.php");
+     } else {
+         require("header.php");
      }
  }
- else {
+ else{
      require("header.php");
  }
  ?>
@@ -102,6 +104,99 @@
                 </a>
             </div>
            </br>
+
+            <div class="row demo-row">
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-3" >
+
+                    <table  class="flat-table flat-table-1">
+                        <thead>
+                        <th></th>
+                        <th>Ranking</th>
+                        <th></th>
+                        </thead>
+                        <thead>
+                        <th>Posição</th>
+                        <th>Usuário</th>
+                        <th>Dinheiro</th>
+                        </thead>
+                        <tbody>
+                        <?php
+                        require ("conexao.php");
+                        $sql= "Select nome, dinheiros from usuario order by dinheiros desc;";
+                        $resultado = mysqli_query($conexao, $sql);
+                        $id = 1;
+                        while ($linha = mysqli_fetch_array($resultado)) {
+                            echo "<tr>
+                            <td align='center' >".$id."</td>
+                            <td align='center' >" . $linha["nome"] . "</td>
+                            <td align='center' >" . $linha["dinheiros"] . "</td>
+                        </tr>
+                        ";
+                            $id = $id+1;
+                        }
+                        ?>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-xs-4" >
+                </div>
+
+                <div class="col-xs-3" >
+                    <table class="flat-table flat-table-1">
+                        <thead>
+
+                        <th></th>
+                        <th>Jogos</th>
+                        <th></th>
+
+
+                        </thead>
+
+
+                        <tbody>
+                        <?php
+                                                require("conexao.php");
+                                                $id = 1;
+                                                $sql1 = "select max(idpartidas) from partidas;";
+                                                $resultado1 = mysqli_query($conexao,$sql1);
+                                                $linha1 = mysqli_fetch_array($resultado1);
+                                                $idmax = $linha1["max(idpartidas)"];
+                                             while ($id <= $idmax) {
+                                                 $sql = "select   idpartidas, max(idtimes) as idtime1, min(idtimes) as idtime2 from partidas, times_partida, times  where idpartidas = times_partidas_idpartidas
+                                                        and  idtimes = times_partidas_idtimes and idpartidas=$id ;";
+                                                 $resultado = mysqli_query($conexao, $sql);
+                                                 while ($linha = mysqli_fetch_array($resultado)) {
+                                                     if (isset ($linha["idtime1"])) {
+                                                         $idtime1 = $linha["idtime1"];
+                                                         $idtime2 = $linha["idtime2"];
+
+                                                         $sql2 = "select sigla_times from times where idtimes = $idtime1";
+                                                         $resultado2 = mysqli_query($conexao, $sql2);
+                                                         $linha2 = mysqli_fetch_array($resultado2);
+                                                         echo "<td><a class='btn btn-block btn-lg btn-inverse' href='times_perfil.php?id=" . $linha["idtime1"] . "'>" . $linha2["sigla_times"] . "</a>              </td>
+             <td><p align='center'><a href='partidas_perfil.php?id=" . $id . "'> <span class='fui-cross'></a></span></p></td>";
+                                                         $sql3 = "select sigla_times from times where idtimes = $idtime2";
+                                                         $resultado3 = mysqli_query($conexao, $sql3);
+                                                         $linha3 = mysqli_fetch_array($resultado3);
+                                                         echo "<td><a class='btn btn-block btn-lg btn-inverse' href='times_perfil.php?id=" . $linha["idtime2"] . "'>" . $linha3["sigla_times"] . "</a>              </td>";
+
+
+                                                         echo "</tbody>";
+                                                     }
+                                                     $id = $id + 1;
+                                                 }
+                                             }
+                         ?>
+                    </table>
+                </div>
+
+                <div class="col-xs-1">
+                </div>
+
+            </div>
+
            <div class="row demo-row">
 
     <div class="col-xs-12" id="texto_noticia">
@@ -145,92 +240,7 @@
             <div class="col-xs-4">
             </div>
         </div>
-       <div class="row demo-row">
-                <div class="col-xs-1">
-                    </div>
-                <div class="col-xs-4" >
 
-                    <table  class="flat-table flat-table-1">
-                        <thead>
-                        <th></th>
-                        <th>Ranking</th>
-                        <th></th>
-                        <thead>
-                        <th>Posição</th>
-                        <th>Usuário</th>
-                        <th>Dinheiro</th>
-                        </thead>
-                        </thead>
-                        <?php
-                        require ("conexao.php");
-                        $sql= "Select nome, dinheiros from usuario order by dinheiros desc;";
-                        $resultado = mysqli_query($conexao, $sql);
-                        $id = 1;
-                        while ($linha = mysqli_fetch_array($resultado)) {
-                            echo "
-                        
-                        <tbody>
-                        <tr>
-                            <td align='center'>".$id."</td><td>" . $linha["nome"] . "</td><td>" . $linha["dinheiros"] . "</td>
-                        </tr>
-                       
-                        ";
-                            $id = $id+1;
-                        }
-                        echo "</tbody>
-                    ";
-                        ?>
-                    </table>
-</div>
-                <div class="col-xs-2" >
-                </div>
-
-                <div class="col-xs-3" >
-                    <table class="flat-table flat-table-1">
-                        <thead>
-
-                        <th></th>
-                        <th>Jogos</th>
-                        <th></th>
-
-
-                        </thead>
-
-
-                        <tbody>
-                        <tr>
-                            <td>TimeA</td>
-                            <td><span id="icone" class="fui-cross"></span></td>
-                            <td>TimeB</td>
-                        </tr>
-                        <tr>
-                            <td>TimeC</td>
-
-                            <td><span id="icone" class="fui-cross"></span></td>
-
-                            <td>TimeD</td>
-                        </tr>
-                        <tr>
-                            <td>TimeE</td>
-
-                            <td><span id="icone" class="fui-cross"></span></td>
-
-                            <td>TimeF</td>
-                        </tr>
-                        <tr>
-                            <td>TimeG</td>
-
-                            <td><span id="icone" class="fui-cross"></span></td>
-
-                            <td>TimeH</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            <div class="col-xs-2">
-            </div>
-
-    </div>
     </div>
 
 

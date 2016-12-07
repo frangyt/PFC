@@ -69,11 +69,11 @@ else{
 
                     <th class="success">Nome</th>
                     <th class="success">email</th>
-                    <th class="success">senha</th>
+                    <th class="success">dinheiros</th>
                 </thead>
                 <?php
                 require("conexao.php");
-                $sql = "select   nome, email, senha
+                $sql = "select   nome, email, dinheiros
                     from usuario;
                     ";
 
@@ -82,7 +82,7 @@ else{
                     echo "<tr>
                 <td>".$linha["nome"]."</td>
                 <td>".$linha["email"]."</td>
-                <td><p>".$linha["senha"]."</p></td>
+                <td><p>".$linha["dinheiros"]."</p></td>
               </tr>";
                 }
                 ?>

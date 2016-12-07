@@ -40,7 +40,7 @@ if ($resultado == false) {
     header("location:erro.php?erro=".$erro);
 }
 else {
-    header("location:partidas_lista.php?");
+    header("location:partidas_lista_usuario.php");
 }
 
 

@@ -1,6 +1,6 @@
 <?php
 require_once("conexao.php");
-require("header.php");
+
 
 
 $idtimes1 = $_POST["idtimes1"];
