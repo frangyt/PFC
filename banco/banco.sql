@@ -135,6 +135,35 @@ LOCK TABLES `conquista` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `denuncia`
+--
+
+DROP TABLE IF EXISTS `denuncia`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `denuncia` (
+  `iddenuncia` int(11) NOT NULL AUTO_INCREMENT,
+  `denuncia_idcomentario` int(11) DEFAULT NULL,
+  `datadenuncia` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `denuncia_idusuario` int(11) DEFAULT NULL,
+  PRIMARY KEY (`iddenuncia`),
+  KEY `denuncia-comentario_idx` (`denuncia_idcomentario`),
+  KEY `denuncia-usuario_idx` (`denuncia_idusuario`),
+  CONSTRAINT `denuncia-comentario` FOREIGN KEY (`denuncia_idcomentario`) REFERENCES `comentario` (`idcomentario`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `denuncia-usuario` FOREIGN KEY (`denuncia_idusuario`) REFERENCES `usuario` (`idusuario`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `denuncia`
+--
+
+LOCK TABLES `denuncia` WRITE;
+/*!40000 ALTER TABLE `denuncia` DISABLE KEYS */;
+/*!40000 ALTER TABLE `denuncia` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `jogador`
 --
 
@@ -265,6 +294,32 @@ CREATE TABLE `seguindo` (
 LOCK TABLES `seguindo` WRITE;
 /*!40000 ALTER TABLE `seguindo` DISABLE KEYS */;
 /*!40000 ALTER TABLE `seguindo` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `texto_noticia`
+--
+
+DROP TABLE IF EXISTS `texto_noticia`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `texto_noticia` (
+  `texto` varchar(2000) NOT NULL,
+  `id_noticia` int(11) NOT NULL,
+  `tag` varchar(10) DEFAULT NULL,
+  `titulo` varchar(100) NOT NULL,
+  `data` date NOT NULL,
+  PRIMARY KEY (`id_noticia`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `texto_noticia`
+--
+
+LOCK TABLES `texto_noticia` WRITE;
+/*!40000 ALTER TABLE `texto_noticia` DISABLE KEYS */;
+/*!40000 ALTER TABLE `texto_noticia` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -411,4 +466,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-12-06  8:25:59
+-- Dump completed on 2016-12-13  9:22:01

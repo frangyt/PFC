@@ -176,7 +176,7 @@
                                                          $resultado2 = mysqli_query($conexao, $sql2);
                                                          $linha2 = mysqli_fetch_array($resultado2);
                                                          echo "<td><a class='btn btn-block btn-lg btn-inverse' href='times_perfil.php?id=" . $linha["idtime1"] . "'>" . $linha2["sigla_times"] . "</a>              </td>
-             <td><p align='center'><a href='partidas_perfil.php?id=" . $id . "'> <span class='fui-cross'></a></span></p></td>";
+                                                         <td><p align='center'><a href='partidas_perfil.php?id=" . $id . "'> <span class='fui-cross'></a></span></p></td>";
                                                          $sql3 = "select sigla_times from times where idtimes = $idtime2";
                                                          $resultado3 = mysqli_query($conexao, $sql3);
                                                          $linha3 = mysqli_fetch_array($resultado3);
