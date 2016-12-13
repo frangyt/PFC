@@ -8,7 +8,7 @@
     <link href="dist/css/flat-ui.css" rel="stylesheet">
     <link href="docs/assets/css/demo.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
-
+    <link rel="icon" href="img/iconepagina.png">
     <script src="dist/js/vendor/html5shiv.js"></script>
     <script src="dist/js/vendor/respond.min.js"></script>
     <script src="dist/js/vendor/jquery.min.js"></script>
