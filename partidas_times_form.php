@@ -22,6 +22,7 @@
         }
     </style>
 </head>
+<body>
 <script language="Javascript">
     function confirma(id) {
         if (confirm("Deseja remover esse item?"))
@@ -56,15 +57,17 @@ else{
 
 
     ?>
-
+<div class="container">
+    </br>
 <form action="partidas_times_processa.php?cmd=ins" method="post">
-    <div class="row">
-        <div class="col-md-3">
+    <div class="row demo-row">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-8">
             <div class="form-group">
-                <label for="inputTimes1">Times</label>
+                <label for="inputTimes1"><h4>Time 1</h4></label>
                 <div class="input-group">
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span></span>
-                    <select name=idtimes1 id="inputTime">
+
+                    <select name=idtimes1 id="inputTime" class="form-control select select-primary" data-toggle="select">
                         <?php
                         require("conexao.php");
                         $sintaxesql = "select * from times order by nome_time;";
@@ -78,13 +81,15 @@ else{
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-3">
+    </br>
+    <div class="row demo-row">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-8">
             <div class="form-group">
-                <label for="inputTimes2">Times</label>
+                <label for="inputTimes2"><h4>Time 2</h4></label>
                 <div class="input-group">
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span></span>
-                    <select name=idtimes2 id="inputTime">
+
+                    <select name=idtimes2 id="inputTime" class="form-control select select-primary" data-toggle="select">
                         <?php
                         require("conexao.php");
                         $sintaxesql = "select * from times order by nome_time;";
@@ -98,13 +103,15 @@ else{
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-3">
+    </br>
+    <div class="row demo-row">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-8">
             <div class="form-group">
-                <label for="inputTimes2">Times</label>
+                <label for="inputTimes2"><h4>Data da Partida</h4></label>
                 <div class="input-group">
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span></span>
-                    <select name=idpartidas id="inputTime">
+
+                    <select name=idpartidas id="inputTime" class="form-control select select-primary" data-toggle="select">
                         <?php
                         require("conexao.php");
                         $sintaxesql = "select * from partidas order by idpartidas;";
@@ -118,9 +125,17 @@ else{
             </div>
         </div>
     </div>
-    <input type="submit" class="btn btn-primary btn-large" value="Salvar"/>
+    </br>
+    <div class="row demo-row">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-8">
+        <input type="submit" class="btn btn-primary btn-large" value="Salvar"/>
+    </div>
+        </div>
+    </br>
     </form>
 </div>
 
 
 <?php include("footer.php")?>
+</body>
