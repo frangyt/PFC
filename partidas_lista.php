@@ -120,16 +120,18 @@ else{
                      <?php
                         echo "' href='times_perfil.php?id=" . $linha["idtime2"] . "'>" . $linha3["sigla_times"] . "</a>              </td>";
 
-                    $sql5 = "select ganhador from times_partida where times_partidas_idpartidas = $id";
+                    $sql5 = "select ganhador from times_partida where times_partidas_idpartidas = $idmax";
                     $resultado5 = mysqli_query($conexao, $sql5);
                     $linha5 = mysqli_fetch_array($resultado5);
-                    if ($linha5["ganhador"] == null) {
+                    if ($linha5["ganhador"] == NULL ) {
+                        echo "<td><a class='btn btn-block btn-lg btn-primary' href ='atualiza_resultado.php?id=" . $idmax . "' > atualizar vencedor </a > </td >";
 
 
-                        echo "<td><a class='btn btn-block btn-lg btn-primary' href = 'atualiza_resultado.php?id=" . $idmax . "' > atualizar vencedor </a > </td >";
-                    } else {
-
+                    }
+                    else {
                         echo "<td><a class='btn btn-block btn-lg btn-primary' href='times_perfil.php?id=" . $linha4["idtimes"] . "' > " . $linha4["nome_time"] . "</a> </td>";
+
+
                     }
 
 
