@@ -20,6 +20,7 @@
             <li><a href="jogolista.php">Jogo</a></li>
             <li><a href="time_lista.php">Time</a></li>
             <li><a href="partidas_lista.php">Partidas</a></li>
+            <li><a href="noticias_lista.php">Noticias</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <?php

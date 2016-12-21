@@ -38,30 +38,43 @@ else{
     require("header.php");
 }
 ?>
+<?php
+require_once("conexao.php");
+$sql = "select * from noticias";
+$resultado = mysqli_query($conexao,$sql);
+while ($linha = mysqli_fetch_array($resultado)){
 
-    <div class="container">
 
-    <h1>Notícias</h1>
-    <div class="row demo-row">
+echo "<div class='container'>";
 
-    <div class="col-xs-12">
-        <div class="jumbotron" id="noticia">
-            <blockquote>
-                5 de dezembro de 2016<p align="right">Fonte: IGN</p>
-            </blockquote>
-            <img  id="imagem_noticia" class="img-rounded img-responsive" src="http://sm.ign.com/ign_br/screenshot/default/15350666-1395205707158644-365164269417647280-n_p4h4.jpg">
-        <h3>League of Legends: Pain Gaming vence XLG Super Cup</h3>
-        <p align="justify">A equipe brasileira paiN Gaming foi a grande vencedora da modalidade de League of Legends da XLG Super Cup, que aconteceu durante a Comic-Con Experience 2016, em São Paulo.
-            A grande final, que foi realizada na Twitch Arena neste domingo (4), e a disputa, que foi uma melhor de três partidas, aconteceu entre a paiN e a CNB eSports. O placar final foi de 2 a 0,
-            sendo o primeiro dominado pelo time e o segundo de virada.
-            Por conta do campeonato amistoso All Star, organizado pela Riot Games, o principal mid laner do time, Gabriel "Kami" Bohm, não esteve presente na grande final do confronto com a CNB. Assim,
-            a line-up do time contou com Matheus "Mylon" Borges, Thúlio "SirT" Carlos, afael "Rakin" Knitell, Pedro "Matsukaze" Gama e Caio "Loop" Almeida.
-            A premiação total de XLG Super Cup foi de R$ 100 mil, e a paiN levou, no total, cerca de R$ 30 mil.
-        </p>
+echo "    <h1>Notícias</h1>";
+echo "    <div class='row demo-row'>";
+
+echo "        <div class='col-xs-12'>";
+echo "            <div class='jumbotron' id='noticia'>";
+echo " <blockquote>";
+                    echo " ".$linha["data"]." <p align='right'>Fonte: ".$linha["fonte"]."</p>";
+echo "               </blockquote>";
+
+echo "                <h3> ".$linha["titulo"]."</h3>";
+echo "                <p align='justify'> ";
+                        $corpo = fopen($linha["corpo"] , "r");
+                        while (!feof ($corpo)) {
+                        $linha2 = fgets($corpo,
+                            4096);
+                        echo iconv("CP1252", "UTF-8", $linha2),"<br>";
+
+
+                    }
+                    fclose($corpo);
+
+
+echo "                </p>
+            </div>
         </div>
-        </div>
-        </br>
-
+        </br>";
+}
+?>
         <div class="col-xs-12">
             <div class="jumbotron" id="noticia">
             <blockquote>2 de dezembro de 2016 <p align="right">Fonte: IGN</p>
