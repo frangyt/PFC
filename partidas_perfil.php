@@ -11,7 +11,7 @@
     <link href="index.css" rel="stylesheet">
     <link href="partidas_perfil.css" rel="stylesheet">
     <script src="partidas_perfil.js"></script>
-
+    <link rel="icon" href="img/iconepagina.png">
     <script src="dist/js/vendor/html5shiv.js"></script>
     <script src="dist/js/vendor/respond.min.js"></script>
     <script src="dist/js/vendor/jquery.min.js"></script>

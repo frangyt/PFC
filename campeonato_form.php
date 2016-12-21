@@ -8,7 +8,7 @@
     <link href="dist/css/flat-ui.css" rel="stylesheet">
     <link href="docs/assets/css/demo.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
-
+    <link rel="icon" href="img/iconepagina.png">
     <script src="dist/js/vendor/html5shiv.js"></script>
     <script src="dist/js/vendor/respond.min.js"></script>
     <script src="dist/js/vendor/jquery.min.js"></script>
@@ -22,9 +22,7 @@
         }
     </style>
 </head>
-<div class="container">
-
-    <?php
+<?php
     session_start();
     if (isset($_SESSION["idusuario"])) {
         if ($_SESSION["tipo_usuario"] == 2) {
@@ -38,7 +36,7 @@
         require("header.php");
     }
     ?>
-
+<div class="container">
 
 
     <?php

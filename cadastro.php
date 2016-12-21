@@ -9,7 +9,7 @@
     <link href="dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="dist/css/flat-ui.css" rel="stylesheet">
     <link href="docs/assets/css/demo.css" rel="stylesheet">
-    <link rel="shortcut icon" href="img/íconee-bet.ico">
+    <link rel="icon" href="img/iconepagina.png">
     <link href="index.css" rel="stylesheet">
 
     <script src="dist/js/vendor/html5shiv.js"></script>
@@ -17,6 +17,13 @@
     <script src="dist/js/vendor/jquery.min.js"></script>
     <script src="dist/js/flat-ui.min.js"></script>
     <script src="docs/assets/js/application.js"></script>
+
+
+    <script language="javascript" src="passchk.js"></script>
+    <script language="javascript" src="common.js"></script>
+    <script language="javascript" src="frequency.js"></script>
+
+
     <style>
         body  {
             background-color: white;
@@ -57,7 +64,7 @@
 
 
 
-            <form action='usuario_processa.php?cmd=ins' method='post'>
+            <form action='usuario_processa.php?cmd=ins' name="passchk_form" method='post'>
                 <div class="row demo-row">
                     <div class="col-xs-2">
                     </div>
@@ -97,11 +104,18 @@
                         <label for="inputsenha"><h4>Senha</h4></label>
                         <div class="input-group">
                             <span class="input-group-addon"><span class="fui-lock"></span></span>
-                            <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" value="<?php echo $senha; ?>">
+
+
+                            <input type="password" class="form-control" id="pass" name="passchk_pass" placeholder="Senha" value="<?php echo $senha; ?>">
+
                         </div>
+
+                        <span id="passchk_result">Loading ...</span>
+
                     </div>
                 </div>
                 </div>
+
                 </br>
                 <div class="row demo-row">
                     <div class="col-xs-2"></div>

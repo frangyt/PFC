@@ -9,7 +9,7 @@
         <link href="dist/css/flat-ui.css" rel="stylesheet">
         <link href="docs/assets/css/demo.css" rel="stylesheet">
         <link href="index.css" rel="stylesheet">
-
+        <link rel="icon" href="img/iconepagina.png">
         <script src="dist/js/vendor/html5shiv.js"></script>
         <script src="dist/js/vendor/respond.min.js"></script>
         <script src="dist/js/vendor/jquery.min.js"></script>
@@ -40,11 +40,11 @@
  ?>
 
         <div class="container">
-            <!-- CAROUSEL -->
+
             <div class="section  dark  " style="padding-top:5px;padding-bottom:20px;background-repeat:no-repeat;background-position:center bottom;margin-bottom:10px;"><div style="width: 90%; text-align: center; margin: auto;padding: 5px;"><h2 class="title" style="color:#34495e;font-family: "Lato", Helvetica, Arial, sans-serif;;font-weight: 300;" >Bem vindo ao E-Bet</h2></div></div>
 
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
+
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -52,13 +52,13 @@
                     <li data-target="#myCarousel" data-slide-to="3"></li>
                     <li data-target="#myCarousel" data-slide-to="4"></li>
                 </ol>
-                <!--wrapper slides-->
+
                 <div class="carousel-inner" role="listbox">
     <div class="item active">
       <img src="http://sm.ign.com/ign_br/screenshot/default/15304272-1197890430302183-6550980126968818995-o_zjxg.jpg" alt="Coldzera" style="position: relative">
       <div class="carousel-caption">
-        <h3>BRASILEIRO COLDZERA VENCE PRÊMIO DE MELHOR JOGADOR DE ESPORTS DO ANO NO GAME AWARDS 2016</h3>
-        <p>Jogador de Counter-Strike da SK Gaming foi o mais votado em eleição pública</p>
+        <h3>BRASILEIRO COLDZERA VENCE PRÊMIO DE MELHOR JOGADOR DE ESPORTS DO ANO NO GAMke da SK Gaming foi o mais votado em elE AWARDS 2016</h3>
+          <p>Jogador de Counter-Strieição pública</p>
       </div>
     </div>
 
@@ -93,7 +93,7 @@
       </div>
     </div>
     </div>
-                <!-- Left and right controls -->
+
                 <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
@@ -121,23 +121,26 @@
                         <th>Usuário</th>
                         <th>Dinheiro</th>
                         </thead>
-                        <tbody>
+
                         <?php
                         require ("conexao.php");
                         $sql= "Select nome, dinheiros from usuario order by dinheiros desc;";
                         $resultado = mysqli_query($conexao, $sql);
                         $id = 1;
                         while ($linha = mysqli_fetch_array($resultado)) {
-                            echo "<tr>
+                            echo "
+                            <tbody>
+                            <tr>
                             <td align='center' >".$id."</td>
                             <td align='center' >" . $linha["nome"] . "</td>
                             <td align='center' >" . $linha["dinheiros"] . "</td>
                         </tr>
+                        </tbody>
                         ";
                             $id = $id+1;
                         }
                         ?>
-                        </tbody>
+
                     </table>
                 </div>
                 <div class="col-xs-4" >
@@ -176,7 +179,7 @@
                                                          $resultado2 = mysqli_query($conexao, $sql2);
                                                          $linha2 = mysqli_fetch_array($resultado2);
                                                          echo "<td><a class='btn btn-block btn-lg btn-inverse' href='times_perfil.php?id=" . $linha["idtime1"] . "'>" . $linha2["sigla_times"] . "</a>              </td>
-             <td><p align='center'><a href='partidas_perfil.php?id=" . $id . "'> <span class='fui-cross'></a></span></p></td>";
+                                                         <td><p align='center'><a href='partidas_perfil.php?id=" . $id . "'> <span class='fui-cross'></a></span></p></td>";
                                                          $sql3 = "select sigla_times from times where idtimes = $idtime2";
                                                          $resultado3 = mysqli_query($conexao, $sql3);
                                                          $linha3 = mysqli_fetch_array($resultado3);
