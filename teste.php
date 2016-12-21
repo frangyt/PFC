@@ -1,8 +1,8 @@
 <?php
-date_default_timezone_set('America/Sao_Paulo');
-$date = date('Y-m-d H:i:s');
-echo $date;
-
+$barra = "\\";
+echo $barra;
+$caminho = "noticias". $barra ."noticia". "2".".txt";
+echo $caminho;
 ?>
 
 <!--select idpartidas, max(idtimes) as idtime1, min(idtimes) as idtime2, idcampeonatos, data, sigla_campeonato from partidas,

@@ -8,12 +8,14 @@ $sql = "select max(idnoticias) from noticias";
 $resultado = mysqli_query($conexao, $sql);
 $linha = mysqli_fetch_array($resultado);
 $id = $linha["max(idnoticias)"] + 1;
-$caminho = "noticias"."\\"."noticia". $id.".txt";
+$barra = "\\";
+$caminho = "noticias". $barra ."noticia". $id.".txt";
+$caminho2 = "noticias/noticias". $id .".txt";
 $file = fopen($caminho, "w+");
 fwrite($file,$corpo);
 $insert = "insert into noticias
                 (titulo, corpo,data, fonte)
-                values ('$titulo','$caminho','$data','$fonte');";
+                values ('$titulo','$id','$data','$fonte');";
 $resultado2 = mysqli_query($conexao,$insert);
 if ($resultado == false) {
     $erro = mysqli_error($conexao);

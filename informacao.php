@@ -44,8 +44,9 @@ require_once("conexao.php");
 $sql = "select * from noticias";
 $resultado = mysqli_query($conexao,$sql);
 while ($linha = mysqli_fetch_array($resultado)){
-
-
+$corpo = $linha["corpo"];
+$barra ="\\";
+$caminho = "noticias".$barra."noticia".$corpo.".txt";
 echo "<div class='container'>";
 
 echo "    <h1>Notícias</h1>";
@@ -59,11 +60,11 @@ echo "               </blockquote>";
 
 echo "                <h3> ".$linha["titulo"]."</h3>";
 echo "                <p align='justify'> ";
-                        $corpo = fopen($linha["corpo"] , "r");
+                        $corpo = fopen($caminho , "r");
                         while (!feof ($corpo)) {
                         $linha2 = fgets($corpo,
                             4096);
-                        echo iconv("CP1252", "UTF-8", $linha2),"<br>";
+                        echo $linha2."<br>";
 
 
                     }
@@ -76,54 +77,7 @@ echo "                </p>
         </br>";
 }
 ?>
-        <div class="col-xs-12">
-            <div class="jumbotron" id="noticia">
-            <blockquote>2 de dezembro de 2016 <p align="right">Fonte: IGN</p>
-             </blockquote>
-                <img  id="imagem_noticia" class="img-rounded img-responsive" src="http://sm.ign.com/ign_br/screenshot/default/15304272-1197890430302183-6550980126968818995-o_zjxg.jpg">
-                <h3>Brasileiro Coldzera vence prêmio de melhor jogador de E-Sports do Ano no Game Awards 2016</h3>
-            <p align="justify">
-                É do Brasil! Durante o Game Awards 2016, o brasileiro Marcelo "Coldzera" David, do time de Counter-Strike: Global Offensive SK Gaming, foi eleito pelo público como o melhor atleta de eSports do ano.
-                Coldezera, ao lado de sua equipe, é bicampeão das Majors de CS:GO e levou seu time ao vice-campeonato na ESL Pro League.
-                Claramente emocionado, Coldzera subiu ao palco do Game Awards para agradecer especialmente "aos fãs brasileiros" dizendo também que “Abdicou muito da vida para chegar até aqui”.
-                Parabéns pelo merecido reconhecimento, Coldzera! O Brasil está celebrando com você.
-            </p>
 
-        </div>
-            </div>
-            <div class="col-xs-12">
-                <div class="jumbotron" id="noticia">
-                    <blockquote>2 de Dezembro de 2016 <p align="right">Fonte: IGN</p>
-                    </blockquote>
-                    <img  id="imagem_noticia" class="img-rounded img-responsive" src="https://static.omelete.uol.com.br/media/uploads/conteudo/fotos/eBrasileirao.jpg">
-                    <h3>Capcom Cup traz brasileiro na disputa e mais de US$ 350 mil em prêmios</h3>
-                    <p align="justify">
-                        A Capcom Cup 2016, campeonato mundial de Street Fighter V, começou nesta sexta-feira (2) já trazendo Thomas "Brolynho", nosso representante brasileiro, nas primeiras disputas do evento.
-                        Ao todo, 32 jogadores vão disputar pelo título do mundial, todos selecionados pelo circuito de torneios oficial da empresa, o Capcom Pro Tour. O Centro de Convenções de Anaheim, nos Estados Unidos,
-                        vai abrigar os competidores, que vão lutar pelas oito vagas para a grande final, realizada durante a PlayStation Experience (PSX).
-                        A grande final da Capcom Cup vai acontecer em 3 de dezembro e este ano está com um formato diferente de premiação total. Em 2015, o torneio premiava o primeiro lugar com US$ 250 mil, mas em 2016,
-                        cada DLC do conjunto Capcom Pro Tour de Street Fighter V vendida vai acumular uma porcentagem à premiação total -- isso inclui o estágio Ring of Destiny e roupas especiais para Cammy, Chun-Li e Necalli.
-                        Até o mês de setembro, a premiação extra do conteúdo pago estava em US$ 90 mil.
-                    </p>
-
-                </div>
-
-        </div>
-        <div class="row demo-row">
-        <div class="col-xs-4"></div>
-            <div class="col-xs-4">
-            <ul class="pagination">
-                <li class="active"><a href="informacao.php">1</a></li>
-                <li><a href="informacao2.php">2</a></li>
-                <li><a href="informacao3.php">3</a></li>
-                <li><a href="informacao4.php">4</a></li>
-                <li><a href="informacao5.php">5</a></li>
-            </ul>
-        </div>
-            <div class="col-xs-4"></div>
-        </div>
-    </div>
-    </div>
 <?php require ("footer.php");
 ?>
 <script src="dist/js/vendor/jquery.min.js"></script>

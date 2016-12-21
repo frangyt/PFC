@@ -42,34 +42,41 @@ else{
 
 <?php
 require_once("conexao.php");
+
+
 $sql = "select * from noticias";
 $resultado = mysqli_query($conexao,$sql);
-$linha = mysqli_fetch_array($resultado);
+while ($linha = mysqli_fetch_array($resultado)){
+    $corpo = $linha["corpo"];
+    $barra ="\\";
+    $caminho = "noticias".$barra."noticia".$corpo.".txt";
+    echo "<div class='container'>";
 
-?>
-<div class="container">
-    <p><a class="btn btn-primary btn-large" href="noticia_form.php?id=">Adicionar noticia <span class="glyphicon glyphicon-plus-sign"></span></a></p>
-    <h1>Notícias</h1>
-    <div class="row demo-row">
+    echo "    <h1>Notícias</h1>";
+    echo "    <div class='row demo-row'>";
 
-        <div class="col-xs-12">
-            <div class="jumbotron" id="noticia">
-                <blockquote>
-                    <?php echo $linha["data"]; ?><p align="right">Fonte: <?php echo $linha["fonte"]; ?></p>
-                </blockquote>
-                <img  id="imagem_noticia" class="img-rounded img-responsive" src="http://sm.ign.com/ign_br/screenshot/default/15350666-1395205707158644-365164269417647280-n_p4h4.jpg">
-                <h3><?php echo $linha["titulo"]; ?></h3>
-                <p align="justify"><?php $corpo = fopen($linha["corpo"] , "r");
-                    while (!feof ($corpo)) {
-                        $linha2 = fgets($corpo,
-                            4096);
-                        echo iconv("CP1252", "UTF-8", $linha2),"<br>";
+    echo "        <div class='col-xs-12'>";
+    echo "            <div class='jumbotron' id='noticia'>";
+    echo " <blockquote>";
+    echo " ".$linha["data"]." <p align='right'>Fonte: ".$linha["fonte"]."</p>";
+    echo "               </blockquote>";
+
+    echo "                <h3> ".$linha["titulo"]."</h3>";
+    echo "                <p align='justify'> ";
+    $corpo = fopen($caminho , "r");
+    while (!feof ($corpo)) {
+        $linha2 = fgets($corpo,
+            4096);
+        echo $linha2."<br>";
 
 
-                    }
-                    fclose($corpo);
+    }
+    fclose($corpo);
 
-                    ?>
-                </p>
+
+    echo "                </p>
             </div>
         </div>
+        </br>";
+}
+?>
