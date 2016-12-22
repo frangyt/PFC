@@ -45,11 +45,10 @@ else{
 }
 ?>
 <div class="container">
-
-
     <h4>Partidas</h4>
-    <p><a class="btn btn-primary btn-large" href="partidas_form.php?id=">Adicionar partida <span class="glyphicon glyphicon-plus-sign"></span></a></p>
-    <table class="flat-table flat-table-1">
+</br>
+    <p><a href="partidas_form.php?id=" class="btn btn-primary btn-large"> Adicionar partida <span class="fui-plus-circle"></span></a></p>
+    <table  class="flat-table flat-table-1">
         <thead>
             <th>     </th>
             <th >Data e Horário</th>
@@ -144,8 +143,6 @@ else{
 
         ?>
     </table>
-
-
 </div>
 <?php require ("footer.php");
 ?>

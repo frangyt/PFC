@@ -39,11 +39,29 @@
  }
  ?>
 
+<div class="container">
+
+            <div class="section  dark  " style="padding-top:5px;padding-bottom:20px;background-repeat:no-repeat;background-position:center bottom;margin-bottom:10px;"><div style="width: 90%; text-align: center; margin: auto;padding: 5px;"><h2 class="title" style="color:#34495e;font-family: "Lato", Helvetica, Arial, sans-serif;;font-weight: 300;" ></h2></div></div>
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
 
-            <div class="section  dark  " style="padding-top:5px;padding-bottom:20px;background-repeat:no-repeat;background-position:center bottom;margin-bottom:10px;"><div style="width: 90%; text-align: center; margin: auto;padding: 5px;"><h2 class="title" style="color:#34495e;font-family: "Lato", Helvetica, Arial, sans-serif;;font-weight: 300;" >Bem vindo ao E-Bet</h2></div></div>
+                <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="http://www.legendsbr.com/wp-content/uploads/2014/12/League_of_Legends-fenomeno-campeonato_mundial_LNCIMA20141021_0079_27.jpg" alt="E-bet" style="position: relative">
+      <div class="carousel-caption">
+        <h3>Bem Vindo ao E-Bet</h3>
+          <p>Seu site de apostas em E-Sports</p>
+      </div>
+    </div>
 
 
+    </div>
+    </div>
+
+
+            </div>
+           </br>
 
             <div class="row demo-row">
                 <div class="col-xs-1">
@@ -181,7 +199,7 @@
                 }
                 ?>
 
-
+    </div>
 
 
 
