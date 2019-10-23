@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<html>
     <head>
         <meta charset=utf-8>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
         <link href="dist/css/flat-ui.css" rel="stylesheet">
         <link href="docs/assets/css/demo.css" rel="stylesheet">
         <link href="index.css" rel="stylesheet">
-
+        <link rel="icon" href="img/iconepagina.png">
         <script src="dist/js/vendor/html5shiv.js"></script>
         <script src="dist/js/vendor/respond.min.js"></script>
         <script src="dist/js/vendor/jquery.min.js"></script>
@@ -24,157 +24,85 @@
         </style>
     </head>
  <body>
-    <div class="container">
+
+   <?php
+   session_start();
+   if (isset($_SESSION["idusuario"])) {
+       if ($_SESSION["tipo_usuario"] == 2) {
+           require("header_admin.php");
+       }
+       else {
+           require("header.php");
+       }
+   }
+   else{
+       require("header.php");
+   }
+   ?>
+
+<div class="container">
+
+            <div class="section  dark  " style="padding-top:5px;padding-bottom:20px;background-repeat:no-repeat;background-position:center bottom;margin-bottom:10px;"><div style="width: 90%; text-align: center; margin: auto;padding: 5px;"><h2 class="title" style="color:#34495e;font-family: "Lato", Helvetica, Arial, sans-serif;;font-weight: 300;" ></h2></div></div>
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
 
+                <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="http://www.legendsbr.com/wp-content/uploads/2014/12/League_of_Legends-fenomeno-campeonato_mundial_LNCIMA20141021_0079_27.jpg" alt="E-bet" style="position: relative">
+      <div class="carousel-caption">
+        <h3>Bem Vindo ao E-Bet</h3>
+          <p>Seu site de apostas em E-Sports</p>
+      </div>
+    </div>
 
 
+    </div>
+    </div>
 
 
-
-
-        <nav class="navbar navbar-inverse" role="navigation">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
-                    <span class="sr-only">Toggle navigation</span>
-                </button>
-                <a class="navbar-brand" href="index.php" >E-bet</a>
             </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse-01">
-                <ul class="nav navbar-nav navbar-left">
-                    <li ><a href="pagina admin.php">Admin</a></li>
-                    <li class="dropdown">
-                        <a href="jogo.php" class="dropdown-toggle" data-toggle="dropdown">Campeonatos<b class="caret"></b></a>
-                        <span class="dropdown-arrow"></span>
-                        <ul class="dropdown-menu">
-                            <li><a href="jogolista.php">Lista de Jogos</a></li>
+           </br>
 
-                        </ul>
-                    </li>
-                    <li><a href="cadastro.php">Cadastrar</a></li>
-                    <li><a href="calendario.php">Calendário</a></li>
-                    <li><a href="informacao.php">Notícias</a></li>
-                </ul>
-                <form class="navbar-form navbar-right" action="#" role="search">
-                    <div class="form-group">
-                        <div class="input-group">
-                            <input class="form-control" id="navbarInput-01" type="search" placeholder="Pesquise aqui!">
-                            <span class="input-group-btn">
-            <button type="submit" class="btn"><span class="fui-search"></span></button>
-          </span>
-                        </div>
-                    </div>
-                </form>
-                </div>
-
-        </nav>
-        <div class="demo-headline">
-            </div>
-
-        <div class="row demo-row">
-
-    <div class="col-xs-12" id="texto_noticia">
-
-        <div class="jumbotron" id="noticia">
-            <blockquote>
-                22/08/2016 - 16:45
-            </blockquote>
-            <img class="img-rounded img-responsive" src="imagens/noticia1.jpg">
-        <h3>League of Legends - Mais dois times se classificam para o Mundial</h3>
-        <p align="justify">Mais duas equipes garantiram suas vagas no Campeonato Mundial de League of Legends que acontece do fim de setembro ao fim de outubro nos Estados Unidos.
-        Agora foi a vez da Team SoloMid (TSM) e Flash Wolves se classificarem.
-        A TSM se classificou ao derrotar o CounterLogic Gaming na semifinal da LCS North America Summer 2016. Com isso, a equipe já garantiu 170 pontos no circuito norte-americano.
-        Desta forma, mesmo que eles percam a Grande Final, que será contra a cloud9, a SoloMid vai continuar com a vaga garantida por conta dos pontos.
-        A Team SoloMid é formada por Kevin "Hauntzer" Yarnel (Solo Top), Dennis "Svenskeren" Johnsen (Jungler), Soren "Bjergsen" Bjerg (Mid Laner), Yilliang "Doublelift" Peng (AD Carry) e
-        Vincent "Biofrost" Wang (Support), e até hoje, a organização não ficou de fora de uma edição do Mundial.
-        Enquanto isso, em Taiwan, a Flash Wolves se classificou ao vencer a LSM, derrotando o ahq eSports Club por 3 x 2 na semifinal, e vencendo J Team (antigo Taipei Assassins) por 3 x 0.
-        A equipe é formada por Yu "MMD" Li-Hung (Solo Top), Hung "Karsa" Hau-Hsuan (Jungler), Huang "Maple" Yi-Tang (Mid Laner), Hsiung "NL" Wen-An (AD Carry) e Hu "SwordArt" Shuo-Jie (Support).</p>
-
-        <p>Até agora, estão garantidas no Mundial:</p>
-
-        <p>ROX Tigers (Coreia do Sul)</p>
-        <p>Edward Gaming (China)</p>
-        <p>Royal Never Give Up (China)</p>
-        <p>G2 Esports (Europa)</p>
-        <p>SK Telecom T1 (Coreia do Sul)</p>
-        <p>Flash Wolves (Taiwan)</p>
-        <p>Team SoloMid (América do Norte)</p>
-        </div>
-        <br></br>
-        <div class="jumbotron" id="noticia">
-            <blockquote>
-                22/08/2016 - 20:03
-            </blockquote>
-            <img class="img-rounded img-responsive" src="imagens/noticia2.jpg">
-        <h3>League of Legends - Thiago "Djokovic" Maia não é mais técnico da CNB</h3>
-
-        <p align="justify">Thiago "Djokovic" Maia está deixando o posto de técnico do CNB e-Sports Club vice-campeão brasileiro de League of Legends.
-        Ele vai focar em terminar a faculdade de medicina, mas continuará parte da organização, agora agindo como analista.
-        Djoko já jogou pela INTZ mas ganhou destaque no cenário competitivo como técnico na CNB, sendo considerado um dos melhores na posição. Entretanto, isso vinha com custos.
-        Ele fazia viagens de ônibus rotineiramente entre São Paulo (SP) e Juiz de Fora (MG) para tentar equilibrar os treinos e as provas do curso. Agora, o foco de Djoko fica nos estudos, mas ele ainda vai ajudar a equipe.
-        “Apesar de algumas mudanças na rotina do Djoko, devido a sua faculdade de medicina, conseguimos adaptar ele no cargo de analista para continuar trazendo todo seu conhecimento de LoL para o individual de cada jogador e estratégias da equipe,
-        "explicou Cleber "fuzi" Fonseca, COO do CNB. "Mesmo ficando um pouco ausente de nosso Centro de Treinamento, ele continuará vindo para SP, esporadicamente, para acompanhar o desenvolvimento da equipe de perto."</p>
-        </div>
-
-        </div>
-
-        </div>
-</br>
-        <div class="row demo-row">
-        <div class="col-xs-4">
-            </div>
-            <div class="col-xs-4">
-                <p>Para mais notícias clique <a href="informacao.php"> aqui</a> </p>
-            </div>
-            <div class="col-xs-4">
-            </div>
-        </div>
-
-        <div class="row demo-row">
+            <div class="row demo-row">
                 <div class="col-xs-1">
-                    </div>
-                <div class="col-xs-4" >
+                </div>
+                <div class="col-xs-3" >
 
-                    <table class="flat-table flat-table-1">
+                    <table  class="flat-table flat-table-1">
                         <thead>
+                        <th></th>
                         <th>Ranking</th>
+                        <th></th>
                         </thead>
-                        <tbody>
-                        <tr>
-                            <td>1° - Usuário 1</td>
-                        </tr>
-                        <tr>
-                            <td>2° - Usuário 2</td>
-                        </tr>
-                        <tr>
-                            <td>3° - Usuário 3</td>
-                        </tr>
-                        <tr>
-                            <td>4° - Usuário 4</td>
-                        </tr>
-                        <tr>
-                            <td>5° - Usuário 5</td>
-                        </tr>
-                        <tr>
-                            <td>6° - Usuário 6</td>
-                        </tr>
-                        <tr>
-                            <td>7° - Usuário 7</td>
-                        </tr>
-                        <tr>
-                            <td>8° - Usuário 8</td>
-                        </tr>
-                        <tr>
-                            <td>9° - Usuário 9</td>
-                        </tr>
-                        <tr>
-                            <td>10° - Usuário 10</td>
+                        <thead>
+                        <th>Posição</th>
+                        <th>Usuário</th>
+                        <th>Dinheiro</th>
+                        </thead>
+
+                        <?php
+                        require ("conexao.php");
+                        $sql= "Select nome, dinheiros from usuario order by dinheiros desc;";
+                        $resultado = mysqli_query($conexao, $sql);
+                        $id = 1;
+                        while ($linha = mysqli_fetch_array($resultado)) {
+                            echo "
+                            <tbody>
+                            <tr>
+                            <td align='center' >".$id."</td>
+                            <td align='center' >" . $linha["nome"] . "</td>
+                            <td align='center' >" . $linha["dinheiros"] . "</td>
                         </tr>
                         </tbody>
-                    </table>
+                        ";
+                            $id = $id+1;
+                        }
+                        ?>
 
-</div>
-                <div class="col-xs-2" >
+                    </table>
+                </div>
+                <div class="col-xs-4" >
                 </div>
 
                 <div class="col-xs-3" >
@@ -182,91 +110,101 @@
                         <thead>
 
                         <th></th>
-                        <th>Jogos</th>
+                        <th>jogos</th>
                         <th></th>
 
 
                         </thead>
+
+
                         <tbody>
-                        <tr>
-                            <td>TimeA</td>
-                            <td><span id="icone" class="fui-cross"></span></td>
-                            <td>TimeB</td>
-                        </tr>
-                        <tr>
-                            <td>TimeC</td>
+                        <?php
+                                                require("conexao.php");
+                                                $id = 1;
+                                                $sql1 = "select max(idpartidas) from partidas;";
+                                                $resultado1 = mysqli_query($conexao,$sql1);
+                                                $linha1 = mysqli_fetch_array($resultado1);
+                                                $idmax = $linha1["max(idpartidas)"];
+                                             while ($id <= $idmax) {
+                                                 $sql = "select   idpartidas, max(idtimes) as idtime1, min(idtimes) as idtime2 from partidas, times_partida, times  where idpartidas = times_partidas_idpartidas
+                                                        and  idtimes = times_partidas_idtimes and idpartidas=$id ;";
+                                                 $resultado = mysqli_query($conexao, $sql);
+                                                 while ($linha = mysqli_fetch_array($resultado)) {
+                                                     if (isset ($linha["idtime1"])) {
+                                                         $idtime1 = $linha["idtime1"];
+                                                         $idtime2 = $linha["idtime2"];
 
-                            <td><span id="icone" class="fui-cross"></span></td>
+                                                         $sql2 = "select sigla_times from times where idtimes = $idtime1";
+                                                         $resultado2 = mysqli_query($conexao, $sql2);
+                                                         $linha2 = mysqli_fetch_array($resultado2);
+                                                         echo "<td><a class='btn btn-block btn-lg btn-inverse' href='times_perfil.php?id=" . $linha["idtime1"] . "'>" . $linha2["sigla_times"] . "</a>              </td>
+                                                         <td><p align='center'><a href='partidas_perfil.php?id=" . $id . "'> <span class='fui-cross'></a></span></p></td>";
+                                                         $sql3 = "select sigla_times from times where idtimes = $idtime2";
+                                                         $resultado3 = mysqli_query($conexao, $sql3);
+                                                         $linha3 = mysqli_fetch_array($resultado3);
+                                                         echo "<td><a class='btn btn-block btn-lg btn-inverse' href='times_perfil.php?id=" . $linha["idtime2"] . "'>" . $linha3["sigla_times"] . "</a>              </td>";
 
-                            <td>TimeD</td>
-                        </tr>
-                        <tr>
-                            <td>TimeE</td>
 
-                            <td><span id="icone" class="fui-cross"></span></td>
-
-                            <td>TimeF</td>
-                        </tr>
-                        <tr>
-                            <td>TimeG</td>
-
-                            <td><span id="icone" class="fui-cross"></span></td>
-
-                            <td>TimeH</td>
-                        </tr>
-                        </tbody>
+                                                         echo "</tbody>";
+                                                     }
+                                                     $id = $id + 1;
+                                                 }
+                                             }
+                         ?>
                     </table>
                 </div>
-            <div class="col-xs-2">
+
+                <div class="col-xs-1">
+                </div>
+
             </div>
+
+           <div class="row demo-row">
+
+    <div class="col-xs-12" id="texto_noticia">
+<?php
+        $sql = "select * from noticias";
+        $resultado = mysqli_query($conexao,$sql);
+        while ($linha = mysqli_fetch_array($resultado)){
+        $corpo = $linha["corpo"];
+        $barra ="\\";
+        $caminho = "noticias".$barra."noticia".$corpo.".txt";
+        echo "<div class='container'>";
+
+            echo "    <h1>Notícias</h1>";
+            echo "    <div class='row demo-row'>";
+
+                echo "        <div class='col-xs-12'>";
+                    echo "            <div class='jumbotron' id='noticia'>";
+                        echo " <blockquote>";
+                            echo " ".$linha["data"]." <p align='right'>Fonte: ".$linha["fonte"]."</p>";
+                            echo "               </blockquote>";
+
+                        echo "                <h3> ".$linha["titulo"]."</h3>";
+                        echo "                <p align='justify'> ";
+                            $corpo = fopen($caminho , "r");
+                            while (!feof ($corpo)) {
+                            $linha2 = fgets($corpo,
+                            4096);
+                            echo $linha2."<br>";
+
+
+                            }
+                            fclose($corpo);
+
+
+                            echo "                </p>
+                    </div>
+                </div>
+                </br>";
+                }
+                ?>
 
     </div>
-    </div>
-
-
-
-
-
-
-
-    </div>
-    <footer>
-        <div class="container">
-        <div class="row demo-row">
-            <div class="col-xs-5">
-                <h6>Nossos Contatos</h6>
-                <a href="https://www.facebook.com/vinycius13" class="fui-facebook"> Vinycius Silveira</a></br>
-                <a href="https://plus.google.com/116622724535038811811" class="fui-google-plus"> viny13.99</a></br>
-                <a href="https://www.facebook.com/leandroandrei.dacunha?fref=ts" class="fui-facebook"> Leandro Cunha</a></br>
-                <a href="https://plus.google.com/102453433601359477942" class="fui-google-plus"> liando619</a></br>
-            </div>
-            <div class="col-xs-2"></div>
-            <div class="col-xs-5">
-                <h6>Contatos do IFC-Araquari</h6>
-                <a href="http://araquari.ifc.edu.br/" class="fui-window"> Site do Instituto</a></br>
-                <a href="https://www.facebook.com/ifc.oficial" class="fui-facebook"> Facebook do Instituto</a></br>
-                <span class="fui-home"> <b>(47) 3803-7200</b></span>
-
-            </div>
-
-
-        </div>
-            <div class="row demo-row">
-        <div class="col-xs-4">
-        </div>
-            <div class="col-xs-4">
-        © Todos os Direitos reservados á sua mãe
-        </div>
-            <div class="col-xs-4">
-            </div>
-        </div>
-        </div>
-    </footer>
-
-
-    <script>
-        videojs.options.flash.swf = "dist/js/vendors/video-js.swf"
-    </script>
-
+</div>
+</div>
+</div>
+    <?php require ("footer.php");
+    ?>
  </body>
 </html>

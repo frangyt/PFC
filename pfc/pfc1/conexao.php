@@ -1,5 +1,5 @@
 <?php
-$conexao = mysqli_connect("localhost", "root", "root", "pfc");
+$conexao = mysqli_connect("localhost", "root", "", "test");
 mysqli_set_charset($conexao, 'utf8');
 if ($conexao == false)
 {
@@ -8,5 +8,3 @@ if ($conexao == false)
 }
 
 ?>
-
-    
